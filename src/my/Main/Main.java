@@ -89,7 +89,6 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
         PanCard = new javax.swing.JPanel();
@@ -227,21 +226,13 @@ public class Main extends javax.swing.JFrame {
         CircularMotionRB1 = new javax.swing.JRadioButton();
         GravityRB1 = new javax.swing.JRadioButton();
         StartTestB = new javax.swing.JButton();
-        jLabel33 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel34 = new javax.swing.JLabel();
         TLS = new javax.swing.JRadioButton();
         TLM = new javax.swing.JRadioButton();
         TLL = new javax.swing.JRadioButton();
         CriteriaCheck = new javax.swing.JTextField();
-        jPanel33 = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        QbyQ = new javax.swing.JRadioButton();
-        PbyP = new javax.swing.JRadioButton();
-        jLabel36 = new javax.swing.JLabel();
         PerQ = new javax.swing.JRadioButton();
-        jButton28 = new javax.swing.JButton();
+        jLabel36 = new javax.swing.JLabel();
         jButton29 = new javax.swing.JButton();
         SearchResults = new javax.swing.JPanel();
         SearchBox2 = new javax.swing.JTextField();
@@ -2043,7 +2034,7 @@ public class Main extends javax.swing.JFrame {
 
         MakeT.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Make A Test", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(0, 204, 0))); // NOI18N
 
-        jPanel32.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Basic Settings", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
+        jPanel32.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Settings", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
 
         jLabel32.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel32.setText("Units:");
@@ -2084,22 +2075,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jLabel33.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel33.setText("Question Type:");
-
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton1.setText("Multiple Choice");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton2.setText("Short Response");
-
         jLabel34.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel34.setText("Test Length:");
 
@@ -2128,6 +2103,17 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        PerQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        PerQ.setText("Per Question");
+        PerQ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PerQActionPerformed(evt);
+            }
+        });
+
+        jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel36.setText("Answer Availability:");
+
         javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
         jPanel32.setLayout(jPanel32Layout);
         jPanel32Layout.setHorizontalGroup(
@@ -2143,7 +2129,7 @@ public class Main extends javax.swing.JFrame {
                         .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel34)
                             .addComponent(jLabel32)
-                            .addComponent(jLabel33)
+                            .addComponent(jLabel36)
                             .addGroup(jPanel32Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2165,10 +2151,7 @@ public class Main extends javax.swing.JFrame {
                                         .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(MomentumRB1)
                                             .addComponent(GravityRB1)))
-                                    .addGroup(jPanel32Layout.createSequentialGroup()
-                                        .addComponent(jRadioButton1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton2)))))
+                                    .addComponent(PerQ))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -2187,12 +2170,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(CircularMotionRB1)
                     .addComponent(GravityRB1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel33)
+                .addComponent(jLabel36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PerQ)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel34)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -2204,85 +2185,6 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(CriteriaCheck, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(StartTestB))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Advanced Settings", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
-
-        jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel35.setText("Test Display:");
-
-        buttonGroup3.add(QbyQ);
-        QbyQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QbyQ.setText("Question by Question");
-        QbyQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QbyQActionPerformed(evt);
-            }
-        });
-
-        buttonGroup3.add(PbyP);
-        PbyP.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        PbyP.setText("Page by Page");
-
-        jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel36.setText("Answer Availability:");
-
-        PerQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        PerQ.setText("Per Question");
-        PerQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PerQActionPerformed(evt);
-            }
-        });
-
-        jButton28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton28.setText("Start Test");
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
-        jPanel33.setLayout(jPanel33Layout);
-        jPanel33Layout.setHorizontalGroup(
-            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel33Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel33Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton28))
-                    .addGroup(jPanel33Layout.createSequentialGroup()
-                        .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel35)
-                            .addComponent(jLabel36)
-                            .addGroup(jPanel33Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(PerQ)
-                                    .addGroup(jPanel33Layout.createSequentialGroup()
-                                        .addComponent(QbyQ)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(PbyP)))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel33Layout.setVerticalGroup(
-            jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel33Layout.createSequentialGroup()
-                .addComponent(jLabel35)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(QbyQ)
-                    .addComponent(PbyP))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel36)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PerQ)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton28)
-                .addContainerGap())
         );
 
         jButton29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2298,20 +2200,15 @@ public class Main extends javax.swing.JFrame {
         MakeTLayout.setHorizontalGroup(
             MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MakeTLayout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton29)
-                    .addGroup(MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPanel33, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         MakeTLayout.setVerticalGroup(
             MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MakeTLayout.createSequentialGroup()
                 .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton29)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -5486,10 +5383,6 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MomentumRB1ActionPerformed
 
-    private void QbyQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QbyQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QbyQActionPerformed
-
     private void PerQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PerQActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PerQActionPerformed
@@ -5786,7 +5679,7 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
         card2.show(PanCard, "Make A Test");
-        if(buttonGroup1.getSelection()==null || buttonGroup2.getSelection()==null || testcheck())
+        if(buttonGroup2.getSelection()==null || testcheck())
         {
             CriteriaCheck.setVisible(true);
             
@@ -5798,15 +5691,15 @@ public class Main extends javax.swing.JFrame {
         
         if(TLS.isSelected())
         {
-            QuizMaker(false);
+            QuizMaker(PerQ.isSelected());
         }
         else if(TLM.isSelected())
         {
-            QuestMaker(false);
+            QuestMaker(PerQ.isSelceted());
         }
         else if(TLL.isSelected())
         {
-            TestMaker(false);
+            TestMaker(PerQ.isSelected());
         }
         
         
@@ -6032,10 +5925,6 @@ public class Main extends javax.swing.JFrame {
     private void MTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MTActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MTActionPerformed
-
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         writer.clearstats();
@@ -6376,36 +6265,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card2 = (CardLayout)PanCard.getLayout();
         card2.show(PanCard, "Test Form A");
     }//GEN-LAST:event_jButton53ActionPerformed
-
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        CriteriaCheck.setVisible(false);
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Main Interface");
-        CardLayout card2 = (CardLayout)PanCard.getLayout();
-        card2.show(PanCard, "Make A Test");
-        if(buttonGroup1.getSelection()==null || buttonGroup2.getSelection()==null || testcheck())
-        {
-            CriteriaCheck.setVisible(true);
-            
-            card.show(PanCard, "Main Interface");
-            card2.show(PanCard, "Make A Test");
-            JOptionPane.showMessageDialog(NoQuery.getTopLevelAncestor(), "Please Select all Criteria", "Missing Link", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        
-        if(TLS.isSelected())
-        {
-            QuizMaker(PerQ.isSelected());
-        }
-        else if(TLM.isSelected())
-        {
-            QuestMaker(PerQ.isSelected());
-        }
-        else if(TLL.isSelected())
-        {
-            TestMaker(PerQ.isSelected());
-        }
-    }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -7485,11 +7344,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField NoQuery;
     private javax.swing.JTextField NoQuery2;
     private javax.swing.JPanel PanCard;
-    private javax.swing.JRadioButton PbyP;
     private javax.swing.JRadioButton PerQ;
     private javax.swing.JTextField QSolved;
     private javax.swing.JTextField Qanswer;
-    private javax.swing.JRadioButton QbyQ;
     private javax.swing.JTextArea Qfield;
     private javax.swing.JPanel QuestA;
     private javax.swing.JPanel QuestB;
@@ -7733,7 +7590,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton TopicListB;
     private javax.swing.JTextField Units;
     private javax.swing.JTextField UnitsVar;
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JButton jButton1;
@@ -7756,7 +7612,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
@@ -7854,9 +7709,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -7937,11 +7790,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel28;
     private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel32;
-    private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
