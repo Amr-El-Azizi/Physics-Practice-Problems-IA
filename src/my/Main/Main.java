@@ -92,7 +92,6 @@ public class Main extends javax.swing.JFrame {
         buttonGroup1 = new javax.swing.ButtonGroup();
         buttonGroup2 = new javax.swing.ButtonGroup();
         buttonGroup3 = new javax.swing.ButtonGroup();
-        buttonGroup4 = new javax.swing.ButtonGroup();
         PanCard = new javax.swing.JPanel();
         Main = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
@@ -241,7 +240,6 @@ public class Main extends javax.swing.JFrame {
         QbyQ = new javax.swing.JRadioButton();
         PbyP = new javax.swing.JRadioButton();
         jLabel36 = new javax.swing.JLabel();
-        jRadioButton5 = new javax.swing.JRadioButton();
         PerQ = new javax.swing.JRadioButton();
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
@@ -2229,16 +2227,6 @@ public class Main extends javax.swing.JFrame {
         jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel36.setText("Answer Availability:");
 
-        buttonGroup4.add(jRadioButton5);
-        jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton5.setText("At the end");
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
-            }
-        });
-
-        buttonGroup4.add(PerQ);
         PerQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         PerQ.setText("Per Question");
         PerQ.addActionListener(new java.awt.event.ActionListener() {
@@ -2272,10 +2260,7 @@ public class Main extends javax.swing.JFrame {
                             .addGroup(jPanel33Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel33Layout.createSequentialGroup()
-                                        .addComponent(PerQ)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton5))
+                                    .addComponent(PerQ)
                                     .addGroup(jPanel33Layout.createSequentialGroup()
                                         .addComponent(QbyQ)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2294,9 +2279,7 @@ public class Main extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PerQ)
-                    .addComponent(jRadioButton5))
+                .addComponent(PerQ)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton28)
                 .addContainerGap())
@@ -2946,18 +2929,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB1.setText("Check Answer");
+        QuizAnsB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB1ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB2.setText("Check Answer");
+        QuizAnsB2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB2ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB3.setText("Check Answer");
+        QuizAnsB3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB3ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB4.setText("Check Answer");
+        QuizAnsB4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB4ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB5.setText("Check Answer");
+        QuizAnsB5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout QuizLayout = new javax.swing.GroupLayout(Quiz);
         Quiz.setLayout(QuizLayout);
@@ -3118,7 +3126,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton3)))
         );
 
-        PanCard.add(Quiz, "Test Form A");
+        PanCard.add(Quiz, "Quiz Form");
 
         QuestA.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Quest Part A", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
@@ -3305,18 +3313,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB6.setText("Check Answer");
+        QuizAnsB6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB6ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB7.setText("Check Answer");
+        QuizAnsB7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB7ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB8.setText("Check Answer");
+        QuizAnsB8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB8ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB9.setText("Check Answer");
+        QuizAnsB9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB9ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB10.setText("Check Answer");
+        QuizAnsB10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB10ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout QuestALayout = new javax.swing.GroupLayout(QuestA);
         QuestA.setLayout(QuestALayout);
@@ -3673,18 +3706,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB11.setText("Check Answer");
+        QuizAnsB11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB11ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB12.setText("Check Answer");
+        QuizAnsB12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB12ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB13.setText("Check Answer");
+        QuizAnsB13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB13ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB14.setText("Check Answer");
+        QuizAnsB14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB14ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB15.setText("Check Answer");
+        QuizAnsB15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB15ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout QuestBLayout = new javax.swing.GroupLayout(QuestB);
         QuestB.setLayout(QuestBLayout);
@@ -3758,8 +3816,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizAnsB12, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB13, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB14, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(QuizAnsB15, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0))
+                    .addComponent(QuizAnsB15, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         QuestBLayout.setVerticalGroup(
             QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4251,18 +4308,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB16.setText("Check Answer");
+        QuizAnsB16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB16ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB17.setText("Check Answer");
+        QuizAnsB17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB17ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB18.setText("Check Answer");
+        QuizAnsB18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB18ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB19.setText("Check Answer");
+        QuizAnsB19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB19ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB20.setText("Check Answer");
+        QuizAnsB20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB20ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TestALayout = new javax.swing.GroupLayout(TestA);
         TestA.setLayout(TestALayout);
@@ -4621,18 +4703,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB21.setText("Check Answer");
+        QuizAnsB21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB21ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB22.setText("Check Answer");
+        QuizAnsB22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB22ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB23.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB23.setText("Check Answer");
+        QuizAnsB23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB23ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB24.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB24.setText("Check Answer");
+        QuizAnsB24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB24ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB25.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB25.setText("Check Answer");
+        QuizAnsB25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB25ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TestBLayout = new javax.swing.GroupLayout(TestB);
         TestB.setLayout(TestBLayout);
@@ -4706,8 +4813,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizAnsB22, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB23, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB24, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(QuizAnsB25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0))
+                    .addComponent(QuizAnsB25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(TestBLayout.createSequentialGroup()
                     .addGap(253, 253, 253)
@@ -5003,18 +5109,43 @@ public class Main extends javax.swing.JFrame {
 
         QuizAnsB26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB26.setText("Check Answer");
+        QuizAnsB26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB26ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB27.setText("Check Answer");
+        QuizAnsB27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB27ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB28.setText("Check Answer");
+        QuizAnsB28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB28ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB29.setText("Check Answer");
+        QuizAnsB29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB29ActionPerformed(evt);
+            }
+        });
 
         QuizAnsB30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         QuizAnsB30.setText("Check Answer");
+        QuizAnsB30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                QuizAnsB30ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TestCLayout = new javax.swing.GroupLayout(TestC);
         TestC.setLayout(TestCLayout);
@@ -5358,10 +5489,6 @@ public class Main extends javax.swing.JFrame {
     private void QbyQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QbyQActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_QbyQActionPerformed
-
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
 
     private void PerQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PerQActionPerformed
         // TODO add your handling code here:
@@ -6249,7 +6376,7 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
         card2.show(PanCard, "Make A Test");
-        if(buttonGroup1.getSelection()==null || buttonGroup2.getSelection()==null || testcheck() || buttonGroup3.getSelection()==null || buttonGroup4.getSelection()==null)
+        if(buttonGroup1.getSelection()==null || buttonGroup2.getSelection()==null || testcheck())
         {
             CriteriaCheck.setVisible(true);
             
@@ -6277,7 +6404,7 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         CurrentTestB.setVisible(true);
-        CT = "Test Form A";
+        CT = "Quiz Form";
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -6451,89 +6578,154 @@ public class Main extends javax.swing.JFrame {
         QuizUnitsVar13.setVisible(true);
         QuizUnitsVar14.setVisible(true);
         QuizUnitsVar15.setVisible(true);
-
+        int tally = 0;
+        
         if(equal(QuizQ1.answer, QuizAnswer6.getText()))
-        QuizAnswerVar6.setText("Correct");
+        {
+            QuizAnswerVar6.setText("Correct");
+            tally++;
+        }
         else
         QuizAnswerVar6.setText("Incorrect");
         if(equal(QuizQ2.answer, QuizAnswer7.getText()))
-        QuizAnswerVar7.setText("Correct");
+        {
+            QuizAnswerVar7.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar7.setText("Incorrect");
         if(equal(QuizQ3.answer, QuizAnswer8.getText()))
-        QuizAnswerVar8.setText("Correct");
+        {
+            QuizAnswerVar8.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar8.setText("Incorrect");
         if(equal(QuizQ4.answer, QuizAnswer9.getText()))
-        QuizAnswerVar9.setText("Correct");
+        {
+            QuizAnswerVar9.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar9.setText("Incorrect");
         if(equal(QuizQ5.answer, QuizAnswer10.getText()))
-        QuizAnswerVar10.setText("Correct");
+        {
+            QuizAnswerVar10.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar10.setText("Incorrect");
         if(equal(QuizQ6.answer, QuizAnswer11.getText()))
-        QuizAnswerVar11.setText("Correct");
+        {
+            QuizAnswerVar11.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar11.setText("Incorrect");
         if(equal(QuizQ7.answer, QuizAnswer12.getText()))
-        QuizAnswerVar12.setText("Correct");
+        {
+            QuizAnswerVar12.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar12.setText("Incorrect");
         if(equal(QuizQ8.answer, QuizAnswer13.getText()))
-        QuizAnswerVar13.setText("Correct");
+        {
+            QuizAnswerVar13.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar13.setText("Incorrect");
         if(equal(QuizQ9.answer, QuizAnswer14.getText()))
-        QuizAnswerVar14.setText("Correct");
+        {
+            QuizAnswerVar14.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar14.setText("Incorrect");
         if(equal(QuizQ10.answer, QuizAnswer15.getText()))
-        QuizAnswerVar15.setText("Correct");
+        {
+            QuizAnswerVar15.setText("Correct");
+            tally ++;
+        }
         else
         QuizAnswerVar15.setText("Incorrect");
 
         if(QuizQ1.units.equals(QuizUnits6.getText()))
-        QuizUnitsVar6.setText("Correct");
+        {
+            QuizUnitsVar6.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar6.setText("Incorrect");
         if(QuizQ2.units.equals(QuizUnits7.getText()))
-        QuizUnitsVar7.setText("Correct");
+        {
+            QuizUnitsVar7.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar7.setText("Incorrect");
         if(QuizQ3.units.equals(QuizUnits8.getText()))
-        QuizUnitsVar8.setText("Correct");
+        {
+            QuizUnitsVar8.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar8.setText("Incorrect");
         if(QuizQ4.units.equals(QuizUnits9.getText()))
-        QuizUnitsVar9.setText("Correct");
+        {
+            QuizUnitsVar9.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar9.setText("Incorrect");
         if(QuizQ5.units.equals(QuizUnits10.getText()))
-        QuizUnitsVar10.setText("Correct");
+        {
+            QuizUnitsVar10.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar10.setText("Incorrect");
         if(QuizQ6.units.equals(QuizUnits11.getText()))
-        QuizUnitsVar11.setText("Correct");
+        {
+            QuizUnitsVar11.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar11.setText("Incorrect");
         if(QuizQ7.units.equals(QuizUnits12.getText()))
-        QuizUnitsVar12.setText("Correct");
+        {
+            QuizUnitsVar12.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar12.setText("Incorrect");
         if(QuizQ8.units.equals(QuizUnits13.getText()))
-        QuizUnitsVar13.setText("Correct");
+        {
+            QuizUnitsVar13.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar13.setText("Incorrect");
         if(QuizQ9.units.equals(QuizUnits14.getText()))
-        QuizUnitsVar14.setText("Correct");
+        {
+            QuizUnitsVar14.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar14.setText("Incorrect");
         if(QuizQ10.units.equals(QuizUnits15.getText()))
-        QuizUnitsVar15.setText("Correct");
+        {
+            QuizUnitsVar15.setText("Correct");
+            tally ++;
+        }
         else
         QuizUnitsVar15.setText("Incorrect");
-
+        
+        if(tally == 20)
+        {
+            writer.tally("T");
+        }
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
@@ -6583,6 +6775,636 @@ public class Main extends javax.swing.JFrame {
     private void Quiz11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Quiz11ActionPerformed
+
+    private void QuizAnsB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB1ActionPerformed
+        if(equal(QuizQ1.answer, QuizAnswer1.getText()))
+        {
+            QuizAnswerVar1.setText("Correct");
+        }
+        else
+        QuizAnswerVar1.setText("Incorrect");
+        if(QuizQ1.units.equals(QuizUnits1.getText()))
+        {
+            QuizUnitsVar1.setText("Correct");
+        }
+        else
+        QuizUnitsVar1.setText("Incorrect");
+        QuizAnswerVar1.setVisible(true);
+        QuizUnitsVar1.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quiz Form");
+    }//GEN-LAST:event_QuizAnsB1ActionPerformed
+
+    private void QuizAnsB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB2ActionPerformed
+        if(equal(QuizQ2.answer, QuizAnswer2.getText()))
+        {
+            QuizAnswerVar2.setText("Correct");
+        }
+        else
+        QuizAnswerVar2.setText("Incorrect");
+        if(QuizQ2.units.equals(QuizUnits2.getText()))
+        {
+            QuizUnitsVar2.setText("Correct");
+        }
+        else
+        QuizUnitsVar2.setText("Incorrect");
+        QuizAnswerVar2.setVisible(true);
+        QuizUnitsVar2.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quiz Form");
+    }//GEN-LAST:event_QuizAnsB2ActionPerformed
+
+    private void QuizAnsB3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB3ActionPerformed
+        if(equal(QuizQ3.answer, QuizAnswer3.getText()))
+        {
+            QuizAnswerVar3.setText("Correct");
+        }
+        else
+        QuizAnswerVar3.setText("Incorrect");
+        if(QuizQ3.units.equals(QuizUnits3.getText()))
+        {
+            QuizUnitsVar3.setText("Correct");
+        }
+        else
+        QuizUnitsVar3.setText("Incorrect");
+        QuizAnswerVar3.setVisible(true);
+        QuizUnitsVar3.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quiz Form");
+    }//GEN-LAST:event_QuizAnsB3ActionPerformed
+
+    private void QuizAnsB4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB4ActionPerformed
+        if(equal(QuizQ4.answer, QuizAnswer4.getText()))
+        {
+            QuizAnswerVar4.setText("Correct");
+        }
+        else
+        QuizAnswerVar4.setText("Incorrect");
+        if(QuizQ4.units.equals(QuizUnits4.getText()))
+        {
+            QuizUnitsVar4.setText("Correct");
+        }
+        else
+        QuizUnitsVar4.setText("Incorrect");
+        QuizAnswerVar4.setVisible(true);
+        QuizUnitsVar4.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quiz Form");
+    }//GEN-LAST:event_QuizAnsB4ActionPerformed
+
+    private void QuizAnsB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB5ActionPerformed
+        if(equal(QuizQ5.answer, QuizAnswer5.getText()))
+        {
+            QuizAnswerVar5.setText("Correct");
+        }
+        else
+        QuizAnswerVar5.setText("Incorrect");
+        if(QuizQ5.units.equals(QuizUnits5.getText()))
+        {
+            QuizUnitsVar5.setText("Correct");
+        }
+        else
+        QuizUnitsVar5.setText("Incorrect");
+        QuizAnswerVar5.setVisible(true);
+        QuizUnitsVar5.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quiz Form");
+    }//GEN-LAST:event_QuizAnsB5ActionPerformed
+
+    private void QuizAnsB6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB6ActionPerformed
+        if(equal(QuizQ1.answer, QuizAnswer6.getText()))
+        {
+            QuizAnswerVar6.setText("Correct");
+        }
+        else
+        QuizAnswerVar6.setText("Incorrect");
+        if(QuizQ1.units.equals(QuizUnits6.getText()))
+        {
+            QuizUnitsVar6.setText("Correct");
+        }
+        else
+        QuizUnitsVar6.setText("Incorrect");
+        QuizAnswerVar6.setVisible(true);
+        QuizUnitsVar6.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_QuizAnsB6ActionPerformed
+
+    private void QuizAnsB7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB7ActionPerformed
+        if(equal(QuizQ2.answer, QuizAnswer7.getText()))
+        {
+            QuizAnswerVar7.setText("Correct");
+        }
+        else
+        QuizAnswerVar7.setText("Incorrect");
+        if(QuizQ2.units.equals(QuizUnits7.getText()))
+        {
+            QuizUnitsVar7.setText("Correct");
+        }
+        else
+        QuizUnitsVar7.setText("Incorrect");
+        QuizAnswerVar7.setVisible(true);
+        QuizUnitsVar7.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_QuizAnsB7ActionPerformed
+
+    private void QuizAnsB8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB8ActionPerformed
+        if(equal(QuizQ3.answer, QuizAnswer8.getText()))
+        {
+            QuizAnswerVar8.setText("Correct");
+        }
+        else
+        QuizAnswerVar8.setText("Incorrect");
+        if(QuizQ3.units.equals(QuizUnits8.getText()))
+        {
+            QuizUnitsVar8.setText("Correct");
+        }
+        else
+        QuizUnitsVar8.setText("Incorrect");
+        QuizAnswerVar8.setVisible(true);
+        QuizUnitsVar8.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_QuizAnsB8ActionPerformed
+
+    private void QuizAnsB9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB9ActionPerformed
+        if(equal(QuizQ4.answer, QuizAnswer9.getText()))
+        {
+            QuizAnswerVar9.setText("Correct");
+        }
+        else
+        QuizAnswerVar9.setText("Incorrect");
+        if(QuizQ4.units.equals(QuizUnits9.getText()))
+        {
+            QuizUnitsVar9.setText("Correct");
+        }
+        else
+        QuizUnitsVar9.setText("Incorrect");
+        QuizAnswerVar9.setVisible(true);
+        QuizUnitsVar9.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_QuizAnsB9ActionPerformed
+
+    private void QuizAnsB10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB10ActionPerformed
+        if(equal(QuizQ5.answer, QuizAnswer10.getText()))
+        {
+            QuizAnswerVar10.setText("Correct");
+        }
+        else
+        QuizAnswerVar10.setText("Incorrect");
+        if(QuizQ5.units.equals(QuizUnits10.getText()))
+        {
+            QuizUnitsVar10.setText("Correct");
+        }
+        else
+        QuizUnitsVar10.setText("Incorrect");
+        QuizAnswerVar10.setVisible(true);
+        QuizUnitsVar10.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_QuizAnsB10ActionPerformed
+
+    private void QuizAnsB11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB11ActionPerformed
+        if(equal(QuizQ6.answer, QuizAnswer11.getText()))
+        {
+            QuizAnswerVar11.setText("Correct");
+        }
+        else
+        QuizAnswerVar11.setText("Incorrect");
+        if(QuizQ6.units.equals(QuizUnits11.getText()))
+        {
+            QuizUnitsVar11.setText("Correct");
+        }
+        else
+        QuizUnitsVar11.setText("Incorrect");
+        QuizAnswerVar11.setVisible(true);
+        QuizUnitsVar11.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form B");
+    }//GEN-LAST:event_QuizAnsB11ActionPerformed
+
+    private void QuizAnsB12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB12ActionPerformed
+        if(equal(QuizQ7.answer, QuizAnswer12.getText()))
+        {
+            QuizAnswerVar12.setText("Correct");
+        }
+        else
+        QuizAnswerVar12.setText("Incorrect");
+        if(QuizQ7.units.equals(QuizUnits12.getText()))
+        {
+            QuizUnitsVar12.setText("Correct");
+        }
+        else
+        QuizUnitsVar12.setText("Incorrect");
+        QuizAnswerVar12.setVisible(true);
+        QuizUnitsVar12.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form B");
+    }//GEN-LAST:event_QuizAnsB12ActionPerformed
+
+    private void QuizAnsB13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB13ActionPerformed
+        if(equal(QuizQ8.answer, QuizAnswer13.getText()))
+        {
+            QuizAnswerVar13.setText("Correct");
+        }
+        else
+        QuizAnswerVar13.setText("Incorrect");
+        if(QuizQ8.units.equals(QuizUnits13.getText()))
+        {
+            QuizUnitsVar13.setText("Correct");
+        }
+        else
+        QuizUnitsVar13.setText("Incorrect");
+        QuizAnswerVar13.setVisible(true);
+        QuizUnitsVar13.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form B");
+    }//GEN-LAST:event_QuizAnsB13ActionPerformed
+
+    private void QuizAnsB15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB15ActionPerformed
+        if(equal(QuizQ9.answer, QuizAnswer14.getText()))
+        {
+            QuizAnswerVar14.setText("Correct");
+        }
+        else
+        QuizAnswerVar14.setText("Incorrect");
+        if(QuizQ9.units.equals(QuizUnits14.getText()))
+        {
+            QuizUnitsVar14.setText("Correct");
+        }
+        else
+        QuizUnitsVar14.setText("Incorrect");
+        QuizAnswerVar14.setVisible(true);
+        QuizUnitsVar14.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form B");
+    }//GEN-LAST:event_QuizAnsB15ActionPerformed
+
+    private void QuizAnsB14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB14ActionPerformed
+        if(equal(QuizQ10.answer, QuizAnswer15.getText()))
+        {
+            QuizAnswerVar15.setText("Correct");
+        }
+        else
+        QuizAnswerVar15.setText("Incorrect");
+        if(QuizQ10.units.equals(QuizUnits15.getText()))
+        {
+            QuizUnitsVar15.setText("Correct");
+        }
+        else
+        QuizUnitsVar15.setText("Incorrect");
+        QuizAnswerVar15.setVisible(true);
+        QuizUnitsVar15.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form B");
+    }//GEN-LAST:event_QuizAnsB14ActionPerformed
+
+    private void QuizAnsB16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB16ActionPerformed
+        if(equal(QuizQ1.answer, QuizAnswer16.getText()))
+        {
+            QuizAnswerVar16.setText("Correct");
+        }
+        else
+        QuizAnswerVar16.setText("Incorrect");
+        if(QuizQ1.units.equals(QuizUnits16.getText()))
+        {
+            QuizUnitsVar16.setText("Correct");
+        }
+        else
+        QuizUnitsVar16.setText("Incorrect");
+        QuizAnswerVar16.setVisible(true);
+        QuizUnitsVar16.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_QuizAnsB16ActionPerformed
+
+    private void QuizAnsB17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB17ActionPerformed
+        if(equal(QuizQ2.answer, QuizAnswer17.getText()))
+        {
+            QuizAnswerVar17.setText("Correct");
+        }
+        else
+        QuizAnswerVar17.setText("Incorrect");
+        if(QuizQ2.units.equals(QuizUnits17.getText()))
+        {
+            QuizUnitsVar17.setText("Correct");
+        }
+        else
+        QuizUnitsVar17.setText("Incorrect");
+        QuizAnswerVar17.setVisible(true);
+        QuizUnitsVar17.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_QuizAnsB17ActionPerformed
+
+    private void QuizAnsB18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB18ActionPerformed
+        if(equal(QuizQ3.answer, QuizAnswer18.getText()))
+        {
+            QuizAnswerVar18.setText("Correct");
+        }
+        else
+        QuizAnswerVar18.setText("Incorrect");
+        if(QuizQ3.units.equals(QuizUnits18.getText()))
+        {
+            QuizUnitsVar18.setText("Correct");
+        }
+        else
+        QuizUnitsVar18.setText("Incorrect");
+        QuizAnswerVar18.setVisible(true);
+        QuizUnitsVar18.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_QuizAnsB18ActionPerformed
+
+    private void QuizAnsB19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB19ActionPerformed
+        if(equal(QuizQ4.answer, QuizAnswer19.getText()))
+        {
+            QuizAnswerVar19.setText("Correct");
+        }
+        else
+        QuizAnswerVar19.setText("Incorrect");
+        if(QuizQ4.units.equals(QuizUnits19.getText()))
+        {
+            QuizUnitsVar19.setText("Correct");
+        }
+        else
+        QuizUnitsVar19.setText("Incorrect");
+        QuizAnswerVar19.setVisible(true);
+        QuizUnitsVar19.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_QuizAnsB19ActionPerformed
+
+    private void QuizAnsB20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB20ActionPerformed
+        if(equal(QuizQ10.answer, QuizAnswer20.getText()))
+        {
+            QuizAnswerVar20.setText("Correct");
+        }
+        else
+        QuizAnswerVar20.setText("Incorrect");
+        if(QuizQ10.units.equals(QuizUnits20.getText()))
+        {
+            QuizUnitsVar20.setText("Correct");
+        }
+        else
+        QuizUnitsVar20.setText("Incorrect");
+        QuizAnswerVar20.setVisible(true);
+        QuizUnitsVar20.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_QuizAnsB20ActionPerformed
+
+    private void QuizAnsB21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB21ActionPerformed
+        if(equal(QuizQ6.answer, QuizAnswer21.getText()))
+        {
+            QuizAnswerVar21.setText("Correct");
+        }
+        else
+        QuizAnswerVar21.setText("Incorrect");
+        if(QuizQ6.units.equals(QuizUnits21.getText()))
+        {
+            QuizUnitsVar21.setText("Correct");
+        }
+        else
+        QuizUnitsVar21.setText("Incorrect");
+        QuizAnswerVar21.setVisible(true);
+        QuizUnitsVar21.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form B");
+    }//GEN-LAST:event_QuizAnsB21ActionPerformed
+
+    private void QuizAnsB22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB22ActionPerformed
+        if(equal(QuizQ7.answer, QuizAnswer22.getText()))
+        {
+            QuizAnswerVar22.setText("Correct");
+        }
+        else
+        QuizAnswerVar22.setText("Incorrect");
+        if(QuizQ7.units.equals(QuizUnits22.getText()))
+        {
+            QuizUnitsVar22.setText("Correct");
+        }
+        else
+        QuizUnitsVar22.setText("Incorrect");
+        QuizAnswerVar22.setVisible(true);
+        QuizUnitsVar22.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form B");
+    }//GEN-LAST:event_QuizAnsB22ActionPerformed
+
+    private void QuizAnsB23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB23ActionPerformed
+        if(equal(QuizQ8.answer, QuizAnswer23.getText()))
+        {
+            QuizAnswerVar8.setText("Correct");
+        }
+        else
+        QuizAnswerVar23.setText("Incorrect");
+        if(QuizQ8.units.equals(QuizUnits23.getText()))
+        {
+            QuizUnitsVar23.setText("Correct");
+        }
+        else
+        QuizUnitsVar23.setText("Incorrect");
+        QuizAnswerVar23.setVisible(true);
+        QuizUnitsVar23.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form B");
+    }//GEN-LAST:event_QuizAnsB23ActionPerformed
+
+    private void QuizAnsB24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB24ActionPerformed
+        if(equal(QuizQ9.answer, QuizAnswer4.getText()))
+        {
+            QuizAnswerVar24.setText("Correct");
+        }
+        else
+        QuizAnswerVar24.setText("Incorrect");
+        if(QuizQ9.units.equals(QuizUnits24.getText()))
+        {
+            QuizUnitsVar24.setText("Correct");
+        }
+        else
+        QuizUnitsVar24.setText("Incorrect");
+        QuizAnswerVar24.setVisible(true);
+        QuizUnitsVar24.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form B");
+    }//GEN-LAST:event_QuizAnsB24ActionPerformed
+
+    private void QuizAnsB25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB25ActionPerformed
+        if(equal(QuizQ10.answer, QuizAnswer25.getText()))
+        {
+            QuizAnswerVar25.setText("Correct");
+        }
+        else
+        QuizAnswerVar25.setText("Incorrect");
+        if(QuizQ10.units.equals(QuizUnits25.getText()))
+        {
+            QuizUnitsVar25.setText("Correct");
+        }
+        else
+        QuizUnitsVar25.setText("Incorrect");
+        QuizAnswerVar25.setVisible(true);
+        QuizUnitsVar25.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form B");
+    }//GEN-LAST:event_QuizAnsB25ActionPerformed
+
+    private void QuizAnsB26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB26ActionPerformed
+        if(equal(QuizQ11.answer, QuizAnswer26.getText()))
+        {
+            QuizAnswerVar26.setText("Correct");
+        }
+        else
+        QuizAnswerVar11.setText("Incorrect");
+        if(QuizQ11.units.equals(QuizUnits26.getText()))
+        {
+            QuizUnitsVar26.setText("Correct");
+        }
+        else
+        QuizUnitsVar26.setText("Incorrect");
+        QuizAnswerVar26.setVisible(true);
+        QuizUnitsVar26.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form C");
+    }//GEN-LAST:event_QuizAnsB26ActionPerformed
+
+    private void QuizAnsB27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB27ActionPerformed
+        if(equal(QuizQ12.answer, QuizAnswer27.getText()))
+        {
+            QuizAnswerVar27.setText("Correct");
+        }
+        else
+        QuizAnswerVar27.setText("Incorrect");
+        if(QuizQ12.units.equals(QuizUnits27.getText()))
+        {
+            QuizUnitsVar27.setText("Correct");
+        }
+        else
+        QuizUnitsVar27.setText("Incorrect");
+        QuizAnswerVar27.setVisible(true);
+        QuizUnitsVar27.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form C");
+    }//GEN-LAST:event_QuizAnsB27ActionPerformed
+
+    private void QuizAnsB28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB28ActionPerformed
+        if(equal(QuizQ13.answer, QuizAnswer28.getText()))
+        {
+            QuizAnswerVar28.setText("Correct");
+        }
+        else
+        QuizAnswerVar28.setText("Incorrect");
+        if(QuizQ13.units.equals(QuizUnits28.getText()))
+        {
+            QuizUnitsVar28.setText("Correct");
+        }
+        else
+        QuizUnitsVar28.setText("Incorrect");
+        QuizAnswerVar28.setVisible(true);
+        QuizUnitsVar28.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form C");
+    }//GEN-LAST:event_QuizAnsB28ActionPerformed
+
+    private void QuizAnsB29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB29ActionPerformed
+        if(equal(QuizQ14.answer, QuizAnswer29.getText()))
+        {
+            QuizAnswerVar29.setText("Correct");
+        }
+        else
+        QuizAnswerVar29.setText("Incorrect");
+        if(QuizQ14.units.equals(QuizUnits29.getText()))
+        {
+            QuizUnitsVar29.setText("Correct");
+        }
+        else
+        QuizUnitsVar29.setText("Incorrect");
+        QuizAnswerVar29.setVisible(true);
+        QuizUnitsVar29.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form C");
+    }//GEN-LAST:event_QuizAnsB29ActionPerformed
+
+    private void QuizAnsB30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB30ActionPerformed
+        if(equal(QuizQ15.answer, QuizAnswer30.getText()))
+        {
+            QuizAnswerVar30.setText("Correct");
+        }
+        else
+        QuizAnswerVar30.setText("Incorrect");
+        if(QuizQ15.units.equals(QuizUnits30.getText()))
+        {
+            QuizUnitsVar30.setText("Correct");
+        }
+        else
+        QuizUnitsVar30.setText("Incorrect");
+        QuizAnswerVar30.setVisible(true);
+        QuizUnitsVar30.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form C");
+    }//GEN-LAST:event_QuizAnsB30ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -6907,7 +7729,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -7114,7 +7935,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
@@ -8133,7 +8953,7 @@ public class Main extends javax.swing.JFrame {
         Quiz5.setText(QuizQ5.questiontext);
         TestQs = blanc();
         CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Test Form A");
+        card.show(PanCard, "Quiz Form");
     }
     
     public void QuestMaker(boolean ans)
