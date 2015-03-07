@@ -6091,6 +6091,8 @@ public class Main extends javax.swing.JFrame {
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
+        CurrentTestB.setVisible(true);
+        CT = "Test Form A";
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
@@ -6150,6 +6152,8 @@ public class Main extends javax.swing.JFrame {
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
+        CurrentTestB.setVisible(true);
+        CT = "Test Form A";
     }//GEN-LAST:event_jButton49ActionPerformed
 
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
@@ -6202,7 +6206,10 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_Quiz30ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-        // TODO add your handling code here:
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CurrentTestB.setVisible(true);
+        CT = "Test Form A";
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
@@ -6498,7 +6505,7 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
-        card2.show(PanCard, "Test Form A");
+        card2.show(PanCard, "Quiz Form");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void Quiz5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz5ActionPerformed
