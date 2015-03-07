@@ -238,11 +238,11 @@ public class Main extends javax.swing.JFrame {
         CriteriaCheck = new javax.swing.JTextField();
         jPanel33 = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        QbyQ = new javax.swing.JRadioButton();
+        PbyP = new javax.swing.JRadioButton();
         jLabel36 = new javax.swing.JLabel();
         jRadioButton5 = new javax.swing.JRadioButton();
-        jRadioButton6 = new javax.swing.JRadioButton();
+        PerQ = new javax.swing.JRadioButton();
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         SearchResults = new javax.swing.JPanel();
@@ -330,6 +330,11 @@ public class Main extends javax.swing.JFrame {
         Quiz5 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        QuizAnsB1 = new javax.swing.JButton();
+        QuizAnsB2 = new javax.swing.JButton();
+        QuizAnsB3 = new javax.swing.JButton();
+        QuizAnsB4 = new javax.swing.JButton();
+        QuizAnsB5 = new javax.swing.JButton();
         QuestA = new javax.swing.JPanel();
         Quiz6 = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
@@ -373,6 +378,11 @@ public class Main extends javax.swing.JFrame {
         Quiz10 = new javax.swing.JTextField();
         jButton5 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
+        QuizAnsB6 = new javax.swing.JButton();
+        QuizAnsB7 = new javax.swing.JButton();
+        QuizAnsB8 = new javax.swing.JButton();
+        QuizAnsB9 = new javax.swing.JButton();
+        QuizAnsB10 = new javax.swing.JButton();
         QuestB = new javax.swing.JPanel();
         Quiz11 = new javax.swing.JTextField();
         jLabel65 = new javax.swing.JLabel();
@@ -417,6 +427,11 @@ public class Main extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        QuizAnsB11 = new javax.swing.JButton();
+        QuizAnsB12 = new javax.swing.JButton();
+        QuizAnsB13 = new javax.swing.JButton();
+        QuizAnsB14 = new javax.swing.JButton();
+        QuizAnsB15 = new javax.swing.JButton();
         Quizlets = new javax.swing.JPanel();
         jLabel80 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
@@ -482,6 +497,11 @@ public class Main extends javax.swing.JFrame {
         Quiz20 = new javax.swing.JTextField();
         jButton46 = new javax.swing.JButton();
         jButton47 = new javax.swing.JButton();
+        QuizAnsB16 = new javax.swing.JButton();
+        QuizAnsB17 = new javax.swing.JButton();
+        QuizAnsB18 = new javax.swing.JButton();
+        QuizAnsB19 = new javax.swing.JButton();
+        QuizAnsB20 = new javax.swing.JButton();
         TestB = new javax.swing.JPanel();
         Quiz21 = new javax.swing.JTextField();
         jLabel106 = new javax.swing.JLabel();
@@ -526,10 +546,15 @@ public class Main extends javax.swing.JFrame {
         jButton48 = new javax.swing.JButton();
         jButton49 = new javax.swing.JButton();
         jButton50 = new javax.swing.JButton();
+        jLabel122 = new javax.swing.JLabel();
+        QuizAnsB21 = new javax.swing.JButton();
+        QuizAnsB22 = new javax.swing.JButton();
+        QuizAnsB23 = new javax.swing.JButton();
+        QuizAnsB24 = new javax.swing.JButton();
+        QuizAnsB25 = new javax.swing.JButton();
         TestC = new javax.swing.JPanel();
         Quiz26 = new javax.swing.JTextField();
         jLabel121 = new javax.swing.JLabel();
-        jLabel122 = new javax.swing.JLabel();
         jLabel123 = new javax.swing.JLabel();
         QuizAnswer26 = new javax.swing.JTextField();
         QuizUnits26 = new javax.swing.JTextField();
@@ -570,6 +595,11 @@ public class Main extends javax.swing.JFrame {
         jButton51 = new javax.swing.JButton();
         jButton52 = new javax.swing.JButton();
         jButton53 = new javax.swing.JButton();
+        QuizAnsB26 = new javax.swing.JButton();
+        QuizAnsB27 = new javax.swing.JButton();
+        QuizAnsB28 = new javax.swing.JButton();
+        QuizAnsB29 = new javax.swing.JButton();
+        QuizAnsB30 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -786,7 +816,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(374, Short.MAX_VALUE))
+                .addContainerGap(380, Short.MAX_VALUE))
         );
 
         PanCard.add(Main, "Main Interface");
@@ -838,7 +868,7 @@ public class Main extends javax.swing.JFrame {
         );
         AnswerLayout.setVerticalGroup(
             AnswerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 672, Short.MAX_VALUE)
+            .addGap(0, 678, Short.MAX_VALUE)
             .addGroup(AnswerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(AnswerLayout.createSequentialGroup()
                     .addContainerGap()
@@ -943,14 +973,14 @@ public class Main extends javax.swing.JFrame {
         FavoriteQTypesLayout.setVerticalGroup(
             FavoriteQTypesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, FavoriteQTypesLayout.createSequentialGroup()
-                .addContainerGap(638, Short.MAX_VALUE)
+                .addContainerGap(644, Short.MAX_VALUE)
                 .addComponent(jButton15)
                 .addContainerGap())
             .addGroup(FavoriteQTypesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(FavoriteQTypesLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(386, Short.MAX_VALUE)))
+                    .addContainerGap(392, Short.MAX_VALUE)))
         );
 
         PanCard.add(FavoriteQTypes, "Favorite Question Types");
@@ -1108,7 +1138,7 @@ public class Main extends javax.swing.JFrame {
         );
         SavedQLayout.setVerticalGroup(
             SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 672, Short.MAX_VALUE)
+            .addGap(0, 678, Short.MAX_VALUE)
             .addGroup(SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SavedQLayout.createSequentialGroup()
                     .addContainerGap()
@@ -1269,7 +1299,7 @@ public class Main extends javax.swing.JFrame {
         );
         SavedTLayout.setVerticalGroup(
             SavedTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 672, Short.MAX_VALUE)
+            .addGap(0, 678, Short.MAX_VALUE)
             .addGroup(SavedTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SavedTLayout.createSequentialGroup()
                     .addContainerGap()
@@ -1447,7 +1477,7 @@ public class Main extends javax.swing.JFrame {
         SearchLayout.setVerticalGroup(
             SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchLayout.createSequentialGroup()
-                .addContainerGap(636, Short.MAX_VALUE)
+                .addContainerGap(642, Short.MAX_VALUE)
                 .addComponent(jButton23)
                 .addContainerGap())
             .addGroup(SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1456,7 +1486,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(374, Short.MAX_VALUE)))
+                    .addContainerGap(380, Short.MAX_VALUE)))
         );
 
         PanCard.add(Search, "Search");
@@ -2008,7 +2038,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(TopicLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton25)
                     .addComponent(jButton26))
-                .addContainerGap(326, Short.MAX_VALUE))
+                .addContainerGap(332, Short.MAX_VALUE))
         );
 
         PanCard.add(TopicL, "Topic List");
@@ -2183,18 +2213,18 @@ public class Main extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel35.setText("Test Display:");
 
-        buttonGroup3.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton3.setText("Question by Question");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(QbyQ);
+        QbyQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QbyQ.setText("Question by Question");
+        QbyQ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                QbyQActionPerformed(evt);
             }
         });
 
-        buttonGroup3.add(jRadioButton4);
-        jRadioButton4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton4.setText("One Page");
+        buttonGroup3.add(PbyP);
+        PbyP.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        PbyP.setText("Page by Page");
 
         jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel36.setText("Answer Availability:");
@@ -2208,17 +2238,22 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        buttonGroup4.add(jRadioButton6);
-        jRadioButton6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jRadioButton6.setText("Per Question");
-        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(PerQ);
+        PerQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        PerQ.setText("Per Question");
+        PerQ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton6ActionPerformed(evt);
+                PerQActionPerformed(evt);
             }
         });
 
         jButton28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton28.setText("Start Test");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel33Layout = new javax.swing.GroupLayout(jPanel33);
         jPanel33.setLayout(jPanel33Layout);
@@ -2238,13 +2273,13 @@ public class Main extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel33Layout.createSequentialGroup()
-                                        .addComponent(jRadioButton6)
+                                        .addComponent(PerQ)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jRadioButton5))
                                     .addGroup(jPanel33Layout.createSequentialGroup()
-                                        .addComponent(jRadioButton3)
+                                        .addComponent(QbyQ)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jRadioButton4)))))
+                                        .addComponent(PbyP)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -2254,13 +2289,13 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel35)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton3)
-                    .addComponent(jRadioButton4))
+                    .addComponent(QbyQ)
+                    .addComponent(PbyP))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton6)
+                    .addComponent(PerQ)
                     .addComponent(jRadioButton5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton28)
@@ -2716,12 +2751,12 @@ public class Main extends javax.swing.JFrame {
             .addGroup(QuestionLayout.createSequentialGroup()
                 .addGap(310, 310, 310)
                 .addComponent(jButton16)
-                .addContainerGap(337, Short.MAX_VALUE))
+                .addContainerGap(343, Short.MAX_VALUE))
             .addGroup(QuestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(QuestionLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(369, Short.MAX_VALUE)))
+                    .addContainerGap(375, Short.MAX_VALUE)))
         );
 
         PanCard.add(Question, "Questions");
@@ -2909,6 +2944,21 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        QuizAnsB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB1.setText("Check Answer");
+
+        QuizAnsB2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB2.setText("Check Answer");
+
+        QuizAnsB3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB3.setText("Check Answer");
+
+        QuizAnsB4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB4.setText("Check Answer");
+
+        QuizAnsB5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB5.setText("Check Answer");
+
         javax.swing.GroupLayout QuizLayout = new javax.swing.GroupLayout(Quiz);
         Quiz.setLayout(QuizLayout);
         QuizLayout.setHorizontalGroup(
@@ -2957,31 +3007,37 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnits5, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnitsVar5, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuizLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addContainerGap())
+                .addComponent(jButton2))
             .addGroup(QuizLayout.createSequentialGroup()
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Quiz1)
                     .addComponent(jLabel5)
                     .addComponent(jLabel39)
                     .addComponent(Quiz2)
-                    .addComponent(Quiz3, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz3, javax.swing.GroupLayout.DEFAULT_SIZE, 392, Short.MAX_VALUE)
                     .addComponent(jLabel42)
                     .addComponent(Quiz4)
                     .addComponent(jLabel45)
                     .addComponent(Quiz5)
                     .addComponent(jLabel47))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB3, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB5, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         QuizLayout.setVerticalGroup(
             QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuizLayout.createSequentialGroup()
                 .addComponent(jLabel5)
                 .addGap(5, 5, 5)
-                .addComponent(Quiz1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
@@ -2994,8 +3050,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel39)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -3008,8 +3066,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel42)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel41)
@@ -3022,8 +3082,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel45)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel44)
@@ -3036,8 +3098,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel47)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel49)
@@ -3232,12 +3296,27 @@ public class Main extends javax.swing.JFrame {
         });
 
         jButton8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton8.setText("Next Part");
+        jButton8.setText("Next Page");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
+
+        QuizAnsB6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB6.setText("Check Answer");
+
+        QuizAnsB7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB7.setText("Check Answer");
+
+        QuizAnsB8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB8.setText("Check Answer");
+
+        QuizAnsB9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB9.setText("Check Answer");
+
+        QuizAnsB10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB10.setText("Check Answer");
 
         javax.swing.GroupLayout QuestALayout = new javax.swing.GroupLayout(QuestA);
         QuestA.setLayout(QuestALayout);
@@ -3265,12 +3344,6 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestALayout.createSequentialGroup()
-                        .addComponent(jLabel52)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(QuizUnitsVar6)
-                            .addComponent(QuizUnits6, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestALayout.createSequentialGroup()
                         .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel55)
                             .addComponent(jLabel58)
@@ -3285,33 +3358,46 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnitsVar9)
                             .addComponent(QuizUnits9, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnits10, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(QuizUnitsVar10, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(QuizUnitsVar10, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestALayout.createSequentialGroup()
+                        .addComponent(jLabel52)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(QuizAnsB6, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(QuizUnitsVar6)
+                                .addComponent(QuizUnits6, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestALayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton8)
-                .addContainerGap())
+                .addComponent(jButton8))
             .addGroup(QuestALayout.createSequentialGroup()
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Quiz6)
                     .addComponent(jLabel50)
                     .addComponent(jLabel54)
                     .addComponent(Quiz7)
-                    .addComponent(Quiz8, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz8, javax.swing.GroupLayout.DEFAULT_SIZE, 387, Short.MAX_VALUE)
                     .addComponent(jLabel57)
                     .addComponent(Quiz9)
                     .addComponent(jLabel60)
                     .addComponent(Quiz10)
                     .addComponent(jLabel62))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB7, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB8, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB9, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB10, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         QuestALayout.setVerticalGroup(
             QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuestALayout.createSequentialGroup()
                 .addComponent(jLabel50)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
@@ -3324,8 +3410,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel54)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel53)
@@ -3338,8 +3426,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel57)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel56)
@@ -3352,8 +3442,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel60)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
@@ -3366,8 +3458,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel62)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel64)
@@ -3378,7 +3472,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(QuizAnswerVar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizUnitsVar10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(QuestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
                     .addComponent(jButton8)))
@@ -3577,6 +3671,21 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        QuizAnsB11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB11.setText("Check Answer");
+
+        QuizAnsB12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB12.setText("Check Answer");
+
+        QuizAnsB13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB13.setText("Check Answer");
+
+        QuizAnsB14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB14.setText("Check Answer");
+
+        QuizAnsB15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB15.setText("Check Answer");
+
         javax.swing.GroupLayout QuestBLayout = new javax.swing.GroupLayout(QuestB);
         QuestB.setLayout(QuestBLayout);
         QuestBLayout.setHorizontalGroup(
@@ -3603,12 +3712,6 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestBLayout.createSequentialGroup()
-                        .addComponent(jLabel67)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(QuizUnitsVar11)
-                            .addComponent(QuizUnits11, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestBLayout.createSequentialGroup()
                         .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel70)
                             .addComponent(jLabel73)
@@ -3623,35 +3726,49 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnitsVar14)
                             .addComponent(QuizUnits14, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnits15, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(QuizUnitsVar15, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(QuizUnitsVar15, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestBLayout.createSequentialGroup()
+                        .addComponent(jLabel67)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(QuizAnsB11, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(QuizUnitsVar11)
+                                .addComponent(QuizUnits11, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestBLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
-                .addContainerGap())
+                .addComponent(jButton6))
             .addGroup(QuestBLayout.createSequentialGroup()
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Quiz11)
                     .addComponent(jLabel65)
                     .addComponent(jLabel69)
                     .addComponent(Quiz12)
-                    .addComponent(Quiz13, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz13, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
                     .addComponent(jLabel72)
                     .addComponent(Quiz14)
                     .addComponent(jLabel75)
                     .addComponent(Quiz15)
                     .addComponent(jLabel77))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB12, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB13, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB14, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB15, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0))
         );
         QuestBLayout.setVerticalGroup(
             QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuestBLayout.createSequentialGroup()
                 .addComponent(jLabel65)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel66)
@@ -3664,8 +3781,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel69)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel68)
@@ -3678,8 +3797,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel72)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel71)
@@ -3692,8 +3813,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel75)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel74)
@@ -3706,8 +3829,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel77)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel79)
@@ -3718,7 +3843,7 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(QuizAnswerVar15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizUnitsVar15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton6)
                     .addComponent(jButton7)
@@ -3825,7 +3950,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton38))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton44)
-                .addContainerGap(471, Short.MAX_VALUE))
+                .addContainerGap(477, Short.MAX_VALUE))
         );
 
         QuizletsLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton32, jButton34, jButton36, jButton37, jButton38});
@@ -3934,7 +4059,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton43)
-                .addContainerGap(518, Short.MAX_VALUE))
+                .addContainerGap(524, Short.MAX_VALUE))
         );
 
         ResourcesLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton39, jButton40});
@@ -4117,12 +4242,27 @@ public class Main extends javax.swing.JFrame {
         });
 
         jButton47.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton47.setText("Next Part");
+        jButton47.setText("Next Page");
         jButton47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton47ActionPerformed(evt);
             }
         });
+
+        QuizAnsB16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB16.setText("Check Answer");
+
+        QuizAnsB17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB17.setText("Check Answer");
+
+        QuizAnsB18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB18.setText("Check Answer");
+
+        QuizAnsB19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB19.setText("Check Answer");
+
+        QuizAnsB20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB20.setText("Check Answer");
 
         javax.swing.GroupLayout TestALayout = new javax.swing.GroupLayout(TestA);
         TestA.setLayout(TestALayout);
@@ -4172,31 +4312,37 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnits20, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnitsVar20, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestALayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton46)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton47)
-                .addContainerGap())
+                .addComponent(jButton47))
             .addGroup(TestALayout.createSequentialGroup()
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Quiz16)
                     .addComponent(jLabel91)
                     .addComponent(jLabel95)
                     .addComponent(Quiz17)
-                    .addComponent(Quiz18, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz18, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
                     .addComponent(jLabel98)
                     .addComponent(Quiz19)
                     .addComponent(jLabel101)
                     .addComponent(Quiz20)
                     .addComponent(jLabel103))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB16, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB17, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB18, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB19, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB20, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         TestALayout.setVerticalGroup(
             TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TestALayout.createSequentialGroup()
                 .addComponent(jLabel91)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB16))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel92)
@@ -4209,8 +4355,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel95)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB17))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel94)
@@ -4223,8 +4371,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel98)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB18))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel97)
@@ -4237,8 +4387,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel101)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel100)
@@ -4251,8 +4403,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel103)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestALayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel105)
@@ -4462,6 +4616,24 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jLabel122.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel122.setText("Answer:");
+
+        QuizAnsB21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB21.setText("Check Answer");
+
+        QuizAnsB22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB22.setText("Check Answer");
+
+        QuizAnsB23.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB23.setText("Check Answer");
+
+        QuizAnsB24.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB24.setText("Check Answer");
+
+        QuizAnsB25.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB25.setText("Check Answer");
+
         javax.swing.GroupLayout TestBLayout = new javax.swing.GroupLayout(TestB);
         TestB.setLayout(TestBLayout);
         TestBLayout.setHorizontalGroup(
@@ -4488,12 +4660,6 @@ public class Main extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestBLayout.createSequentialGroup()
-                        .addComponent(jLabel108)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(QuizUnitsVar21)
-                            .addComponent(QuizUnits21, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestBLayout.createSequentialGroup()
                         .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel111)
                             .addComponent(jLabel114)
@@ -4508,28 +4674,45 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnitsVar24)
                             .addComponent(QuizUnits24, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnits25, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(QuizUnitsVar25, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(QuizUnitsVar25, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestBLayout.createSequentialGroup()
+                        .addComponent(jLabel108)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(QuizAnsB21, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(QuizUnitsVar21)
+                                .addComponent(QuizUnits21, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestBLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton49)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton50)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton48)
-                .addContainerGap())
+                .addComponent(jButton48))
             .addGroup(TestBLayout.createSequentialGroup()
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Quiz21)
                     .addComponent(jLabel106)
                     .addComponent(jLabel110)
                     .addComponent(Quiz22)
-                    .addComponent(Quiz23, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz23, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
                     .addComponent(jLabel113)
                     .addComponent(Quiz24)
                     .addComponent(jLabel116)
                     .addComponent(Quiz25)
                     .addComponent(jLabel118))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB22, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB23, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB24, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, 0))
+            .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(TestBLayout.createSequentialGroup()
+                    .addGap(253, 253, 253)
+                    .addComponent(jLabel122)
+                    .addContainerGap(253, Short.MAX_VALUE)))
         );
 
         TestBLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton48, jButton50});
@@ -4538,8 +4721,10 @@ public class Main extends javax.swing.JFrame {
             TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TestBLayout.createSequentialGroup()
                 .addComponent(jLabel106)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB21))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel107)
@@ -4552,8 +4737,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel110)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel109)
@@ -4566,8 +4753,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel113)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Quiz23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB23))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel112)
@@ -4580,8 +4769,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel116)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB24))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel115)
@@ -4594,8 +4785,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel118)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel120)
@@ -4611,6 +4804,11 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton48)
                     .addComponent(jButton49)
                     .addComponent(jButton50)))
+            .addGroup(TestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(TestBLayout.createSequentialGroup()
+                    .addGap(313, 313, 313)
+                    .addComponent(jLabel122)
+                    .addContainerGap(320, Short.MAX_VALUE)))
         );
 
         PanCard.add(TestB, "Test Form B");
@@ -4627,9 +4825,6 @@ public class Main extends javax.swing.JFrame {
 
         jLabel121.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel121.setText("Question 11:");
-
-        jLabel122.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel122.setText("Answer:");
 
         jLabel123.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel123.setText("Units:");
@@ -4791,7 +4986,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         jButton52.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton52.setText("Previous Part");
+        jButton52.setText("Previous Page");
         jButton52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton52ActionPerformed(evt);
@@ -4806,6 +5001,21 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        QuizAnsB26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB26.setText("Check Answer");
+
+        QuizAnsB27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB27.setText("Check Answer");
+
+        QuizAnsB28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB28.setText("Check Answer");
+
+        QuizAnsB29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB29.setText("Check Answer");
+
+        QuizAnsB30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        QuizAnsB30.setText("Check Answer");
+
         javax.swing.GroupLayout TestCLayout = new javax.swing.GroupLayout(TestC);
         TestC.setLayout(TestCLayout);
         TestCLayout.setHorizontalGroup(
@@ -4813,7 +5023,6 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestCLayout.createSequentialGroup()
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel124)
-                    .addComponent(jLabel122)
                     .addComponent(jLabel127)
                     .addComponent(jLabel130)
                     .addComponent(jLabel135))
@@ -4854,7 +5063,6 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(QuizUnits30, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(QuizUnitsVar30, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestCLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jButton51)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton52)
@@ -4866,13 +5074,19 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel121)
                     .addComponent(jLabel125)
                     .addComponent(Quiz27)
-                    .addComponent(Quiz28, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
+                    .addComponent(Quiz28, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
                     .addComponent(jLabel128)
                     .addComponent(Quiz29)
                     .addComponent(jLabel131)
                     .addComponent(Quiz30)
                     .addComponent(jLabel133))
-                .addGap(135, 135, 135))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(QuizAnsB26, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB27, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB28, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB29, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB30, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         TestCLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton52, jButton53});
@@ -4881,11 +5095,12 @@ public class Main extends javax.swing.JFrame {
             TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TestCLayout.createSequentialGroup()
                 .addComponent(jLabel121)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel122)
                     .addComponent(jLabel123)
                     .addComponent(QuizAnswer26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizUnits26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -4895,8 +5110,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel125)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB27))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel124)
@@ -4909,8 +5126,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel128)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB28))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel127)
@@ -4923,8 +5142,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel131)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB29))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel130)
@@ -4937,8 +5158,10 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizUnitsVar29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel133)
-                .addGap(5, 5, 5)
-                .addComponent(Quiz30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(4, 4, 4)
+                .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Quiz30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(QuizAnsB30))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel135)
@@ -5132,17 +5355,17 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MomentumRB1ActionPerformed
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void QbyQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QbyQActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_QbyQActionPerformed
 
     private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton5ActionPerformed
 
-    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+    private void PerQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PerQActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton6ActionPerformed
+    }//GEN-LAST:event_PerQActionPerformed
 
     private void FavoriteQTypeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FavoriteQTypeBActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -5448,15 +5671,15 @@ public class Main extends javax.swing.JFrame {
         
         if(TLS.isSelected())
         {
-            QuizMaker();
+            QuizMaker(false);
         }
         else if(TLM.isSelected())
         {
-            QuestMaker();
+            QuestMaker(false);
         }
         else if(TLL.isSelected())
         {
-            TestMaker();
+            TestMaker(false);
         }
         
         
@@ -5469,151 +5692,6 @@ public class Main extends javax.swing.JFrame {
     private void TLMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TLMActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TLMActionPerformed
-
-    private void Quiz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz1ActionPerformed
-
-    private void QuizUnitsVar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar1ActionPerformed
-
-    private void QuizUnitsVar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar2ActionPerformed
-
-    private void Quiz2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz2ActionPerformed
-
-    private void QuizUnitsVar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar3ActionPerformed
-
-    private void Quiz3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz3ActionPerformed
-
-    private void QuizUnitsVar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar4ActionPerformed
-
-    private void Quiz4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz4ActionPerformed
-
-    private void QuizUnitsVar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar5ActionPerformed
-
-    private void Quiz5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz5ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Main Interface");
-        CurrentTestB.setVisible(true);
-        CT = "Test Form A";
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        QuizAnswerVar1.setVisible(true);
-        QuizAnswerVar2.setVisible(true);
-        QuizAnswerVar3.setVisible(true);
-        QuizAnswerVar4.setVisible(true);
-        QuizAnswerVar5.setVisible(true);
-        QuizUnitsVar1.setVisible(true);
-        QuizUnitsVar2.setVisible(true);
-        QuizUnitsVar3.setVisible(true);
-        QuizUnitsVar4.setVisible(true);
-        QuizUnitsVar5.setVisible(true);
-        int tally = 0;
-        if(equal(QuizQ1.answer, QuizAnswer1.getText()))
-        {
-            QuizAnswerVar1.setText("Correct");
-            tally ++;
-        }
-        else
-            QuizAnswerVar1.setText("Incorrect");
-        if(equal(QuizQ2.answer, QuizAnswer2.getText()))
-        {
-            QuizAnswerVar2.setText("Correct");
-            tally ++;
-        }
-        else
-            QuizAnswerVar2.setText("Incorrect");
-        if(equal(QuizQ3.answer, QuizAnswer3.getText()))
-        {
-            QuizAnswerVar3.setText("Correct");
-            tally ++;
-        }
-        else
-            QuizAnswerVar3.setText("Incorrect");
-        if(equal(QuizQ4.answer, QuizAnswer4.getText()))
-        {
-            QuizAnswerVar4.setText("Correct");
-            tally++;
-        }
-        else
-            QuizAnswerVar4.setText("Incorrect");
-        if(equal(QuizQ5.answer, QuizAnswer5.getText()))
-        {
-            QuizAnswerVar5.setText("Correct");
-            tally++;
-        }
-        else
-            QuizAnswerVar5.setText("Incorrect");
-        
-        if(QuizQ1.units.equals(QuizUnits1.getText()))
-        {
-            QuizUnitsVar1.setText("Correct");
-            tally ++;
-        }
-        else
-            QuizUnitsVar1.setText("Incorrect");
-        if(QuizQ2.units.equals(QuizUnits2.getText()))
-        {
-            QuizUnitsVar2.setText("Correct");
-            tally++;
-        }
-        else
-            QuizUnitsVar2.setText("Incorrect");
-        if(QuizQ3.units.equals(QuizUnits3.getText()))
-        {
-            QuizUnitsVar3.setText("Correct");
-            tally++;
-        }
-        else
-            QuizUnitsVar3.setText("Incorrect");
-        if(QuizQ4.units.equals(QuizUnits4.getText()))
-        {
-            QuizUnitsVar4.setText("Correct");
-            tally++;
-        }
-        else
-            QuizUnitsVar4.setText("Incorrect");
-        if(QuizQ5.units.equals(QuizUnits5.getText()))
-        {
-            QuizUnitsVar5.setText("Correct");
-            tally++;
-        }
-        else
-            QuizUnitsVar5.setText("Incorrect");
-        if(tally == 10)
-        {
-            writer.tally("T");
-            
-        }
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Main Interface");
-        CardLayout card2 = (CardLayout)PanCard.getLayout();
-        card2.show(PanCard, "Test Form A");
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void QuizUnits1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits1ActionPerformed
 
     private void Quiz6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz6ActionPerformed
         // TODO add your handling code here:
@@ -5666,176 +5744,10 @@ public class Main extends javax.swing.JFrame {
         CT = "Quest Form A";
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void Quiz11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz11ActionPerformed
-
-    private void QuizUnits11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits11ActionPerformed
-
-    private void QuizUnitsVar11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar11ActionPerformed
-
-    private void QuizUnitsVar12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar12ActionPerformed
-
-    private void Quiz12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz12ActionPerformed
-
-    private void QuizUnitsVar13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar13ActionPerformed
-
-    private void Quiz13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz13ActionPerformed
-
-    private void QuizUnitsVar14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar14ActionPerformed
-
-    private void Quiz14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz14ActionPerformed
-
-    private void QuizUnitsVar15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar15ActionPerformed
-
-    private void Quiz15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz15ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        QuizAnswerVar6.setVisible(true);
-        QuizAnswerVar7.setVisible(true);
-        QuizAnswerVar8.setVisible(true);
-        QuizAnswerVar9.setVisible(true);
-        QuizAnswerVar10.setVisible(true);
-        QuizAnswerVar11.setVisible(true);
-        QuizAnswerVar12.setVisible(true);
-        QuizAnswerVar13.setVisible(true);
-        QuizAnswerVar14.setVisible(true);
-        QuizAnswerVar15.setVisible(true);
-        QuizUnitsVar6.setVisible(true);
-        QuizUnitsVar7.setVisible(true);
-        QuizUnitsVar8.setVisible(true);
-        QuizUnitsVar9.setVisible(true);
-        QuizUnitsVar10.setVisible(true);
-        QuizUnitsVar11.setVisible(true);
-        QuizUnitsVar12.setVisible(true);
-        QuizUnitsVar13.setVisible(true);
-        QuizUnitsVar14.setVisible(true);
-        QuizUnitsVar15.setVisible(true);
-        
-        if(equal(QuizQ1.answer, QuizAnswer6.getText()))
-            QuizAnswerVar6.setText("Correct");
-        else
-            QuizAnswerVar6.setText("Incorrect");
-        if(equal(QuizQ2.answer, QuizAnswer7.getText()))
-            QuizAnswerVar7.setText("Correct");
-        else
-            QuizAnswerVar7.setText("Incorrect");
-        if(equal(QuizQ3.answer, QuizAnswer8.getText()))
-            QuizAnswerVar8.setText("Correct");
-        else
-            QuizAnswerVar8.setText("Incorrect");
-        if(equal(QuizQ4.answer, QuizAnswer9.getText()))
-            QuizAnswerVar9.setText("Correct");
-        else
-            QuizAnswerVar9.setText("Incorrect");
-        if(equal(QuizQ5.answer, QuizAnswer10.getText()))
-            QuizAnswerVar10.setText("Correct");
-        else
-            QuizAnswerVar10.setText("Incorrect");
-        if(equal(QuizQ6.answer, QuizAnswer11.getText()))
-            QuizAnswerVar11.setText("Correct");
-        else
-            QuizAnswerVar11.setText("Incorrect");
-        if(equal(QuizQ7.answer, QuizAnswer12.getText()))
-            QuizAnswerVar12.setText("Correct");
-        else
-            QuizAnswerVar12.setText("Incorrect");
-        if(equal(QuizQ8.answer, QuizAnswer13.getText()))
-            QuizAnswerVar13.setText("Correct");
-        else
-            QuizAnswerVar13.setText("Incorrect");
-        if(equal(QuizQ9.answer, QuizAnswer14.getText()))
-            QuizAnswerVar14.setText("Correct");
-        else
-            QuizAnswerVar14.setText("Incorrect");
-        if(equal(QuizQ10.answer, QuizAnswer15.getText()))
-            QuizAnswerVar15.setText("Correct");
-        else
-            QuizAnswerVar15.setText("Incorrect");
-        
-        if(QuizQ1.units.equals(QuizUnits6.getText()))
-            QuizUnitsVar6.setText("Correct");
-        else
-            QuizUnitsVar6.setText("Incorrect");
-        if(QuizQ2.units.equals(QuizUnits7.getText()))
-            QuizUnitsVar7.setText("Correct");
-        else
-            QuizUnitsVar7.setText("Incorrect");
-        if(QuizQ3.units.equals(QuizUnits8.getText()))
-            QuizUnitsVar8.setText("Correct");
-        else
-            QuizUnitsVar8.setText("Incorrect");
-        if(QuizQ4.units.equals(QuizUnits9.getText()))
-            QuizUnitsVar9.setText("Correct");
-        else
-            QuizUnitsVar9.setText("Incorrect");
-        if(QuizQ5.units.equals(QuizUnits10.getText()))
-            QuizUnitsVar10.setText("Correct");
-        else
-            QuizUnitsVar10.setText("Incorrect");
-        if(QuizQ6.units.equals(QuizUnits11.getText()))
-            QuizUnitsVar11.setText("Correct");
-        else
-            QuizUnitsVar11.setText("Incorrect");
-        if(QuizQ7.units.equals(QuizUnits12.getText()))
-            QuizUnitsVar12.setText("Correct");
-        else
-            QuizUnitsVar12.setText("Incorrect");
-        if(QuizQ8.units.equals(QuizUnits13.getText()))
-            QuizUnitsVar13.setText("Correct");
-        else
-            QuizUnitsVar13.setText("Incorrect");
-        if(QuizQ9.units.equals(QuizUnits14.getText()))
-            QuizUnitsVar14.setText("Correct");
-        else
-            QuizUnitsVar14.setText("Incorrect");
-        if(QuizQ10.units.equals(QuizUnits15.getText()))
-            QuizUnitsVar15.setText("Correct");
-        else
-            QuizUnitsVar15.setText("Incorrect");
-        
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Main Interface");
-        CardLayout card2 = (CardLayout)PanCard.getLayout();
-        card2.show(PanCard, "Quest Form A");
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Main Interface");
-        CurrentTestB.setVisible(true);
-        CT = "Quest Form A";
-    }//GEN-LAST:event_jButton7ActionPerformed
-
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Quest Form B");
     }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        CardLayout card = (CardLayout)PanCard.getLayout();
-        card.show(PanCard, "Quest Form A");
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         NoQuery.setVisible(false);
@@ -6331,6 +6243,347 @@ public class Main extends javax.swing.JFrame {
         card2.show(PanCard, "Test Form A");
     }//GEN-LAST:event_jButton53ActionPerformed
 
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        CriteriaCheck.setVisible(false);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Make A Test");
+        if(buttonGroup1.getSelection()==null || buttonGroup2.getSelection()==null || testcheck() || buttonGroup3.getSelection()==null || buttonGroup4.getSelection()==null)
+        {
+            CriteriaCheck.setVisible(true);
+            
+            card.show(PanCard, "Main Interface");
+            card2.show(PanCard, "Make A Test");
+            JOptionPane.showMessageDialog(NoQuery.getTopLevelAncestor(), "Please Select all Criteria", "Missing Link", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        
+        if(TLS.isSelected())
+        {
+            QuizMaker(PerQ.isSelected());
+        }
+        else if(TLM.isSelected())
+        {
+            QuestMaker(PerQ.isSelected());
+        }
+        else if(TLL.isSelected())
+        {
+            TestMaker(PerQ.isSelected());
+        }
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CurrentTestB.setVisible(true);
+        CT = "Test Form A";
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        QuizAnswerVar1.setVisible(true);
+        QuizAnswerVar2.setVisible(true);
+        QuizAnswerVar3.setVisible(true);
+        QuizAnswerVar4.setVisible(true);
+        QuizAnswerVar5.setVisible(true);
+        QuizUnitsVar1.setVisible(true);
+        QuizUnitsVar2.setVisible(true);
+        QuizUnitsVar3.setVisible(true);
+        QuizUnitsVar4.setVisible(true);
+        QuizUnitsVar5.setVisible(true);
+        int tally = 0;
+        if(equal(QuizQ1.answer, QuizAnswer1.getText()))
+        {
+            QuizAnswerVar1.setText("Correct");
+            tally ++;
+        }
+        else
+        QuizAnswerVar1.setText("Incorrect");
+        if(equal(QuizQ2.answer, QuizAnswer2.getText()))
+        {
+            QuizAnswerVar2.setText("Correct");
+            tally ++;
+        }
+        else
+        QuizAnswerVar2.setText("Incorrect");
+        if(equal(QuizQ3.answer, QuizAnswer3.getText()))
+        {
+            QuizAnswerVar3.setText("Correct");
+            tally ++;
+        }
+        else
+        QuizAnswerVar3.setText("Incorrect");
+        if(equal(QuizQ4.answer, QuizAnswer4.getText()))
+        {
+            QuizAnswerVar4.setText("Correct");
+            tally++;
+        }
+        else
+        QuizAnswerVar4.setText("Incorrect");
+        if(equal(QuizQ5.answer, QuizAnswer5.getText()))
+        {
+            QuizAnswerVar5.setText("Correct");
+            tally++;
+        }
+        else
+        QuizAnswerVar5.setText("Incorrect");
+
+        if(QuizQ1.units.equals(QuizUnits1.getText()))
+        {
+            QuizUnitsVar1.setText("Correct");
+            tally ++;
+        }
+        else
+        QuizUnitsVar1.setText("Incorrect");
+        if(QuizQ2.units.equals(QuizUnits2.getText()))
+        {
+            QuizUnitsVar2.setText("Correct");
+            tally++;
+        }
+        else
+        QuizUnitsVar2.setText("Incorrect");
+        if(QuizQ3.units.equals(QuizUnits3.getText()))
+        {
+            QuizUnitsVar3.setText("Correct");
+            tally++;
+        }
+        else
+        QuizUnitsVar3.setText("Incorrect");
+        if(QuizQ4.units.equals(QuizUnits4.getText()))
+        {
+            QuizUnitsVar4.setText("Correct");
+            tally++;
+        }
+        else
+        QuizUnitsVar4.setText("Incorrect");
+        if(QuizQ5.units.equals(QuizUnits5.getText()))
+        {
+            QuizUnitsVar5.setText("Correct");
+            tally++;
+        }
+        else
+        QuizUnitsVar5.setText("Incorrect");
+        if(tally == 10)
+        {
+            writer.tally("T");
+
+        }
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Test Form A");
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void Quiz5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz5ActionPerformed
+
+    private void QuizUnitsVar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar5ActionPerformed
+
+    private void Quiz4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz4ActionPerformed
+
+    private void QuizUnitsVar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar4ActionPerformed
+
+    private void Quiz3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz3ActionPerformed
+
+    private void QuizUnitsVar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar3ActionPerformed
+
+    private void Quiz2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz2ActionPerformed
+
+    private void QuizUnitsVar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar2ActionPerformed
+
+    private void QuizUnitsVar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar1ActionPerformed
+
+    private void QuizUnits1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnits1ActionPerformed
+
+    private void Quiz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CurrentTestB.setVisible(true);
+        CT = "Quest Form A";
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        QuizAnswerVar6.setVisible(true);
+        QuizAnswerVar7.setVisible(true);
+        QuizAnswerVar8.setVisible(true);
+        QuizAnswerVar9.setVisible(true);
+        QuizAnswerVar10.setVisible(true);
+        QuizAnswerVar11.setVisible(true);
+        QuizAnswerVar12.setVisible(true);
+        QuizAnswerVar13.setVisible(true);
+        QuizAnswerVar14.setVisible(true);
+        QuizAnswerVar15.setVisible(true);
+        QuizUnitsVar6.setVisible(true);
+        QuizUnitsVar7.setVisible(true);
+        QuizUnitsVar8.setVisible(true);
+        QuizUnitsVar9.setVisible(true);
+        QuizUnitsVar10.setVisible(true);
+        QuizUnitsVar11.setVisible(true);
+        QuizUnitsVar12.setVisible(true);
+        QuizUnitsVar13.setVisible(true);
+        QuizUnitsVar14.setVisible(true);
+        QuizUnitsVar15.setVisible(true);
+
+        if(equal(QuizQ1.answer, QuizAnswer6.getText()))
+        QuizAnswerVar6.setText("Correct");
+        else
+        QuizAnswerVar6.setText("Incorrect");
+        if(equal(QuizQ2.answer, QuizAnswer7.getText()))
+        QuizAnswerVar7.setText("Correct");
+        else
+        QuizAnswerVar7.setText("Incorrect");
+        if(equal(QuizQ3.answer, QuizAnswer8.getText()))
+        QuizAnswerVar8.setText("Correct");
+        else
+        QuizAnswerVar8.setText("Incorrect");
+        if(equal(QuizQ4.answer, QuizAnswer9.getText()))
+        QuizAnswerVar9.setText("Correct");
+        else
+        QuizAnswerVar9.setText("Incorrect");
+        if(equal(QuizQ5.answer, QuizAnswer10.getText()))
+        QuizAnswerVar10.setText("Correct");
+        else
+        QuizAnswerVar10.setText("Incorrect");
+        if(equal(QuizQ6.answer, QuizAnswer11.getText()))
+        QuizAnswerVar11.setText("Correct");
+        else
+        QuizAnswerVar11.setText("Incorrect");
+        if(equal(QuizQ7.answer, QuizAnswer12.getText()))
+        QuizAnswerVar12.setText("Correct");
+        else
+        QuizAnswerVar12.setText("Incorrect");
+        if(equal(QuizQ8.answer, QuizAnswer13.getText()))
+        QuizAnswerVar13.setText("Correct");
+        else
+        QuizAnswerVar13.setText("Incorrect");
+        if(equal(QuizQ9.answer, QuizAnswer14.getText()))
+        QuizAnswerVar14.setText("Correct");
+        else
+        QuizAnswerVar14.setText("Incorrect");
+        if(equal(QuizQ10.answer, QuizAnswer15.getText()))
+        QuizAnswerVar15.setText("Correct");
+        else
+        QuizAnswerVar15.setText("Incorrect");
+
+        if(QuizQ1.units.equals(QuizUnits6.getText()))
+        QuizUnitsVar6.setText("Correct");
+        else
+        QuizUnitsVar6.setText("Incorrect");
+        if(QuizQ2.units.equals(QuizUnits7.getText()))
+        QuizUnitsVar7.setText("Correct");
+        else
+        QuizUnitsVar7.setText("Incorrect");
+        if(QuizQ3.units.equals(QuizUnits8.getText()))
+        QuizUnitsVar8.setText("Correct");
+        else
+        QuizUnitsVar8.setText("Incorrect");
+        if(QuizQ4.units.equals(QuizUnits9.getText()))
+        QuizUnitsVar9.setText("Correct");
+        else
+        QuizUnitsVar9.setText("Incorrect");
+        if(QuizQ5.units.equals(QuizUnits10.getText()))
+        QuizUnitsVar10.setText("Correct");
+        else
+        QuizUnitsVar10.setText("Incorrect");
+        if(QuizQ6.units.equals(QuizUnits11.getText()))
+        QuizUnitsVar11.setText("Correct");
+        else
+        QuizUnitsVar11.setText("Incorrect");
+        if(QuizQ7.units.equals(QuizUnits12.getText()))
+        QuizUnitsVar12.setText("Correct");
+        else
+        QuizUnitsVar12.setText("Incorrect");
+        if(QuizQ8.units.equals(QuizUnits13.getText()))
+        QuizUnitsVar13.setText("Correct");
+        else
+        QuizUnitsVar13.setText("Incorrect");
+        if(QuizQ9.units.equals(QuizUnits14.getText()))
+        QuizUnitsVar14.setText("Correct");
+        else
+        QuizUnitsVar14.setText("Incorrect");
+        if(QuizQ10.units.equals(QuizUnits15.getText()))
+        QuizUnitsVar15.setText("Correct");
+        else
+        QuizUnitsVar15.setText("Incorrect");
+
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Quest Form A");
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void Quiz15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz15ActionPerformed
+
+    private void QuizUnitsVar15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar15ActionPerformed
+
+    private void Quiz14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz14ActionPerformed
+
+    private void QuizUnitsVar14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar14ActionPerformed
+
+    private void Quiz13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz13ActionPerformed
+
+    private void QuizUnitsVar13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar13ActionPerformed
+
+    private void Quiz12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz12ActionPerformed
+
+    private void QuizUnitsVar12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar12ActionPerformed
+
+    private void QuizUnitsVar11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnitsVar11ActionPerformed
+
+    private void QuizUnits11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_QuizUnits11ActionPerformed
+
+    private void Quiz11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Quiz11ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -6403,8 +6656,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField NoQuery;
     private javax.swing.JTextField NoQuery2;
     private javax.swing.JPanel PanCard;
+    private javax.swing.JRadioButton PbyP;
+    private javax.swing.JRadioButton PerQ;
     private javax.swing.JTextField QSolved;
     private javax.swing.JTextField Qanswer;
+    private javax.swing.JRadioButton QbyQ;
     private javax.swing.JTextArea Qfield;
     private javax.swing.JPanel QuestA;
     private javax.swing.JPanel QuestB;
@@ -6440,6 +6696,36 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField Quiz7;
     private javax.swing.JTextField Quiz8;
     private javax.swing.JTextField Quiz9;
+    private javax.swing.JButton QuizAnsB1;
+    private javax.swing.JButton QuizAnsB10;
+    private javax.swing.JButton QuizAnsB11;
+    private javax.swing.JButton QuizAnsB12;
+    private javax.swing.JButton QuizAnsB13;
+    private javax.swing.JButton QuizAnsB14;
+    private javax.swing.JButton QuizAnsB15;
+    private javax.swing.JButton QuizAnsB16;
+    private javax.swing.JButton QuizAnsB17;
+    private javax.swing.JButton QuizAnsB18;
+    private javax.swing.JButton QuizAnsB19;
+    private javax.swing.JButton QuizAnsB2;
+    private javax.swing.JButton QuizAnsB20;
+    private javax.swing.JButton QuizAnsB21;
+    private javax.swing.JButton QuizAnsB22;
+    private javax.swing.JButton QuizAnsB23;
+    private javax.swing.JButton QuizAnsB24;
+    private javax.swing.JButton QuizAnsB25;
+    private javax.swing.JButton QuizAnsB26;
+    private javax.swing.JButton QuizAnsB27;
+    private javax.swing.JButton QuizAnsB28;
+    private javax.swing.JButton QuizAnsB29;
+    private javax.swing.JButton QuizAnsB3;
+    private javax.swing.JButton QuizAnsB30;
+    private javax.swing.JButton QuizAnsB4;
+    private javax.swing.JButton QuizAnsB5;
+    private javax.swing.JButton QuizAnsB6;
+    private javax.swing.JButton QuizAnsB7;
+    private javax.swing.JButton QuizAnsB8;
+    private javax.swing.JButton QuizAnsB9;
     private javax.swing.JTextField QuizAnswer1;
     private javax.swing.JTextField QuizAnswer10;
     private javax.swing.JTextField QuizAnswer11;
@@ -6828,10 +7114,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JRadioButton jRadioButton6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
@@ -7797,8 +8080,24 @@ public class Main extends javax.swing.JFrame {
         TestQs.add(Database.AngledForces4());
     }
     
-    public void QuizMaker()
+    public void QuizMaker(boolean ans)
     {
+        if(ans)
+        {
+            QuizAnsB1.setVisible(true);
+            QuizAnsB2.setVisible(true);
+            QuizAnsB3.setVisible(true);
+            QuizAnsB4.setVisible(true);
+            QuizAnsB5.setVisible(true);
+        }
+        else
+        {
+            QuizAnsB1.setVisible(false);
+            QuizAnsB2.setVisible(false);
+            QuizAnsB3.setVisible(false);
+            QuizAnsB4.setVisible(false);
+            QuizAnsB5.setVisible(false);
+        }
         QuizAnswerVar1.setVisible(false);
         QuizAnswerVar2.setVisible(false);
         QuizAnswerVar3.setVisible(false);
@@ -7837,8 +8136,34 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Test Form A");
     }
     
-    public void QuestMaker()
+    public void QuestMaker(boolean ans)
     {
+        if(ans)
+        {
+            QuizAnsB6.setVisible(true);
+            QuizAnsB7.setVisible(true);
+            QuizAnsB8.setVisible(true);
+            QuizAnsB9.setVisible(true);
+            QuizAnsB10.setVisible(true);
+            QuizAnsB11.setVisible(true);
+            QuizAnsB12.setVisible(true);
+            QuizAnsB13.setVisible(true);
+            QuizAnsB14.setVisible(true);
+            QuizAnsB15.setVisible(true);
+        }
+        else
+        {
+            QuizAnsB6.setVisible(false);
+            QuizAnsB7.setVisible(false);
+            QuizAnsB8.setVisible(false);
+            QuizAnsB9.setVisible(false);
+            QuizAnsB10.setVisible(false);
+            QuizAnsB11.setVisible(false);
+            QuizAnsB12.setVisible(false);
+            QuizAnsB13.setVisible(false);
+            QuizAnsB14.setVisible(false);
+            QuizAnsB15.setVisible(false);
+        }
         QuizAnswerVar6.setVisible(false);
         QuizAnswerVar7.setVisible(false);
         QuizAnswerVar8.setVisible(false);
@@ -7897,8 +8222,44 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Quest Form A");
     }
     
-    public void TestMaker()
+    public void TestMaker(boolean ans)
     {
+        if(ans)
+        {
+            QuizAnsB16.setVisible(true);
+            QuizAnsB7.setVisible(true);
+            QuizAnsB8.setVisible(true);
+            QuizAnsB9.setVisible(true);
+            QuizAnsB20.setVisible(true);
+            QuizAnsB21.setVisible(true);
+            QuizAnsB22.setVisible(true);
+            QuizAnsB23.setVisible(true);
+            QuizAnsB24.setVisible(true);
+            QuizAnsB25.setVisible(true);
+            QuizAnsB26.setVisible(true);
+            QuizAnsB27.setVisible(true);
+            QuizAnsB28.setVisible(true);
+            QuizAnsB29.setVisible(true);
+            QuizAnsB30.setVisible(true);
+        }
+        else
+        {
+            QuizAnsB16.setVisible(false);
+            QuizAnsB17.setVisible(false);
+            QuizAnsB18.setVisible(false);
+            QuizAnsB19.setVisible(false);
+            QuizAnsB20.setVisible(false);
+            QuizAnsB21.setVisible(false);
+            QuizAnsB22.setVisible(false);
+            QuizAnsB23.setVisible(false);
+            QuizAnsB24.setVisible(false);
+            QuizAnsB25.setVisible(false);
+            QuizAnsB26.setVisible(false);
+            QuizAnsB27.setVisible(false);
+            QuizAnsB28.setVisible(false);
+            QuizAnsB29.setVisible(false);
+            QuizAnsB30.setVisible(false);
+        }
         QuizAnswerVar16.setVisible(false);
         QuizAnswerVar17.setVisible(false);
         QuizAnswerVar18.setVisible(false);
