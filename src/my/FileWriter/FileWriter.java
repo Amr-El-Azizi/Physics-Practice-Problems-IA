@@ -172,7 +172,7 @@ public String textgetter(int location, String name)
 
 public void delete(int location, String name)
 {
-    File file = new File(name) ;
+    File file = new File(name);
     if(tildacounter(name) <= 1)
     {
         try  {

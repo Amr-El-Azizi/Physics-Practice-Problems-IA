@@ -12,6 +12,7 @@ package my.Main;
 
 import java.awt.CardLayout;
 import java.awt.Component;
+import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import my.QuestionDatabase.QuestionDatabase;
@@ -21,6 +22,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.WindowConstants;
 import my.FileWriter.FileWriter;
+import my.FilesUtil.FilesUtil;
 
 public class Main extends javax.swing.JFrame {
 
@@ -2041,22 +2043,12 @@ public class Main extends javax.swing.JFrame {
 
         KinematicsRB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         KinematicsRB1.setText("Kinematics");
-        KinematicsRB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                KinematicsRB1ActionPerformed(evt);
-            }
-        });
 
         ForcesRB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         ForcesRB1.setText("Forces");
 
         MomentumRB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         MomentumRB1.setText("Momentum");
-        MomentumRB1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MomentumRB1ActionPerformed(evt);
-            }
-        });
 
         EnergyRB1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         EnergyRB1.setText("Energy");
@@ -2085,11 +2077,6 @@ public class Main extends javax.swing.JFrame {
         buttonGroup2.add(TLM);
         TLM.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         TLM.setText("Quest");
-        TLM.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TLMActionPerformed(evt);
-            }
-        });
 
         buttonGroup2.add(TLL);
         TLL.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2097,19 +2084,9 @@ public class Main extends javax.swing.JFrame {
 
         CriteriaCheck.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         CriteriaCheck.setText("Select All Criteria please");
-        CriteriaCheck.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CriteriaCheckActionPerformed(evt);
-            }
-        });
 
         PerQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         PerQ.setText("Per Question");
-        PerQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PerQActionPerformed(evt);
-            }
-        });
 
         jLabel36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel36.setText("Answer Availability:");
@@ -2200,10 +2177,11 @@ public class Main extends javax.swing.JFrame {
         MakeTLayout.setHorizontalGroup(
             MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MakeTLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton29)
-                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addGroup(MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton29, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         MakeTLayout.setVerticalGroup(
             MakeTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2220,11 +2198,6 @@ public class Main extends javax.swing.JFrame {
 
         SearchBox2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         SearchBox2.setToolTipText("");
-        SearchBox2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SearchBox2ActionPerformed(evt);
-            }
-        });
 
         SearchB2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         SearchB2.setText("Search");
@@ -2499,6 +2472,11 @@ public class Main extends javax.swing.JFrame {
 
         jButton30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton30.setText("Bookmark Question Type");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton1.setText("See Answer and Explanation");
@@ -5375,18 +5353,6 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton25ActionPerformed
 
-    private void KinematicsRB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KinematicsRB1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_KinematicsRB1ActionPerformed
-
-    private void MomentumRB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MomentumRB1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MomentumRB1ActionPerformed
-
-    private void PerQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PerQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PerQActionPerformed
-
     private void FavoriteQTypeBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FavoriteQTypeBActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Favorite Question Types");
@@ -5506,10 +5472,6 @@ public class Main extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(NoQuery.getTopLevelAncestor(), "Please enter a search criteria", "Can't find the Vacumn", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_SearchB1ActionPerformed
-
-    private void SearchBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SearchBox2ActionPerformed
 
     private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -5695,23 +5657,13 @@ public class Main extends javax.swing.JFrame {
         }
         else if(TLM.isSelected())
         {
-            QuestMaker(PerQ.isSelceted());
+            QuestMaker(PerQ.isSelected());
         }
         else if(TLL.isSelected())
         {
             TestMaker(PerQ.isSelected());
         }
-        
-        
     }//GEN-LAST:event_StartTestBActionPerformed
-
-    private void CriteriaCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriteriaCheckActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CriteriaCheckActionPerformed
-
-    private void TLMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TLMActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TLMActionPerformed
 
     private void Quiz6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz6ActionPerformed
         // TODO add your handling code here:
@@ -6137,129 +6089,228 @@ public class Main extends javax.swing.JFrame {
         QuizUnitsVar28.setVisible(true);
         QuizUnitsVar29.setVisible(true);
         QuizUnitsVar30.setVisible(true);
+        int tally = 0;
         
         if(equal(QuizQ1.answer, QuizAnswer16.getText()))
+        {
             QuizAnswerVar16.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar16.setText("Incorrect");
         if(equal(QuizQ2.answer, QuizAnswer17.getText()))
+        {
             QuizAnswerVar17.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar17.setText("Incorrect");
         if(equal(QuizQ3.answer, QuizAnswer18.getText()))
+        {
             QuizAnswerVar18.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar18.setText("Incorrect");
         if(equal(QuizQ4.answer, QuizAnswer19.getText()))
+        {
             QuizAnswerVar19.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar19.setText("Incorrect");
         if(equal(QuizQ5.answer, QuizAnswer20.getText()))
+        {
             QuizAnswerVar20.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar20.setText("Incorrect");
         if(equal(QuizQ6.answer, QuizAnswer21.getText()))
+        {
             QuizAnswerVar21.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar21.setText("Incorrect");
         if(equal(QuizQ7.answer, QuizAnswer22.getText()))
+        {
             QuizAnswerVar22.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar22.setText("Incorrect");
         if(equal(QuizQ8.answer, QuizAnswer23.getText()))
+        {
             QuizAnswerVar23.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar23.setText("Incorrect");
         if(equal(QuizQ9.answer, QuizAnswer24.getText()))
+        {
             QuizAnswerVar24.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar24.setText("Incorrect");
         if(equal(QuizQ10.answer, QuizAnswer25.getText()))
+        {
             QuizAnswerVar25.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar25.setText("Incorrect");
         if(equal(QuizQ11.answer, QuizAnswer26.getText()))
+        {
             QuizAnswerVar26.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar26.setText("Incorrect");
         if(equal(QuizQ12.answer, QuizAnswer27.getText()))
+        {
             QuizAnswerVar27.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar27.setText("Incorrect");
         if(equal(QuizQ13.answer, QuizAnswer28.getText()))
+        {
             QuizAnswerVar28.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar28.setText("Incorrect");
         if(equal(QuizQ14.answer, QuizAnswer29.getText()))
+        {
             QuizAnswerVar29.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar29.setText("Incorrect");
         if(equal(QuizQ15.answer, QuizAnswer30.getText()))
+        {
             QuizAnswerVar30.setText("Correct");
+            tally ++;
+        }
         else
             QuizAnswerVar30.setText("Incorrect");
         
         if(QuizQ1.units.equals(QuizUnits16.getText()))
+        {
             QuizUnitsVar16.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar16.setText("Incorrect");
         if(QuizQ2.units.equals(QuizUnits17.getText()))
+        {
             QuizUnitsVar17.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar17.setText("Incorrect");
         if(QuizQ3.units.equals(QuizUnits18.getText()))
+        {
             QuizUnitsVar18.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar18.setText("Incorrect");
         if(QuizQ4.units.equals(QuizUnits19.getText()))
+        {
             QuizUnitsVar19.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar19.setText("Incorrect");
         if(QuizQ5.units.equals(QuizUnits20.getText()))
+        {
             QuizUnitsVar20.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar20.setText("Incorrect");
         if(QuizQ6.units.equals(QuizUnits21.getText()))
+        {
             QuizUnitsVar21.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar21.setText("Incorrect");
         if(QuizQ7.units.equals(QuizUnits22.getText()))
+        {
             QuizUnitsVar22.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar22.setText("Incorrect");
         if(QuizQ8.units.equals(QuizUnits23.getText()))
+        {
             QuizUnitsVar23.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar23.setText("Incorrect");
         if(QuizQ9.units.equals(QuizUnits24.getText()))
+        {
             QuizUnitsVar24.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar24.setText("Incorrect");
         if(QuizQ10.units.equals(QuizUnits25.getText()))
+        {
             QuizUnitsVar25.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar25.setText("Incorrect");
         if(QuizQ11.units.equals(QuizUnits26.getText()))
+        {
             QuizUnitsVar26.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar26.setText("Incorrect");
         if(QuizQ12.units.equals(QuizUnits27.getText()))
+        {
             QuizUnitsVar27.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar27.setText("Incorrect");
         if(QuizQ13.units.equals(QuizUnits28.getText()))
+        {
             QuizUnitsVar28.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar28.setText("Incorrect");
         if(QuizQ14.units.equals(QuizUnits29.getText()))
+        {
             QuizUnitsVar29.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar29.setText("Incorrect");
         if(QuizQ15.units.equals(QuizUnits30.getText()))
+        {
             QuizUnitsVar30.setText("Correct");
+            tally ++;
+        }
         else
             QuizUnitsVar30.setText("Incorrect");
         
+        if(tally == 30)
+        {
+            writer.tally("T");
+            if(KinematicsRB1.isSelected())
+                writer.tally("KT");
+            if(ForcesRB1.isSelected())
+                writer.tally("FT");
+        }
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
@@ -6359,7 +6410,10 @@ public class Main extends javax.swing.JFrame {
         if(tally == 10)
         {
             writer.tally("T");
-
+            if(KinematicsRB1.isSelected())
+                writer.tally("KT");
+            if(ForcesRB1.isSelected())
+                writer.tally("FT");
         }
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
@@ -6591,6 +6645,11 @@ public class Main extends javax.swing.JFrame {
         if(tally == 20)
         {
             writer.tally("T");
+            writer.tally("T");
+            if(KinematicsRB1.isSelected())
+                writer.tally("KT");
+            if(ForcesRB1.isSelected())
+                writer.tally("FT");
         }
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
@@ -7271,6 +7330,20 @@ public class Main extends javax.swing.JFrame {
         CardLayout card2 = (CardLayout)PanCard.getLayout();
         card2.show(PanCard, "Test Form C");
     }//GEN-LAST:event_QuizAnsB30ActionPerformed
+
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+    File file = new File("Favourite Questions");
+        try  {
+            boolean successfullyMadeFile = file.createNewFile();
+            }
+        catch (IOException ioe) {; }
+        String fileDataStr = "";
+        try{fileDataStr = FilesUtil.readTextFile("Favourite Questions");}
+        catch(IOException ioe){;}
+        try{
+    	FilesUtil.writeToTextFile("Favourite Questions", fileDataStr + "\n\r" + temp.questionname);
+        } catch (IOException ioe) {;}
+    }//GEN-LAST:event_jButton30ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -8798,11 +8871,21 @@ public class Main extends javax.swing.JFrame {
          //   a = false;
         //if(GravityRB1.isSelected())
             //a = false;
-        QuizQ1 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ2 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ3 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ4 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ5 = TestQs.get(Database.rnum(TestQs.size()));
+        int Qnum = Database.rnum(TestQs.size());
+        QuizQ1 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ2 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ3 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ4 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ5 = TestQs.get(Qnum);
+
         Quiz1.setText(QuizQ1.questiontext);
         Quiz2.setText(QuizQ2.questiontext);
         Quiz3.setText(QuizQ3.questiontext);
@@ -8874,16 +8957,36 @@ public class Main extends javax.swing.JFrame {
          //   a = false;
         //if(GravityRB1.isSelected())
             //a = false;
-        QuizQ1 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ2 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ3 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ4 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ5 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ6 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ7 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ8 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ9 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ10 = TestQs.get(Database.rnum(TestQs.size()));
+        int Qnum = Database.rnum(TestQs.size());
+        QuizQ1 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ2 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ3 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ4 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ5 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ6 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ7 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ8 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ9 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ10 = TestQs.get(Qnum);
+        
         Quiz6.setText(QuizQ1.questiontext);
         Quiz7.setText(QuizQ2.questiontext);
         Quiz8.setText(QuizQ3.questiontext);
@@ -8980,21 +9083,51 @@ public class Main extends javax.swing.JFrame {
          //   a = false;
         //if(GravityRB1.isSelected())
             //a = false;
-        QuizQ1 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ2 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ3 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ4 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ5 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ6 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ7 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ8 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ9 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ10 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ11 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ12 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ13 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ14 = TestQs.get(Database.rnum(TestQs.size()));
-        QuizQ15 = TestQs.get(Database.rnum(TestQs.size()));
+        int Qnum = Database.rnum(TestQs.size());
+        QuizQ1 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ2 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ3 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ4 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ5 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ6 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ7 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ8 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ9 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ10 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ11 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ12 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ13 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ14 = TestQs.get(Qnum);
+        TestQs.remove(Qnum);
+        Qnum = Database.rnum(TestQs.size());
+        QuizQ15 = TestQs.get(Qnum);
+        
         Quiz16.setText(QuizQ1.questiontext);
         Quiz17.setText(QuizQ2.questiontext);
         Quiz18.setText(QuizQ3.questiontext);
