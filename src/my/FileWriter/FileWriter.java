@@ -123,6 +123,38 @@ public String[] namebringer(String name)
     return names;
 }
 
+public String[] namegetter(String name)
+{
+    int counter = tildacounter(name);
+    
+    String[] names = new String[counter];
+    File file = new File(name) ;
+     try  {
+            boolean exists = file.exists();
+            boolean successfullyMadeFile = file.createNewFile();
+               
+            }
+     catch (IOException ioe) {; }
+     
+     String fileDataStr = "";
+    try
+    {fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int linestart = 0;
+    int index = 0;
+        for(int x = 0; x < fileDataStr.length(); x ++)
+        {
+            if(fileDataStr.charAt(x) == '~')
+            {
+                names[index] = fileDataStr.substring(linestart, x);
+                linestart = x + 1;
+                index ++;
+            }
+        }
+    return names;
+}
+
 public String textgetter(int location, String name)
 {
     int counter = 0;

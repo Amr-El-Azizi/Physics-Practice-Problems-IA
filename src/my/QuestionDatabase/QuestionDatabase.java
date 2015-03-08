@@ -616,7 +616,7 @@ public class QuestionDatabase
             else if(b == 2)
             return Fma3();
         }
-         else if(a == 11)
+         else if(a == 12)
         {
             int b = rnum(4);
             if(b == 0)
@@ -638,6 +638,167 @@ public class QuestionDatabase
         return "K";
         if(subunit.equals("Vector") || subunit.equals("First Law") || subunit.equals("Flat Surface Friction") || subunit.equals("Angle of Repose") || subunit.equals("Second Law") || subunit.equals("Angled Forces"))
         return "F";
+        return null;
+    }
+    
+    public Question qtypegetter(String type)
+    {
+        if(type.equals("Velocity"))
+        {
+            int b = rnum(5);
+            if(b == 0)
+            return VD1();
+            else if(b == 1)
+            return VD2();
+            else if(b == 2)
+            return VD3();
+            else if(b == 3)
+            return VD4();
+            else if(b == 4)
+            return VD5();
+        }
+        if(type.equals("Acceleration"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return Acc1();
+            else if(b == 1)
+            return Acc2();
+            else if(b == 2)
+            return Acc3();
+            else if(b == 3)
+            return Acc4();
+        }
+        if(type.equals("Horizontal Motion"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return HoriMot1();
+            else if(b == 1)
+            return HoriMot2();
+            else if(b == 2)
+            return HoriMot3();
+            else if(b == 3)
+            return HoriMot4();
+        }
+        if(type.equals("Dropping a ball"))
+        {
+            int b = rnum(6);
+            if(b == 0)
+            return DropB1();
+            else if(b == 1)
+            return DropB2();
+            else if(b == 2)
+            return DropB3();
+            else if(b == 3)
+            return DropB4();
+            else if(b == 4)
+            return DropB5();
+            else if(b == 5)
+            return DropB6();
+        }
+        if(type.equals("Throwing a ball"))
+        {
+            int b = rnum(6);
+            if(b == 0)
+            return ThrowB1();
+            else if(b == 1)
+            return ThrowB2();
+            else if(b == 2)
+            return ThrowB3();
+            else if(b == 3)
+            return ThrowB4();
+            else if(b == 4)
+            return ThrowB5();
+            else if(b == 5)
+            return ThrowB6();
+        }
+        if(type.equals("Launching a Ball off of a surface"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return LS1();
+            else if(b == 1)
+            return LS2();
+            else if(b == 2)
+            return LS3();
+            else if(b == 3)
+            return LS4();
+        }
+        if(type.equals("Launching an object at an angle"))
+        {
+            int b = rnum(3);
+            if(b == 0)
+            return LA1();
+            else if(b == 1)
+            return LA2();
+            else if(b == 2)
+            return LA3();
+        }
+        if(type.equals("Vector"))
+        {
+            int b = rnum(3);
+            if(b == 0)
+            return Vector1();
+            else if(b == 1)
+            return Vector2();
+            else if(b == 2)
+            return Vector3();
+        }
+        if(type.equals("First Law"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return FLaw1();
+            else if(b == 1)
+            return FLaw2();
+            else if(b == 2)
+            return FLaw3();
+            else if(b == 3)
+            return FLaw4();
+        }
+        if(type.equals("Flat Surface Friction"))
+        {
+            int b = rnum(2);
+            if(b == 0)
+            return FSFriction1();
+            else if(b == 1)
+            return FSFriction2();
+        }
+        if(type.equals("Angle of Repose"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return AORFriction1();
+            else if(b == 1)
+            return AORFriction2();
+            else if(b == 2)
+            return AORFriction3();
+            else if(b == 3)
+            return AORFriction4();
+        }
+        if(type.equals("Second Law"))
+        {
+            int b = rnum(3);
+            if(b == 0)
+            return Fma1();
+            else if(b == 1)
+            return Fma2();
+            else if(b == 2)
+            return Fma3();
+        }
+        if(type.equals("Angled Forces"))
+        {
+            int b = rnum(4);
+            if(b == 0)
+            return AngledForces1();
+            else if(b == 1)
+            return AngledForces2();
+            else if(b == 2)
+            return AngledForces3();
+            else if(b == 3)
+            return AngledForces4();
+        }
         return null;
     }
 }
