@@ -214,7 +214,6 @@ public class Main extends javax.swing.JFrame {
         jScrollPane8 = new javax.swing.JScrollPane();
         TopicList = new javax.swing.JTree();
         jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
         MakeT = new javax.swing.JPanel();
         jPanel32 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
@@ -421,11 +420,6 @@ public class Main extends javax.swing.JFrame {
         QuizAnsB14 = new javax.swing.JButton();
         QuizAnsB15 = new javax.swing.JButton();
         Quizlets = new javax.swing.JPanel();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
         jButton32 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
@@ -1132,7 +1126,7 @@ public class Main extends javax.swing.JFrame {
         );
         SavedQLayout.setVerticalGroup(
             SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 382, Short.MAX_VALUE)
+            .addGap(0, 679, Short.MAX_VALUE)
             .addGroup(SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SavedQLayout.createSequentialGroup()
                     .addContainerGap()
@@ -1421,7 +1415,7 @@ public class Main extends javax.swing.JFrame {
         SearchLayout.setVerticalGroup(
             SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchLayout.createSequentialGroup()
-                .addContainerGap(273, Short.MAX_VALUE)
+                .addContainerGap(605, Short.MAX_VALUE)
                 .addComponent(jButton23)
                 .addGap(20, 20, 20))
             .addGroup(SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1430,12 +1424,12 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(20, Short.MAX_VALUE)))
+                    .addContainerGap(352, Short.MAX_VALUE)))
         );
 
         PanCard.add(Search, "Search");
 
-        jPanel27.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Statistics", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        jPanel27.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.MatteBorder(null), "Statistics", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         jPanel28.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "General", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16), new java.awt.Color(102, 255, 153))); // NOI18N
 
@@ -1541,11 +1535,6 @@ public class Main extends javax.swing.JFrame {
         jTextField22.setEditable(false);
         jTextField22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextField22.setText("Tests completed by Unit:");
-        jTextField22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField22ActionPerformed(evt);
-            }
-        });
 
         jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel27.setText("Gravity:");
@@ -1573,59 +1562,24 @@ public class Main extends javax.swing.JFrame {
 
         CQ.setEditable(false);
         CQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        CQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CQActionPerformed(evt);
-            }
-        });
 
         GQ.setEditable(false);
         GQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        GQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GQActionPerformed(evt);
-            }
-        });
 
         GT.setEditable(false);
         GT.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        GT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GTActionPerformed(evt);
-            }
-        });
 
         ET.setEditable(false);
         ET.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        ET.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ETActionPerformed(evt);
-            }
-        });
 
         FT.setEditable(false);
         FT.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        FT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FTActionPerformed(evt);
-            }
-        });
 
         CMT.setEditable(false);
         CMT.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        CMT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CMTActionPerformed(evt);
-            }
-        });
 
         KT.setEditable(false);
         KT.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        KT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                KTActionPerformed(evt);
-            }
-        });
 
         MQ.setEditable(false);
         MQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -1635,11 +1589,6 @@ public class Main extends javax.swing.JFrame {
 
         MT.setEditable(false);
         MT.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        MT.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MTActionPerformed(evt);
-            }
-        });
 
         jLabel90.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel90.setText("Momentum:");
@@ -1770,11 +1719,10 @@ public class Main extends javax.swing.JFrame {
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel29, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton24)
-                .addGap(0, 36, Short.MAX_VALUE))
+                .addComponent(jButton24))
         );
 
         javax.swing.GroupLayout StatsLayout = new javax.swing.GroupLayout(Stats);
@@ -1785,9 +1733,10 @@ public class Main extends javax.swing.JFrame {
         );
         StatsLayout.setVerticalGroup(
             StatsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(StatsLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, StatsLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
 
         PanCard.add(Stats, "Statistics");
@@ -1930,14 +1879,13 @@ public class Main extends javax.swing.JFrame {
         });
         jScrollPane8.setViewportView(TopicList);
 
+        jButton25.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton25.setText("Back");
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
             }
         });
-
-        jButton26.setText("Ok");
 
         javax.swing.GroupLayout TopicLLayout = new javax.swing.GroupLayout(TopicL);
         TopicL.setLayout(TopicLLayout);
@@ -1949,29 +1897,22 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 583, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopicLLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton25)))
                 .addContainerGap())
         );
-
-        TopicLLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton25, jButton26});
-
         TopicLLayout.setVerticalGroup(
             TopicLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopicLLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(TopicLLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton25)
-                    .addComponent(jButton26))
-                .addContainerGap(332, Short.MAX_VALUE))
+                .addComponent(jButton25)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         PanCard.add(TopicL, "Topic List");
 
-        MakeT.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Make A Test", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(0, 204, 0))); // NOI18N
+        MakeT.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Make A Test", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(0, 204, 0))); // NOI18N
 
         jPanel32.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Settings", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
 
@@ -2131,7 +2072,7 @@ public class Main extends javax.swing.JFrame {
 
         PanCard.add(MakeT, "Make A Test");
 
-        SearchResults.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Search Results", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
+        SearchResults.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Search Results", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         SearchBox2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         SearchBox2.setToolTipText("");
@@ -2281,39 +2222,39 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB1))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R2, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R2, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB2))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R3, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R3, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB3))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R4, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R4, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB4))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R5, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R5, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB5))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R6, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R6, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB6))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R7, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R7, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB7))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R8, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R8, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB8))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R9, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R9, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB9))
                     .addGroup(SearchResultsLayout.createSequentialGroup()
-                        .addComponent(R10, javax.swing.GroupLayout.DEFAULT_SIZE, 442, Short.MAX_VALUE)
+                        .addComponent(R10, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RB10))
                     .addComponent(ResultOverflow)
@@ -2401,11 +2342,6 @@ public class Main extends javax.swing.JFrame {
 
         AnswerVar.setEditable(false);
         AnswerVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        AnswerVar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnswerVarActionPerformed(evt);
-            }
-        });
 
         jButton30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton30.setText("Bookmark Question Type");
@@ -2446,11 +2382,6 @@ public class Main extends javax.swing.JFrame {
 
         UnitsVar.setEditable(false);
         UnitsVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        UnitsVar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                UnitsVarActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -2546,12 +2477,12 @@ public class Main extends javax.swing.JFrame {
             .addGroup(QuestionLayout.createSequentialGroup()
                 .addGap(310, 310, 310)
                 .addComponent(jButton16)
-                .addContainerGap(343, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(QuestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(QuestionLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(375, Short.MAX_VALUE)))
+                    .addContainerGap(376, Short.MAX_VALUE)))
         );
 
         PanCard.add(Question, "Questions");
@@ -2560,11 +2491,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz1.setEditable(false);
         Quiz1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz1ActionPerformed(evt);
-            }
-        });
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel5.setText("Question 1:");
@@ -2578,30 +2504,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits1ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar1.setEditable(false);
         QuizAnswerVar1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar1.setEditable(false);
         QuizUnitsVar1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar1ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar2.setEditable(false);
         QuizUnitsVar2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar2ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar2.setEditable(false);
         QuizAnswerVar2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2613,11 +2524,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz2.setEditable(false);
         Quiz2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz2ActionPerformed(evt);
-            }
-        });
 
         jLabel39.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel39.setText("Question 2:");
@@ -2629,11 +2535,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar3.setEditable(false);
         QuizUnitsVar3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar3ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar3.setEditable(false);
         QuizAnswerVar3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2645,11 +2546,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz3.setEditable(false);
         Quiz3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz3ActionPerformed(evt);
-            }
-        });
 
         jLabel42.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel42.setText("Question 3:");
@@ -2661,11 +2557,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar4.setEditable(false);
         QuizUnitsVar4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar4ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar4.setEditable(false);
         QuizAnswerVar4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2677,11 +2568,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz4.setEditable(false);
         Quiz4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz4ActionPerformed(evt);
-            }
-        });
 
         jLabel45.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel45.setText("Question 4:");
@@ -2700,11 +2586,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar5.setEditable(false);
         QuizUnitsVar5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar5ActionPerformed(evt);
-            }
-        });
 
         jLabel48.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel48.setText("Units:");
@@ -2717,11 +2598,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz5.setEditable(false);
         Quiz5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz5ActionPerformed(evt);
-            }
-        });
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton2.setText("Check Answers");
@@ -2944,11 +2820,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz6.setEditable(false);
         Quiz6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz6ActionPerformed(evt);
-            }
-        });
 
         jLabel50.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel50.setText("Question 1:");
@@ -2962,30 +2833,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits6ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar6.setEditable(false);
         QuizAnswerVar6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar6.setEditable(false);
         QuizUnitsVar6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar6ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar7.setEditable(false);
         QuizUnitsVar7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar7ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar7.setEditable(false);
         QuizAnswerVar7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -2997,11 +2853,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz7.setEditable(false);
         Quiz7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz7ActionPerformed(evt);
-            }
-        });
 
         jLabel54.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel54.setText("Question 2:");
@@ -3013,11 +2864,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar8.setEditable(false);
         QuizUnitsVar8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar8ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar8.setEditable(false);
         QuizAnswerVar8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3029,11 +2875,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz8.setEditable(false);
         Quiz8.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz8ActionPerformed(evt);
-            }
-        });
 
         jLabel57.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel57.setText("Question 3:");
@@ -3045,11 +2886,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar9.setEditable(false);
         QuizUnitsVar9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar9ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar9.setEditable(false);
         QuizAnswerVar9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3061,11 +2897,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz9.setEditable(false);
         Quiz9.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz9ActionPerformed(evt);
-            }
-        });
 
         jLabel60.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel60.setText("Question 4:");
@@ -3084,11 +2915,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar10.setEditable(false);
         QuizUnitsVar10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar10ActionPerformed(evt);
-            }
-        });
 
         jLabel63.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel63.setText("Units:");
@@ -3101,11 +2927,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz10.setEditable(false);
         Quiz10.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz10ActionPerformed(evt);
-            }
-        });
 
         jButton5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton5.setText("Back");
@@ -3329,11 +3150,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz11.setEditable(false);
         Quiz11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz11ActionPerformed(evt);
-            }
-        });
 
         jLabel65.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel65.setText("Question 6:");
@@ -3347,30 +3163,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits11ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar11.setEditable(false);
         QuizAnswerVar11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar11.setEditable(false);
         QuizUnitsVar11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar11ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar12.setEditable(false);
         QuizUnitsVar12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar12ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar12.setEditable(false);
         QuizAnswerVar12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3382,11 +3183,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz12.setEditable(false);
         Quiz12.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz12ActionPerformed(evt);
-            }
-        });
 
         jLabel69.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel69.setText("Question 7:");
@@ -3398,11 +3194,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar13.setEditable(false);
         QuizUnitsVar13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar13ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar13.setEditable(false);
         QuizAnswerVar13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3414,11 +3205,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz13.setEditable(false);
         Quiz13.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz13ActionPerformed(evt);
-            }
-        });
 
         jLabel72.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel72.setText("Question 8:");
@@ -3430,11 +3216,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar14.setEditable(false);
         QuizUnitsVar14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar14ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar14.setEditable(false);
         QuizAnswerVar14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3446,11 +3227,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz14.setEditable(false);
         Quiz14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz14ActionPerformed(evt);
-            }
-        });
 
         jLabel75.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel75.setText("Question 9:");
@@ -3469,11 +3245,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar15.setEditable(false);
         QuizUnitsVar15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar15ActionPerformed(evt);
-            }
-        });
 
         jLabel78.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel78.setText("Units:");
@@ -3486,11 +3257,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz15.setEditable(false);
         Quiz15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz15ActionPerformed(evt);
-            }
-        });
 
         jButton6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton6.setText("Check Answers");
@@ -3721,32 +3487,30 @@ public class Main extends javax.swing.JFrame {
 
         PanCard.add(QuestB, "Quest Form B");
 
-        jLabel80.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel80.setText("Kinematics:");
+        jButton32.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton32.setText("Kinematics");
 
-        jLabel81.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel81.setText("Forces and Momentum:");
-
-        jLabel82.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel82.setText("Momentum and Energy:");
-
-        jLabel83.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel83.setText("Circular Motion:");
-
-        jLabel84.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel84.setText("Grvaity:");
-
+        jButton34.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton34.setText("Forces and Momentum");
         jButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton34ActionPerformed(evt);
             }
         });
 
+        jButton36.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton36.setText("Momentum and Energy");
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton36ActionPerformed(evt);
             }
         });
+
+        jButton37.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton37.setText("Circular Motion");
+
+        jButton38.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton38.setText("Gravity");
 
         jButton44.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton44.setText("Back");
@@ -3762,64 +3526,35 @@ public class Main extends javax.swing.JFrame {
             QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuizletsLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(QuizletsLayout.createSequentialGroup()
-                        .addComponent(jLabel84)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton38))
-                    .addGroup(QuizletsLayout.createSequentialGroup()
-                        .addComponent(jLabel83)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton37))
-                    .addGroup(QuizletsLayout.createSequentialGroup()
-                        .addComponent(jLabel82)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton36))
-                    .addGroup(QuizletsLayout.createSequentialGroup()
-                        .addComponent(jLabel81)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton34))
-                    .addGroup(QuizletsLayout.createSequentialGroup()
-                        .addComponent(jLabel80)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton44)
+                    .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton38)
+                        .addComponent(jButton37)
+                        .addComponent(jButton36)
+                        .addComponent(jButton34)
                         .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(337, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuizletsLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton44)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        QuizletsLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel80, jLabel81, jLabel82, jLabel83, jLabel84});
 
         QuizletsLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton32, jButton34, jButton36, jButton37, jButton38});
 
         QuizletsLayout.setVerticalGroup(
             QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuizletsLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel80)
-                    .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel81)
-                    .addComponent(jButton34))
+                .addComponent(jButton34)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel82)
-                    .addComponent(jButton36))
+                .addComponent(jButton36)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel83)
-                    .addComponent(jButton37))
+                .addComponent(jButton37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(QuizletsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel84)
-                    .addComponent(jButton38))
+                .addComponent(jButton38)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton44)
-                .addContainerGap(477, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         QuizletsLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton32, jButton34, jButton36, jButton37, jButton38});
@@ -3876,30 +3611,28 @@ public class Main extends javax.swing.JFrame {
             ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ResourcesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(ResourcesLayout.createSequentialGroup()
-                        .addComponent(jLabel88)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(ResourcesLayout.createSequentialGroup()
-                        .addGroup(ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(ResourcesLayout.createSequentialGroup()
-                                .addComponent(jLabel85)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(ResourcesLayout.createSequentialGroup()
-                                .addComponent(jLabel86)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel87)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(232, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ResourcesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton43)
-                .addContainerGap())
+                .addGroup(ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton43)
+                    .addGroup(ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(ResourcesLayout.createSequentialGroup()
+                            .addComponent(jLabel88)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(ResourcesLayout.createSequentialGroup()
+                            .addGroup(ResourcesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(ResourcesLayout.createSequentialGroup()
+                                    .addComponent(jLabel85)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jButton39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(ResourcesLayout.createSequentialGroup()
+                                    .addComponent(jLabel86)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jLabel87)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ResourcesLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel85, jLabel86, jLabel88});
@@ -3928,7 +3661,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton43)
-                .addContainerGap(524, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         ResourcesLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton39, jButton40});
@@ -3939,11 +3672,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz16.setEditable(false);
         Quiz16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz16ActionPerformed(evt);
-            }
-        });
 
         jLabel91.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel91.setText("Question 1:");
@@ -3957,30 +3685,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits16ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar16.setEditable(false);
         QuizAnswerVar16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar16.setEditable(false);
         QuizUnitsVar16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar16ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar17.setEditable(false);
         QuizUnitsVar17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar17ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar17.setEditable(false);
         QuizAnswerVar17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -3992,11 +3705,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz17.setEditable(false);
         Quiz17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz17ActionPerformed(evt);
-            }
-        });
 
         jLabel95.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel95.setText("Question 2:");
@@ -4008,11 +3716,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar18.setEditable(false);
         QuizUnitsVar18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar18ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar18.setEditable(false);
         QuizAnswerVar18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4024,11 +3727,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz18.setEditable(false);
         Quiz18.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz18ActionPerformed(evt);
-            }
-        });
 
         jLabel98.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel98.setText("Question 3:");
@@ -4040,11 +3738,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar19.setEditable(false);
         QuizUnitsVar19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar19ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar19.setEditable(false);
         QuizAnswerVar19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4056,11 +3749,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz19.setEditable(false);
         Quiz19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz19.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz19ActionPerformed(evt);
-            }
-        });
 
         jLabel101.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel101.setText("Question 4:");
@@ -4079,11 +3767,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar20.setEditable(false);
         QuizUnitsVar20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar20ActionPerformed(evt);
-            }
-        });
 
         jLabel104.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel104.setText("Units:");
@@ -4096,11 +3779,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz20.setEditable(false);
         Quiz20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz20ActionPerformed(evt);
-            }
-        });
 
         jButton46.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton46.setText("Back");
@@ -4323,11 +4001,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz21.setEditable(false);
         Quiz21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz21ActionPerformed(evt);
-            }
-        });
 
         jLabel106.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel106.setText("Question 6:");
@@ -4341,30 +4014,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits21ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar21.setEditable(false);
         QuizAnswerVar21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar21.setEditable(false);
         QuizUnitsVar21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar21ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar22.setEditable(false);
         QuizUnitsVar22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar22ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar22.setEditable(false);
         QuizAnswerVar22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4376,11 +4034,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz22.setEditable(false);
         Quiz22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz22ActionPerformed(evt);
-            }
-        });
 
         jLabel110.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel110.setText("Question 7:");
@@ -4392,11 +4045,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar23.setEditable(false);
         QuizUnitsVar23.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar23ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar23.setEditable(false);
         QuizAnswerVar23.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4408,11 +4056,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz23.setEditable(false);
         Quiz23.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz23ActionPerformed(evt);
-            }
-        });
 
         jLabel113.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel113.setText("Question 8:");
@@ -4424,11 +4067,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar24.setEditable(false);
         QuizUnitsVar24.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar24ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar24.setEditable(false);
         QuizAnswerVar24.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4440,11 +4078,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz24.setEditable(false);
         Quiz24.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz24ActionPerformed(evt);
-            }
-        });
 
         jLabel116.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel116.setText("Question 9:");
@@ -4463,11 +4096,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar25.setEditable(false);
         QuizUnitsVar25.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar25ActionPerformed(evt);
-            }
-        });
 
         jLabel119.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel119.setText("Units:");
@@ -4480,11 +4108,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz25.setEditable(false);
         Quiz25.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz25ActionPerformed(evt);
-            }
-        });
 
         jButton48.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton48.setText("Next Page");
@@ -4735,11 +4358,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz26.setEditable(false);
         Quiz26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz26ActionPerformed(evt);
-            }
-        });
 
         jLabel121.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel121.setText("Question 11:");
@@ -4750,30 +4368,15 @@ public class Main extends javax.swing.JFrame {
         QuizAnswer26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnits26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnits26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnits26ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar26.setEditable(false);
         QuizAnswerVar26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         QuizUnitsVar26.setEditable(false);
         QuizUnitsVar26.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar26ActionPerformed(evt);
-            }
-        });
 
         QuizUnitsVar27.setEditable(false);
         QuizUnitsVar27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar27ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar27.setEditable(false);
         QuizAnswerVar27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4785,11 +4388,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz27.setEditable(false);
         Quiz27.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz27.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz27ActionPerformed(evt);
-            }
-        });
 
         jLabel125.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel125.setText("Question 12:");
@@ -4801,11 +4399,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar28.setEditable(false);
         QuizUnitsVar28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar28ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar28.setEditable(false);
         QuizAnswerVar28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4817,11 +4410,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz28.setEditable(false);
         Quiz28.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz28.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz28ActionPerformed(evt);
-            }
-        });
 
         jLabel128.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel128.setText("Question 13:");
@@ -4833,11 +4421,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar29.setEditable(false);
         QuizUnitsVar29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar29ActionPerformed(evt);
-            }
-        });
 
         QuizAnswerVar29.setEditable(false);
         QuizAnswerVar29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -4849,11 +4432,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz29.setEditable(false);
         Quiz29.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz29.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz29ActionPerformed(evt);
-            }
-        });
 
         jLabel131.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel131.setText("Question 14:");
@@ -4872,11 +4450,6 @@ public class Main extends javax.swing.JFrame {
 
         QuizUnitsVar30.setEditable(false);
         QuizUnitsVar30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        QuizUnitsVar30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                QuizUnitsVar30ActionPerformed(evt);
-            }
-        });
 
         jLabel134.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel134.setText("Units:");
@@ -4889,11 +4462,6 @@ public class Main extends javax.swing.JFrame {
 
         Quiz30.setEditable(false);
         Quiz30.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        Quiz30.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Quiz30ActionPerformed(evt);
-            }
-        });
 
         jButton51.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton51.setText("Back");
@@ -5198,10 +4766,6 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_FavQTypeAnsActionPerformed
 
-    private void AnswerVarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnswerVarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AnswerVarActionPerformed
-
     private void SavedQuestionAnswerVarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavedQuestionAnswerVarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SavedQuestionAnswerVarActionPerformed
@@ -5215,38 +4779,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton23ActionPerformed
-
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void CQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CQActionPerformed
-
-    private void GQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GQActionPerformed
-
-    private void GTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GTActionPerformed
-
-    private void ETActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ETActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ETActionPerformed
-
-    private void FTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FTActionPerformed
-
-    private void CMTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CMTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CMTActionPerformed
-
-    private void KTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_KTActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -5333,10 +4865,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Questions");
     }//GEN-LAST:event_CurrentQBActionPerformed
-
-    private void UnitsVarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UnitsVarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_UnitsVarActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
@@ -5575,50 +5103,6 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_StartTestBActionPerformed
 
-    private void Quiz6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz6ActionPerformed
-
-    private void QuizUnits6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits6ActionPerformed
-
-    private void QuizUnitsVar6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar6ActionPerformed
-
-    private void QuizUnitsVar7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar7ActionPerformed
-
-    private void Quiz7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz7ActionPerformed
-
-    private void QuizUnitsVar8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar8ActionPerformed
-
-    private void Quiz8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz8ActionPerformed
-
-    private void QuizUnitsVar9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar9ActionPerformed
-
-    private void Quiz9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz9ActionPerformed
-
-    private void QuizUnitsVar10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar10ActionPerformed
-
-    private void Quiz10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz10ActionPerformed
-
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
@@ -5765,60 +5249,12 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton44ActionPerformed
 
-    private void MTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MTActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MTActionPerformed
-
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         writer.clearstats();
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         card.show(PanCard, "Statistics");
     }//GEN-LAST:event_jButton45ActionPerformed
-
-    private void Quiz16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz16ActionPerformed
-
-    private void QuizUnits16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits16ActionPerformed
-
-    private void QuizUnitsVar16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar16ActionPerformed
-
-    private void QuizUnitsVar17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar17ActionPerformed
-
-    private void Quiz17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz17ActionPerformed
-
-    private void QuizUnitsVar18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar18ActionPerformed
-
-    private void Quiz18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz18ActionPerformed
-
-    private void QuizUnitsVar19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar19ActionPerformed
-
-    private void Quiz19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz19ActionPerformed
-
-    private void QuizUnitsVar20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar20ActionPerformed
-
-    private void Quiz20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz20ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -5831,50 +5267,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Test Form B");
     }//GEN-LAST:event_jButton47ActionPerformed
-
-    private void Quiz21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz21ActionPerformed
-
-    private void QuizUnits21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits21ActionPerformed
-
-    private void QuizUnitsVar21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar21ActionPerformed
-
-    private void QuizUnitsVar22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar22ActionPerformed
-
-    private void Quiz22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz22ActionPerformed
-
-    private void QuizUnitsVar23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar23ActionPerformed
-
-    private void Quiz23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz23ActionPerformed
-
-    private void QuizUnitsVar24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar24ActionPerformed
-
-    private void Quiz24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz24ActionPerformed
-
-    private void QuizUnitsVar25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar25ActionPerformed
-
-    private void Quiz25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz25ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -5892,50 +5284,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Test Form A");
     }//GEN-LAST:event_jButton50ActionPerformed
-
-    private void Quiz26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz26ActionPerformed
-
-    private void QuizUnits26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits26ActionPerformed
-
-    private void QuizUnitsVar26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar26ActionPerformed
-
-    private void QuizUnitsVar27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar27ActionPerformed
-
-    private void Quiz27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz27ActionPerformed
-
-    private void QuizUnitsVar28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar28ActionPerformed
-
-    private void Quiz28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz28ActionPerformed
-
-    private void QuizUnitsVar29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar29ActionPerformed
-
-    private void Quiz29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz29ActionPerformed
-
-    private void QuizUnitsVar30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar30ActionPerformed
-
-    private void Quiz30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz30ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
@@ -6312,50 +5660,6 @@ public class Main extends javax.swing.JFrame {
         card2.show(PanCard, "Quiz Form");
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void Quiz5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz5ActionPerformed
-
-    private void QuizUnitsVar5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar5ActionPerformed
-
-    private void Quiz4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz4ActionPerformed
-
-    private void QuizUnitsVar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar4ActionPerformed
-
-    private void Quiz3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz3ActionPerformed
-
-    private void QuizUnitsVar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar3ActionPerformed
-
-    private void Quiz2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz2ActionPerformed
-
-    private void QuizUnitsVar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar2ActionPerformed
-
-    private void QuizUnitsVar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar1ActionPerformed
-
-    private void QuizUnits1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits1ActionPerformed
-
-    private void Quiz1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz1ActionPerformed
-
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Quest Form A");
@@ -6547,50 +5851,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card2 = (CardLayout)PanCard.getLayout();
         card2.show(PanCard, "Quest Form A");
     }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void Quiz15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz15ActionPerformed
-
-    private void QuizUnitsVar15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar15ActionPerformed
-
-    private void Quiz14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz14ActionPerformed
-
-    private void QuizUnitsVar14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar14ActionPerformed
-
-    private void Quiz13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz13ActionPerformed
-
-    private void QuizUnitsVar13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar13ActionPerformed
-
-    private void Quiz12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz12ActionPerformed
-
-    private void QuizUnitsVar12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar12ActionPerformed
-
-    private void QuizUnitsVar11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnitsVar11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnitsVar11ActionPerformed
-
-    private void QuizUnits11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizUnits11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_QuizUnits11ActionPerformed
-
-    private void Quiz11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Quiz11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Quiz11ActionPerformed
 
     private void QuizAnsB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_QuizAnsB1ActionPerformed
         if(equal(QuizQ1.answer, QuizAnswer1.getText()))
@@ -7639,7 +6899,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
@@ -7788,11 +7047,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
-    private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel87;
