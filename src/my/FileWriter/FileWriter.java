@@ -401,4 +401,60 @@ public int startfinder(String str, int x)
     }
     return 0;
 }
+
+public void typedelete(int x, String name)
+{
+    File file = new File(name);
+    if(tildacounter(name) <= 1)
+    {
+        try  {
+            boolean delete = file.delete();
+            boolean successfullyMadeFile = file.createNewFile();
+            }
+        catch (IOException ioe) {; }
+        return;
+    }
+
+    
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int startindex = 0;
+    int endindex = fileDataStr.length();
+    int count = 0;
+    boolean a = true;
+    outer: for(int i = 0; i < fileDataStr.length() && a; i ++)
+        {
+            if(count != x && fileDataStr.charAt(i) == '~')
+            {
+                startindex = i;
+                count ++;
+                i++;
+            }
+            if(count == x && fileDataStr.charAt(i) == '~')
+            {
+                endindex = i;
+                a = false;
+            }
+        }
+    
+    String temp = "";
+    if(startindex <=3)
+    temp = fileDataStr.substring(endindex, fileDataStr.length());
+    else if(endindex == fileDataStr.length())
+    temp = fileDataStr.substring(0,startindex+1);
+    else
+    temp = fileDataStr.substring(0,startindex) + fileDataStr.substring(endindex, fileDataStr.length());
+
+    try  {
+            boolean delete = file.delete();
+            boolean successfullyMadeFile = file.createNewFile();
+            }
+    catch (IOException ioe) {; }
+    try{FilesUtil.writeToTextFile(name, temp);}
+    catch (IOException ioe) {; }
+}
 }

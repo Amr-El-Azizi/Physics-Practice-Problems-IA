@@ -127,6 +127,7 @@ public class Main extends javax.swing.JFrame {
         FavQTypeUnitsVar = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
         FavQTypeUnits = new javax.swing.JTextField();
+        jButton54 = new javax.swing.JButton();
         SavedQ = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         jComboBox1 = new javax.swing.JComboBox();
@@ -803,7 +804,7 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(380, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         PanCard.add(Main, "Main Interface");
@@ -873,6 +874,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton54.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton54.setText("Delete Type");
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -905,9 +914,15 @@ public class Main extends javax.swing.JFrame {
                                 .addComponent(FavQTypeAnsVar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(FavQTypeAns, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton54)))
                 .addContainerGap())
         );
+
+        jPanel12Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton28, jButton54});
+
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
@@ -917,6 +932,8 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel13)
                     .addComponent(jButton28))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton54)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -933,7 +950,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jLabel35)
                     .addComponent(FavQTypeUnits, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton14))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout FavoriteQTypesLayout = new javax.swing.GroupLayout(FavoriteQTypes);
@@ -950,7 +967,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(FavoriteQTypesLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(351, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         PanCard.add(FavoriteQTypes, "Favorite Question Types");
@@ -1115,7 +1132,7 @@ public class Main extends javax.swing.JFrame {
         );
         SavedQLayout.setVerticalGroup(
             SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 678, Short.MAX_VALUE)
+            .addGap(0, 382, Short.MAX_VALUE)
             .addGroup(SavedQLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SavedQLayout.createSequentialGroup()
                     .addContainerGap()
@@ -1139,11 +1156,6 @@ public class Main extends javax.swing.JFrame {
 
         jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextField11.setText("Number");
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
-            }
-        });
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel16.setText("Length:");
@@ -1251,29 +1263,21 @@ public class Main extends javax.swing.JFrame {
             .addGroup(SavedTLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(375, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         PanCard.add(SavedT, "Saved Tests");
+
+        Search.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Search", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18), new java.awt.Color(0, 0, 225))); // NOI18N
 
         jPanel24.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Advanced Search", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 18))); // NOI18N
 
         AdvSearchBox1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         AdvSearchBox1.setText("Enter search query here");
         AdvSearchBox1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        AdvSearchBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AdvSearchBox1ActionPerformed(evt);
-            }
-        });
 
         AdvSearchBox2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         AdvSearchBox2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        AdvSearchBox2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AdvSearchBox2ActionPerformed(evt);
-            }
-        });
 
         AdvSearchBox3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         AdvSearchBox3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1286,11 +1290,6 @@ public class Main extends javax.swing.JFrame {
 
         SearchCB2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         SearchCB2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AND", "OR" }));
-        SearchCB2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SearchCB2ActionPerformed(evt);
-            }
-        });
 
         SearchCB3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         SearchCB3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "AND", "OR" }));
@@ -1318,7 +1317,7 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(SearchCB3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AdvSearchBox4, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+                            .addComponent(AdvSearchBox4, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)
                             .addComponent(AdvSearchBox3)
                             .addComponent(AdvSearchBox2)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
@@ -1377,7 +1376,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel25Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SearchBox, javax.swing.GroupLayout.DEFAULT_SIZE, 553, Short.MAX_VALUE)
+                    .addComponent(SearchBox, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
                     .addGroup(jPanel25Layout.createSequentialGroup()
                         .addComponent(NoQuery)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1408,7 +1407,7 @@ public class Main extends javax.swing.JFrame {
         SearchLayout.setHorizontalGroup(
             SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchLayout.createSequentialGroup()
-                .addContainerGap(532, Short.MAX_VALUE)
+                .addContainerGap(522, Short.MAX_VALUE)
                 .addComponent(jButton23)
                 .addContainerGap())
             .addGroup(SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1422,16 +1421,16 @@ public class Main extends javax.swing.JFrame {
         SearchLayout.setVerticalGroup(
             SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SearchLayout.createSequentialGroup()
-                .addContainerGap(642, Short.MAX_VALUE)
+                .addContainerGap(273, Short.MAX_VALUE)
                 .addComponent(jButton23)
-                .addContainerGap())
+                .addGap(20, 20, 20))
             .addGroup(SearchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(SearchLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(380, Short.MAX_VALUE)))
+                    .addContainerGap(20, Short.MAX_VALUE)))
         );
 
         PanCard.add(Search, "Search");
@@ -1440,10 +1439,13 @@ public class Main extends javax.swing.JFrame {
 
         jPanel28.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "General", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16), new java.awt.Color(102, 255, 153))); // NOI18N
 
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel19.setText("Most Visited Unit:");
 
+        jLabel20.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel20.setText("Tests Completed:");
 
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel21.setText("Questions Solved:");
 
         QSolved.setEditable(false);
@@ -1475,20 +1477,26 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(MostVisited))
                     .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addComponent(jLabel21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(QSolved, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
-                        .addGap(53, 53, 53))
-                    .addGroup(jPanel28Layout.createSequentialGroup()
-                        .addComponent(jLabel20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TCompleted)
-                        .addGap(56, 56, 56)))
+                        .addGroup(jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel28Layout.createSequentialGroup()
+                                .addComponent(jLabel21)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(QSolved, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel28Layout.createSequentialGroup()
+                                .addComponent(jLabel20)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TCompleted, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel28Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButton45))
         );
+
+        jPanel28Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel19, jLabel20, jLabel21});
+
+        jPanel28Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {QSolved, TCompleted});
+
         jPanel28Layout.setVerticalGroup(
             jPanel28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel28Layout.createSequentialGroup()
@@ -1514,11 +1522,6 @@ public class Main extends javax.swing.JFrame {
         jTextField21.setEditable(false);
         jTextField21.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextField21.setText("Questions solved by Unit:");
-        jTextField21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField21ActionPerformed(evt);
-            }
-        });
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel22.setText("Kinematics:");
@@ -1561,27 +1564,12 @@ public class Main extends javax.swing.JFrame {
 
         KQ.setEditable(false);
         KQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        KQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                KQActionPerformed(evt);
-            }
-        });
 
         FQ.setEditable(false);
         FQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        FQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FQActionPerformed(evt);
-            }
-        });
 
         EQ.setEditable(false);
         EQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        EQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                EQActionPerformed(evt);
-            }
-        });
 
         CQ.setEditable(false);
         CQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -1641,11 +1629,6 @@ public class Main extends javax.swing.JFrame {
 
         MQ.setEditable(false);
         MQ.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        MQ.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MQActionPerformed(evt);
-            }
-        });
 
         jLabel89.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel89.setText("Momentum:");
@@ -1787,7 +1770,7 @@ public class Main extends javax.swing.JFrame {
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGroup(jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel29, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton24)
@@ -5223,10 +5206,6 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_SavedQuestionAnswerVarActionPerformed
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
-
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
@@ -5237,25 +5216,9 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton23ActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
-
     private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField22ActionPerformed
-
-    private void KQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_KQActionPerformed
-
-    private void FQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FQActionPerformed
-
-    private void EQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_EQActionPerformed
 
     private void CQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CQActionPerformed
         // TODO add your handling code here:
@@ -5710,10 +5673,6 @@ public class Main extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton21ActionPerformed
 
-    private void SearchCB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchCB2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SearchCB2ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -5741,22 +5700,11 @@ public class Main extends javax.swing.JFrame {
         SavedQuestionViewer.setText(writer.textgetter(jComboBox1.getSelectedIndex(), "Saved Questions"));
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void AdvSearchBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdvSearchBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AdvSearchBox2ActionPerformed
-
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         writer.delete(jComboBox1.getSelectedIndex() + 1, "Saved Questions");
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(writer.namebringer("Saved Questions")));
         SavedQuestionViewer.setText(writer.textgetter(0, "Saved Questions"));
     }//GEN-LAST:event_jButton27ActionPerformed
-
-    private void AdvSearchBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdvSearchBox1ActionPerformed
-        try{
-        java.awt.Desktop.getDesktop().browse(new URI ("http://quizlet.com/61838103/momentum-and-energy-flash-cards/"));}
-        catch(Exception e)
-        {;}        
-    }//GEN-LAST:event_AdvSearchBox1ActionPerformed
 
     private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
         try{
@@ -5816,10 +5764,6 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton44ActionPerformed
-
-    private void MQActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MQActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MQActionPerformed
 
     private void MTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MTActionPerformed
         // TODO add your handling code here:
@@ -7345,6 +7289,16 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton14ActionPerformed
 
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
+        writer.typedelete(jComboBox5.getSelectedIndex(), "Favourite Questions");
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(writer.namegetter("Favourite Questions")));    
+        FavouriteQTypeText.setText("");
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Favorite Question Types");
+    }//GEN-LAST:event_jButton54ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7716,6 +7670,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton52;
     private javax.swing.JButton jButton53;
+    private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;

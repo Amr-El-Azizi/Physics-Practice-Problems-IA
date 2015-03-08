@@ -81,7 +81,7 @@
                       <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel4" min="-2" pref="103" max="-2" attributes="0"/>
-                      <EmptySpace pref="380" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -382,7 +382,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel12" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="351" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -415,7 +415,7 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jComboBox5" min="-2" pref="344" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton28" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jButton28" linkSize="14" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Component id="jLabel35" min="-2" max="-2" attributes="0"/>
@@ -440,6 +440,10 @@
                                   </Group>
                                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jButton54" linkSize="14" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -455,6 +459,8 @@
                               <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton54" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jScrollPane5" min="-2" pref="129" max="-2" attributes="0"/>
@@ -473,7 +479,7 @@
                               <Component id="FavQTypeUnits" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jButton14" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -608,6 +614,17 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FavQTypeUnitsActionPerformed"/>
                   </Events>
                 </Component>
+                <Component class="javax.swing.JButton" name="jButton54">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Delete Type"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton54ActionPerformed"/>
+                  </Events>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -643,7 +660,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="678" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="382" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -923,7 +940,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPanel21" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="375" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1077,9 +1094,6 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Number"/>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField11ActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel16">
                       <Properties>
@@ -1141,6 +1155,19 @@
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="Search">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                <TitledBorder title="Search">
+                  <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                  <Font PropertyName="font" name="Times New Roman" size="18" style="1"/>
+                  <Color PropertyName="color" blue="e1" green="0" red="0" type="rgb"/>
+                </TitledBorder>
+              </Border>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
               <CardConstraints cardName="Search"/>
@@ -1151,7 +1178,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="532" max="32767" attributes="0"/>
+                      <EmptySpace pref="522" max="32767" attributes="0"/>
                       <Component id="jButton23" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -1170,9 +1197,9 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="642" max="32767" attributes="0"/>
+                      <EmptySpace pref="273" max="32767" attributes="0"/>
                       <Component id="jButton23" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
@@ -1180,7 +1207,7 @@
                           <Component id="jPanel25" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jPanel24" min="-2" pref="187" max="-2" attributes="0"/>
-                          <EmptySpace pref="380" max="32767" attributes="0"/>
+                          <EmptySpace pref="20" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1216,7 +1243,7 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="AdvSearchBox4" alignment="0" pref="490" max="32767" attributes="0"/>
+                                      <Component id="AdvSearchBox4" alignment="0" pref="480" max="32767" attributes="0"/>
                                       <Component id="AdvSearchBox3" alignment="0" max="32767" attributes="0"/>
                                       <Component id="AdvSearchBox2" alignment="0" max="32767" attributes="0"/>
                                   </Group>
@@ -1279,9 +1306,6 @@
                       </Border>
                     </Property>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AdvSearchBox1ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="AdvSearchBox2">
                   <Properties>
@@ -1294,9 +1318,6 @@
                       </Border>
                     </Property>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AdvSearchBox2ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="AdvSearchBox3">
                   <Properties>
@@ -1347,9 +1368,6 @@
                       </StringArray>
                     </Property>
                   </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchCB2ActionPerformed"/>
-                  </Events>
                 </Component>
                 <Component class="javax.swing.JComboBox" name="SearchCB3">
                   <Properties>
@@ -1397,7 +1415,7 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="SearchBox" pref="553" max="32767" attributes="0"/>
+                              <Component id="SearchBox" pref="543" max="32767" attributes="0"/>
                               <Group type="102" attributes="0">
                                   <Component id="NoQuery" max="32767" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1547,21 +1565,24 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel19" linkSize="15" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Component id="MostVisited" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="QSolved" pref="48" max="32767" attributes="0"/>
-                                      <EmptySpace min="53" pref="53" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="TCompleted" max="32767" attributes="0"/>
-                                      <EmptySpace min="56" pref="56" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel21" linkSize="15" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="QSolved" linkSize="16" min="-2" pref="48" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="jLabel20" linkSize="15" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="TCompleted" linkSize="16" min="-2" pref="45" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="53" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -1600,16 +1621,25 @@
                   <SubComponents>
                     <Component class="javax.swing.JLabel" name="jLabel19">
                       <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="14" style="0"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Most Visited Unit:"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel20">
                       <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="14" style="0"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Tests Completed:"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel21">
                       <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="14" style="0"/>
+                        </Property>
                         <Property name="text" type="java.lang.String" value="Questions Solved:"/>
                       </Properties>
                     </Component>
@@ -1804,9 +1834,6 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Questions solved by Unit:"/>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField21ActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel22">
                       <Properties>
@@ -1907,9 +1934,6 @@
                           <Font name="Times New Roman" size="14" style="0"/>
                         </Property>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="KQActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="FQ">
                       <Properties>
@@ -1918,9 +1942,6 @@
                           <Font name="Times New Roman" size="14" style="0"/>
                         </Property>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FQActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="EQ">
                       <Properties>
@@ -1929,9 +1950,6 @@
                           <Font name="Times New Roman" size="14" style="0"/>
                         </Property>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EQActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JTextField" name="CQ">
                       <Properties>
@@ -2017,9 +2035,6 @@
                           <Font name="Times New Roman" size="14" style="0"/>
                         </Property>
                       </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MQActionPerformed"/>
-                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel89">
                       <Properties>
