@@ -78,7 +78,8 @@ public class Main extends javax.swing.JFrame {
         CriteriaCheck.setVisible(false);
         SavedQuestionAnswerVar.setVisible(false);
         SavedQuestionUnitsVar.setVisible(false);
-        
+        FavQTypeAns.setVisible(false);
+        FavQTypeUnits.setVisible(false);
     }
 
 
@@ -7296,8 +7297,14 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_FavQTypeUnitsActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        FavQTypeAns.setVisible(false);
+        FavQTypeUnits.setVisible(false);
         temp = Database.qtypegetter((String)jComboBox5.getSelectedItem());
         FavouriteQTypeText.setText(temp.questiontext);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Favorite Question Types");
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -7312,7 +7319,7 @@ public class Main extends javax.swing.JFrame {
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Main Interface");
         CardLayout card2 = (CardLayout)PanCard.getLayout();
-        card2.show(PanCard, "Questions");
+        card2.show(PanCard, "Favorite Question Types");
         if(equal(temp.answer,FavQTypeAnsVar.getText()))
         {
             FavQTypeAns.setText("Correct");
@@ -7322,7 +7329,7 @@ public class Main extends javax.swing.JFrame {
         {
             FavQTypeAns.setText("Incorrect");
         }
-        if(FavQTypeUnitsVar.equals(temp.units))
+        if(FavQTypeUnitsVar.getText().equals(temp.units))
         {
             FavQTypeUnits.setText("Correct");
             unitsc = true;
