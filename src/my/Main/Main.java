@@ -116,14 +116,14 @@ public class Main extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextArea5 = new javax.swing.JTextArea();
+        FavouriteQTypeText = new javax.swing.JTextArea();
         jLabel15 = new javax.swing.JLabel();
-        FaveQTypAnsVar = new javax.swing.JTextField();
+        FavQTypeAnsVar = new javax.swing.JTextField();
         FavQTypeAns = new javax.swing.JTextField();
         jButton14 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
-        FaveQTypeUnitsVar = new javax.swing.JTextField();
+        FavQTypeUnitsVar = new javax.swing.JTextField();
         jLabel35 = new javax.swing.JLabel();
         FavQTypeUnits = new javax.swing.JTextField();
         SavedQ = new javax.swing.JPanel();
@@ -817,15 +817,15 @@ public class Main extends javax.swing.JFrame {
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel14.setText("Question:");
 
-        jTextArea5.setColumns(20);
-        jTextArea5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextArea5.setRows(5);
-        jScrollPane5.setViewportView(jTextArea5);
+        FavouriteQTypeText.setColumns(20);
+        FavouriteQTypeText.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        FavouriteQTypeText.setRows(5);
+        jScrollPane5.setViewportView(FavouriteQTypeText);
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel15.setText("Your Answer:");
 
-        FaveQTypAnsVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        FavQTypeAnsVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         FavQTypeAns.setEditable(false);
         FavQTypeAns.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
@@ -859,7 +859,7 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        FaveQTypeUnitsVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        FavQTypeUnitsVar.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         jLabel35.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel35.setText("Units:");
@@ -889,7 +889,7 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel12Layout.createSequentialGroup()
                         .addComponent(jLabel35)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(FaveQTypeUnitsVar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(FavQTypeUnitsVar, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(FavQTypeUnits, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -901,7 +901,7 @@ public class Main extends javax.swing.JFrame {
                             .addComponent(jLabel14)
                             .addComponent(jLabel15)
                             .addGroup(jPanel12Layout.createSequentialGroup()
-                                .addComponent(FaveQTypAnsVar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(FavQTypeAnsVar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(FavQTypeAns, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -923,12 +923,12 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(FaveQTypAnsVar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FavQTypeAnsVar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(FavQTypeAns, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton15)
-                    .addComponent(FaveQTypeUnitsVar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FavQTypeUnitsVar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel35)
                     .addComponent(FavQTypeUnits, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton14))
@@ -7296,7 +7296,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_FavQTypeUnitsActionPerformed
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        temp = Database.qtypegetter(jComboBox5.getSelectedItem());
+        temp = Database.qtypegetter((String)jComboBox5.getSelectedItem());
+        FavouriteQTypeText.setText(temp.questiontext);
     }//GEN-LAST:event_jButton28ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
@@ -7304,7 +7305,37 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
+        boolean answerc = false;
+        boolean unitsc = false;
+        FavQTypeAns.setVisible(true);
+        FavQTypeUnits.setVisible(true);
+        CardLayout card = (CardLayout)PanCard.getLayout();
+        card.show(PanCard, "Main Interface");
+        CardLayout card2 = (CardLayout)PanCard.getLayout();
+        card2.show(PanCard, "Questions");
+        if(equal(temp.answer,FavQTypeAnsVar.getText()))
+        {
+            FavQTypeAns.setText("Correct");
+            answerc = true;
+        }
+        else
+        {
+            FavQTypeAns.setText("Incorrect");
+        }
+        if(FavQTypeUnitsVar.equals(temp.units))
+        {
+            FavQTypeUnits.setText("Correct");
+            unitsc = true;
+        }
+        else
+        {
+            FavQTypeUnits.setText("Incorrect");
+        }
+        if(answerc && unitsc)
+        {
+            writer.tally("Q");
+            writer.tally(Database.getUnit(temp.questionname));
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     /**
@@ -7361,11 +7392,12 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField FQ;
     private javax.swing.JTextField FT;
     private javax.swing.JTextField FavQTypeAns;
+    private javax.swing.JTextField FavQTypeAnsVar;
     private javax.swing.JTextField FavQTypeUnits;
-    private javax.swing.JTextField FaveQTypAnsVar;
-    private javax.swing.JTextField FaveQTypeUnitsVar;
+    private javax.swing.JTextField FavQTypeUnitsVar;
     private javax.swing.JButton FavoriteQTypeB;
     private javax.swing.JPanel FavoriteQTypes;
+    private javax.swing.JTextArea FavouriteQTypeText;
     private javax.swing.JRadioButton ForcesRB1;
     private javax.swing.JTextField GQ;
     private javax.swing.JTextField GT;
@@ -7833,7 +7865,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JTextArea jTextArea5;
     private javax.swing.JTextArea jTextArea7;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField21;
