@@ -460,7 +460,7 @@ public void typedelete(int x, String name)
 
 public String countQuiz()
 {
-    int count = 0;
+    int count = 1;
     boolean a = true;
     while(a)
     {
@@ -474,6 +474,7 @@ public String countQuiz()
             a = false;
         }
     }
+    System.out.println(count);
     return Integer.toString(count);
 }
 }

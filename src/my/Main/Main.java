@@ -6666,9 +6666,12 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the test a name:") + "\n\r";
-        String QName = Quiz + writer.countQuiz();
+        String QName = "Quiz" + writer.countQuiz();
+        System.out.println(QName);
+        File file = new File(QName);
         try{
-        FilesUtil.writeToTextFile(testname, QName);
+        file.createNewFile();
+        FilesUtil.writeToTextFile(QName, testname);
         }
         catch (IOException ioe) {; }
         try
