@@ -618,6 +618,22 @@ public Question[] getQs(String name)
     return QuizQs;
 }
 
+public boolean PerQon(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    for(int i = 0; i < fileDataStr.length()-4; i ++)
+        if(fileDataStr.substring(i, i + 4).equals("PerQ"))
+        {
+            return true;
+        }
+    return false;
+}
+
 /*public void print(Question[] qstns)
 {
     for(Question q: qstns)

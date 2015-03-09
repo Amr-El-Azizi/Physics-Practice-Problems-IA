@@ -6750,7 +6750,7 @@ public class Main extends javax.swing.JFrame {
             Quiz3.setText(QuizQ3.questiontext);
             Quiz4.setText(QuizQ4.questiontext);
             Quiz5.setText(QuizQ5.questiontext);
-            if(writer.perQon("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)))
+            if(writer.PerQon("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)))
             {
                 QuizAnsB1.setVisible(true);
                 QuizAnsB2.setVisible(true);
