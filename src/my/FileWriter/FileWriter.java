@@ -744,6 +744,29 @@ public boolean PerQon(String name)
     return false;
 }
 
+public void renamer(String name, int x)
+{
+    int count = x + 1;
+    boolean a = true;
+    while(a)
+    {
+        File file = new File("Quiz" + Integer.toString(count));
+        if(file.exists())
+        {
+            count ++;
+            File file2 = new File("Quiz" + Integer.toString(count-1));
+            try
+            {
+                file2.createNewFile();
+                FilesUtil.writeToTextFile("Quiz" + Integer.toString(count-1), FilesUtil.readTextFile("Quiz" + Integer.toString(count-1)));
+                file.delete();
+            }
+            catch(IOException ioe){;}    
+        }
+        else
+        a = false;
+    }
+}
 /*public void print(Question[] qstns)
 {
     for(Question q: qstns)
