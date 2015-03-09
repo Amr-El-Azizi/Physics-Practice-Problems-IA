@@ -1,13 +1,15 @@
-Testing-Quiz
--Kinematics
+Test Test-Quiz-
+-Kinematics-
+-Forces-
+-PerQ-
 
-1. Acceleration|An object accelerated at a rate of 9.0ms^-2 for 5.0s and reached a velocity of 3.0ms^-1. What was its initial velocity?|-42.0|ms^-1~
+1. Launching an object at an angle|A cannon launches a cannonball at a 80.0 degree angle so that it lands on a surface of the same height. If the initial velocity is 28.0ms^-1, how long does it take to reach the ground?|5.514923415316888|s~
 
-1. Horizontal Motion|A penguin slides off of an ice flow at a velocity of 5.0ms^-1. When he hits the water, he experiences a backwards acceleration and stops 20.0m from the edge. What is the acceleration he experienced?|0.125|ms^-2~
+1. Launching a Ball off of a surface|A ball is kicked off of a building 17.0m high with a horizontal velocity of 5.0ms^-1. Ignoring fluid resistance, how far does it travel before it hits the ground?|NaN|ms~
 
-1. Velocity|If an object moved 11.0m after 19.0s, what was its velocity?|0.5789473684210527|ms^-1~
+1. Angle of Repose|If the angle of repose between two object a and surface b is 40.0 degrees, what is the coeffecient of friction?|-64.01170042408307|degrees~
 
-1. Acceleration|If an object started moving at 17.0ms^-1 and was at a speed of 12.0ms^-1 after 16.0s, how fast did it accelerate?|-0.3125|ms^-2~
+1. Dropping a ball|An object weighing 87.0g is dropped from a table and hits the ground after 4.0s. What is the height of the table?|80.0|m~
 
-1. Launching an object at an angle|If a2.0m tall person throws a rugby ball at a31.0 degree angle with an initial velocity of 21.0ms^-1, what is the change in displacement once the rugby ball hits the ground?|10.49511571697677|m~
+1. Launching a Ball off of a surface|A brick is thrown horizontally out of a building at the velocity of 2.0ms^-1. If it has a final vertical velocity of 4.0ms^-1, what is its change in displacement?|0.8|m~
 

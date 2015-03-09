@@ -498,4 +498,54 @@ public String[] testbringer()
     names[i-1] = "Quiz" + Integer.toString(i);
     return names;
 }
+
+public String getLength(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int startindex = 0;
+    for(int i = 0; i < fileDataStr.length(); i ++)
+    {
+        if(startindex == 0 && fileDataStr.charAt(i) == '-')
+            startindex = i;
+        else if(fileDataStr.charAt(i) == '-')
+            return fileDataStr.substring(startindex + 1, i);
+    }
+    return "";
+}
+
+public String getUnits(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int startindex = 0;
+    int count = 0;
+    String output = "";
+    for(int i = 0; i < fileDataStr.length(); i ++)
+    {
+        if(count <= 1 && fileDataStr.charAt(i) == '-')
+        {
+            startindex = i;
+            count ++;
+        }
+        else if(fileDataStr.charAt(i) == '-')
+        {
+            output = output + fileDataStr.substring(startindex + 1, i);
+            startindex = i;
+        }
+        else if(fileDataStr.charAt(i) == '1' || fileDataStr.substring(i,i + 4).equals("PerQ"))
+        {
+            return output;
+        }
+    }
+    return output;
+}
 }

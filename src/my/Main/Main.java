@@ -1175,7 +1175,7 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addComponent(jLabel17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1183,9 +1183,12 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(TestLength, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(271, Short.MAX_VALUE))
+                        .addComponent(TestLength)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel22Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel16, jLabel17});
+
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
@@ -1213,6 +1216,11 @@ public class Main extends javax.swing.JFrame {
 
         jButton56.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton56.setText("View Test Information");
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
@@ -1224,8 +1232,8 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel21Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton56))
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -1254,8 +1262,8 @@ public class Main extends javax.swing.JFrame {
             SavedTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SavedTLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SavedTLayout.setVerticalGroup(
             SavedTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4868,7 +4876,8 @@ public class Main extends javax.swing.JFrame {
 
     private void SavedTestsBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavedTestsBActionPerformed
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(writer.testbringer()));
-        TestLength.setText("");
+        TestLength.setText(writer.getLength((String)jComboBox3.getSelectedItem()));
+        TestUnits.setText(writer.getUnits((String)jComboBox3.getSelectedItem()));
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Saved Tests");
     }//GEN-LAST:event_SavedTestsBActionPerformed
@@ -6675,13 +6684,13 @@ public class Main extends javax.swing.JFrame {
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the test a name:");
         String QName = "Quiz" + writer.countQuiz();
-        String info = testname + "-Quiz\n\r";
+        String info = testname + "-Quiz-\n\r";
         if(KinematicsRB1.isSelected())
-            info = info + "-Kinematics\n\r";
+            info = info + "-Kinematics-\n\r";
         if(ForcesRB1.isSelected())
-            info = info + "-Forces\n\r";
+            info = info + "-Forces-\n\r";
         if(PerQ.isSelected())
-            info = info + "-PerQ\n\r";
+            info = info + "-PerQ-\n\r";
         info = info + "\n\r";
         File file = new File(QName);
         try{
@@ -6715,6 +6724,10 @@ public class Main extends javax.swing.JFrame {
         }
         catch (IOException ioe) {; }
     }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton56ActionPerformed
 
     /**
      * @param args the command line arguments
