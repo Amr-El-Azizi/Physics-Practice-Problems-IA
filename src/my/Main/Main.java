@@ -158,6 +158,7 @@ public class Main extends javax.swing.JFrame {
         jButton19 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
         jButton56 = new javax.swing.JButton();
+        jButton57 = new javax.swing.JButton();
         Search = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
@@ -1227,6 +1228,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton57.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton57.setText("Delete Test");
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
@@ -1235,18 +1244,27 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel21Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton56))
-                    .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel21Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton56))
+                            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton57)
+                        .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton20)
-                .addGap(18, 18, 18))
+                .addContainerGap())
         );
+
+        jPanel21Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton56, jButton57});
+
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel21Layout.createSequentialGroup()
@@ -1255,10 +1273,13 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6)
                     .addComponent(jButton56))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton57)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton20))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton20)
+                .addGap(12, 12, 12))
         );
 
         javax.swing.GroupLayout SavedTLayout = new javax.swing.GroupLayout(SavedT);
@@ -1274,8 +1295,8 @@ public class Main extends javax.swing.JFrame {
             SavedTLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SavedTLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         PanCard.add(SavedT, "Saved Tests");
@@ -6739,7 +6760,7 @@ public class Main extends javax.swing.JFrame {
         if(TestLength.getText().equals("Quiz"))
         {
             Question[] QuizQs;
-            QuizQs = writer.getQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
+            QuizQs = writer.getQuizQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
             QuizQ1 = QuizQs[0];
             QuizQ2 = QuizQs[1];
             QuizQ3 = QuizQs[2];
@@ -6781,15 +6802,186 @@ public class Main extends javax.swing.JFrame {
         }
         else if(TestLength.getText().equals("Quest"))
         {
+            Question[] QuizQs;
+            QuizQs = writer.getQuestQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
+            QuizQ1 = QuizQs[0];
+            QuizQ2 = QuizQs[1];
+            QuizQ3 = QuizQs[2];
+            QuizQ4 = QuizQs[3];
+            QuizQ5 = QuizQs[4];
+            QuizQ6 = QuizQs[5];
+            QuizQ7 = QuizQs[6];
+            QuizQ8 = QuizQs[7];
+            QuizQ9 = QuizQs[8];
+            QuizQ10 = QuizQs[9];
+            Quiz6.setText(QuizQ1.questiontext);
+            Quiz7.setText(QuizQ2.questiontext);
+            Quiz8.setText(QuizQ3.questiontext);
+            Quiz9.setText(QuizQ4.questiontext);
+            Quiz10.setText(QuizQ5.questiontext);
+            Quiz11.setText(QuizQ6.questiontext);
+            Quiz12.setText(QuizQ7.questiontext);
+            Quiz13.setText(QuizQ8.questiontext);
+            Quiz14.setText(QuizQ9.questiontext);
+            Quiz15.setText(QuizQ10.questiontext);
+            if(writer.PerQon("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)))
+            {
+                QuizAnsB6.setVisible(true);
+                QuizAnsB7.setVisible(true);
+                QuizAnsB8.setVisible(true);
+                QuizAnsB9.setVisible(true);
+                QuizAnsB10.setVisible(true);
+                QuizAnsB11.setVisible(true);
+                QuizAnsB12.setVisible(true);
+                QuizAnsB13.setVisible(true);
+                QuizAnsB14.setVisible(true);
+                QuizAnsB15.setVisible(true);
+            }
+            else
+            {
+                QuizAnsB6.setVisible(false);
+                QuizAnsB7.setVisible(false);
+                QuizAnsB8.setVisible(false);
+                QuizAnsB9.setVisible(false);
+                QuizAnsB10.setVisible(false);
+                QuizAnsB11.setVisible(false);
+                QuizAnsB12.setVisible(false);
+                QuizAnsB13.setVisible(false);
+                QuizAnsB14.setVisible(false);
+                QuizAnsB15.setVisible(false);
+            }
+            QuizAnswerVar6.setVisible(false);
+            QuizAnswerVar7.setVisible(false);
+            QuizAnswerVar8.setVisible(false);
+            QuizAnswerVar9.setVisible(false);
+            QuizAnswerVar10.setVisible(false);
+            QuizAnswerVar11.setVisible(false);
+            QuizAnswerVar12.setVisible(false);
+            QuizAnswerVar13.setVisible(false);
+            QuizAnswerVar14.setVisible(false);
+            QuizAnswerVar15.setVisible(false);
+            QuizUnitsVar6.setVisible(false);
+            QuizUnitsVar7.setVisible(false);
+            QuizUnitsVar8.setVisible(false);
+            QuizUnitsVar9.setVisible(false);
+            QuizUnitsVar10.setVisible(false);
+            QuizUnitsVar11.setVisible(false);
+            QuizUnitsVar12.setVisible(false);
+            QuizUnitsVar13.setVisible(false);
+            QuizUnitsVar14.setVisible(false);
+            QuizUnitsVar15.setVisible(false);
             CardLayout card = (CardLayout)PanCard.getLayout();
             card.show(PanCard, "Quest Form A");
         }
         else if(TestLength.getText().equals("Test"))
         {
+            Question[] QuizQs;
+            QuizQs = writer.getTestQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
+            QuizQ1 = QuizQs[0];
+            QuizQ2 = QuizQs[1];
+            QuizQ3 = QuizQs[2];
+            QuizQ4 = QuizQs[3];
+            QuizQ5 = QuizQs[4];
+            QuizQ6 = QuizQs[5];
+            QuizQ7 = QuizQs[6];
+            QuizQ8 = QuizQs[7];
+            QuizQ9 = QuizQs[8];
+            QuizQ10 = QuizQs[9];
+            QuizQ11 = QuizQs[10];
+            QuizQ12 = QuizQs[11];
+            QuizQ13 = QuizQs[12];
+            QuizQ14 = QuizQs[13];
+            QuizQ15 = QuizQs[14];
+            Quiz16.setText(QuizQ1.questiontext);
+            Quiz17.setText(QuizQ2.questiontext);
+            Quiz18.setText(QuizQ3.questiontext);
+            Quiz19.setText(QuizQ4.questiontext);
+            Quiz20.setText(QuizQ5.questiontext);
+            Quiz21.setText(QuizQ6.questiontext);
+            Quiz22.setText(QuizQ7.questiontext);
+            Quiz23.setText(QuizQ8.questiontext);
+            Quiz24.setText(QuizQ9.questiontext);
+            Quiz25.setText(QuizQ10.questiontext);
+            Quiz26.setText(QuizQ11.questiontext);
+            Quiz27.setText(QuizQ12.questiontext);
+            Quiz28.setText(QuizQ13.questiontext);
+            Quiz29.setText(QuizQ14.questiontext);
+            Quiz30.setText(QuizQ15.questiontext);
+            if(writer.PerQon("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)))
+            {
+                QuizAnsB16.setVisible(true);
+                QuizAnsB7.setVisible(true);
+                QuizAnsB8.setVisible(true);
+                QuizAnsB9.setVisible(true);
+                QuizAnsB20.setVisible(true);
+                QuizAnsB21.setVisible(true);
+                QuizAnsB22.setVisible(true);
+                QuizAnsB23.setVisible(true);
+                QuizAnsB24.setVisible(true);
+                QuizAnsB25.setVisible(true);
+                QuizAnsB26.setVisible(true);
+                QuizAnsB27.setVisible(true);
+                QuizAnsB28.setVisible(true);
+                QuizAnsB29.setVisible(true);
+                QuizAnsB30.setVisible(true);
+            }
+            else
+            {
+                QuizAnsB16.setVisible(false);
+                QuizAnsB17.setVisible(false);
+                QuizAnsB18.setVisible(false);
+                QuizAnsB19.setVisible(false);
+                QuizAnsB20.setVisible(false);
+                QuizAnsB21.setVisible(false);
+                QuizAnsB22.setVisible(false);
+                QuizAnsB23.setVisible(false);
+                QuizAnsB24.setVisible(false);
+                QuizAnsB25.setVisible(false);
+                QuizAnsB26.setVisible(false);
+                QuizAnsB27.setVisible(false);
+                QuizAnsB28.setVisible(false);
+                QuizAnsB29.setVisible(false);
+                QuizAnsB30.setVisible(false);
+            }
+            QuizAnswerVar16.setVisible(false);
+            QuizAnswerVar17.setVisible(false);
+            QuizAnswerVar18.setVisible(false);
+            QuizAnswerVar19.setVisible(false);
+            QuizAnswerVar20.setVisible(false);
+            QuizAnswerVar21.setVisible(false);
+            QuizAnswerVar22.setVisible(false);
+            QuizAnswerVar23.setVisible(false);
+            QuizAnswerVar24.setVisible(false);
+            QuizAnswerVar25.setVisible(false);
+            QuizAnswerVar26.setVisible(false);
+            QuizAnswerVar27.setVisible(false);
+            QuizAnswerVar28.setVisible(false);
+            QuizAnswerVar29.setVisible(false);
+            QuizAnswerVar30.setVisible(false);
+            QuizUnitsVar16.setVisible(false);
+            QuizUnitsVar17.setVisible(false);
+            QuizUnitsVar18.setVisible(false);
+            QuizUnitsVar19.setVisible(false);
+            QuizUnitsVar20.setVisible(false);
+            QuizUnitsVar21.setVisible(false);
+            QuizUnitsVar22.setVisible(false);
+            QuizUnitsVar23.setVisible(false);
+            QuizUnitsVar24.setVisible(false);
+            QuizUnitsVar25.setVisible(false);
+            QuizUnitsVar26.setVisible(false);
+            QuizUnitsVar27.setVisible(false);
+            QuizUnitsVar28.setVisible(false);
+            QuizUnitsVar29.setVisible(false);
+            QuizUnitsVar30.setVisible(false);
             CardLayout card = (CardLayout)PanCard.getLayout();
             card.show(PanCard, "Test Form A");
         }
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton57ActionPerformed
+        File file = new File("Quiz" + Integer.toString(jComboBox3.getSelectedIndex()));
+        file.delete();
+    }//GEN-LAST:event_jButton57ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -7170,6 +7362,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton56;
+    private javax.swing.JButton jButton57;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;

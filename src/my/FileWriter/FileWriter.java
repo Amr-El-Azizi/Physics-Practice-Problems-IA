@@ -563,7 +563,7 @@ public String getUnits(String name)
     return output;
 }
 
-public Question[] getQs(String name)
+public Question[] getQuizQs(String name)
 {
     String fileDataStr = "";
     try
@@ -573,6 +573,116 @@ public Question[] getQs(String name)
     catch (IOException ioe) {; }
     int startindex = 0;
     Question[] QuizQs = new Question[5];
+    int count = 0;
+    int counter = 0;
+    Question temp = new Question(null, null, 0, null);
+    for(int i = 0; i < fileDataStr.length(); i ++)
+    {
+        try{
+            if(fileDataStr.substring(i,i + 3).equals("1. "))
+            {
+                startindex = i + 3;
+            }
+        }
+        catch(java.lang.StringIndexOutOfBoundsException e){;}
+        if(fileDataStr.charAt(i) == '|')
+        {
+            if(count == 0)
+            {
+                temp.questionname = fileDataStr.substring(startindex, i);
+                startindex = i + 1;
+                count ++;
+            }
+            else if (count == 1)
+            {
+                temp.questiontext = fileDataStr.substring(startindex, i);
+                startindex = i + 1;
+                count ++;
+            }
+            else if (count == 2)
+            {
+                temp.answer = Double.parseDouble(fileDataStr.substring(startindex, i));
+                startindex = i + 1;
+                count ++;
+            }
+        }
+        if(fileDataStr.charAt(i) == '~')
+        {
+            count = 0;
+            temp.units = fileDataStr.substring(startindex, i);
+            QuizQs[counter] = temp;
+            counter ++;
+            temp = new Question(null, null, 0, null);
+        }
+    }
+    return QuizQs;
+}
+
+public Question[] getQuestQs(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int startindex = 0;
+    Question[] QuizQs = new Question[10];
+    int count = 0;
+    int counter = 0;
+    Question temp = new Question(null, null, 0, null);
+    for(int i = 0; i < fileDataStr.length(); i ++)
+    {
+        try{
+            if(fileDataStr.substring(i,i + 3).equals("1. "))
+            {
+                startindex = i + 3;
+            }
+        }
+        catch(java.lang.StringIndexOutOfBoundsException e){;}
+        if(fileDataStr.charAt(i) == '|')
+        {
+            if(count == 0)
+            {
+                temp.questionname = fileDataStr.substring(startindex, i);
+                startindex = i + 1;
+                count ++;
+            }
+            else if (count == 1)
+            {
+                temp.questiontext = fileDataStr.substring(startindex, i);
+                startindex = i + 1;
+                count ++;
+            }
+            else if (count == 2)
+            {
+                temp.answer = Double.parseDouble(fileDataStr.substring(startindex, i));
+                startindex = i + 1;
+                count ++;
+            }
+        }
+        if(fileDataStr.charAt(i) == '~')
+        {
+            count = 0;
+            temp.units = fileDataStr.substring(startindex, i);
+            QuizQs[counter] = temp;
+            counter ++;
+            temp = new Question(null, null, 0, null);
+        }
+    }
+    return QuizQs;
+}
+
+public Question[] getTestQs(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    int startindex = 0;
+    Question[] QuizQs = new Question[15];
     int count = 0;
     int counter = 0;
     Question temp = new Question(null, null, 0, null);
