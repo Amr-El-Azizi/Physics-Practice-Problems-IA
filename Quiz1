@@ -1,15 +1,24 @@
-a-Quiz-
+Quest Test-Quest-
 Kinematics-
-Forces-
 PerQ-
 
-1. Throwing a ball|A ball is thrown upwards by someone 2.0m tall with a velocity of 4.0ms^-1. What is its final velocity before impact if it weighs 82.0g?|7.483314773547883|ms^-1~
+1. Launching a Ball off of a surface|A brick is thrown horizontally out of a building at the velocity of 1.0ms^-1. If it has a final vertical velocity of 2.0ms^-1, what is its change in displacement?|0.2|m~
 
-1. Launching an object at an angle|If a2.0m tall person throws a rugby ball at a16.0 degree angle with an initial velocity of 28.0ms^-1, what is the change in displacement once the rugby ball hits the ground?|16.297019621495348|m~
+1. Launching a Ball off of a surface|A ball is kicked off of a building 24.0m high with a horizontal velocity of 2.0ms^-1. Ignoring fluid resistance, how far does it travel before it hits the ground?|NaN|ms~
 
-1. Velocity|An object has a velocity of 17.0ms^-1 for 17.0s, how far did it travel?|289.0|m~
+1. Launching a Ball off of a surface|A ball is kicked off of a building 12.0m high with a horizontal velocity of 5.0ms^-1. Not accounting for friction, what is its final vertical velocity before impact if it weighs 71.0g?|15.491933384829668|ms^-1~
 
-1. Acceleration|An object accelerated at a rate of -19.0ms^-2 for 4.0s and reached a velocity of -1.0ms^-1. What was its initial velocity?|75.0|ms^-1~
+1. Dropping a ball|A 1.0kg weigh is dropped from the edge of a cliff and has a final velocity of 9.0ms^-1. How long did it take to hit the ground?|0.9|s~
 
-1. Velocity|If an object moved at 19.0ms^-1 and traveled a distance of 8.0m, how long did it travel?|0.42105263157894735|s~
+1. Acceleration|An object accelerated at a rate of -6.0ms^-2 for 12.0s and reached a velocity of 7.0ms^-1. What was its initial velocity?|79.0|ms^-1~
+
+1. Velocity|If an object moved 7.0m after 22.0s, what was its velocity?|0.3181818181818182|ms^-1~
+
+1. Dropping a ball|A 59.0g penny is dropped from a cliff 9.0m high. What is its final velocity before impact?|13.416407864998739|ms^-1~
+
+1. Throwing a ball|A ball is thrown upwards by someone 2.0m tall with a velocity of 1.0ms^-1. What is its final velocity before impact if it weighs 76.0g?|6.4031242374328485|ms^-1~
+
+1. Dropping a ball|An object is dropped from a helicopter and hits the ground after 57.0s. What is its velocity right before it hits the ocean if it has a density of 88.0gcm^-3?|16245.0|m~
+
+1. Velocity|If an object reached a displacement -3.0m after 19.0s, what was its velocity?|0.15789473684210525|s~
 

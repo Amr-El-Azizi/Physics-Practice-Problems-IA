@@ -6760,6 +6760,11 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton56ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        if(writer.getLength("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)).equals(TestLength.getText()) == false)
+        {
+            JOptionPane.showMessageDialog(NoQuery.getTopLevelAncestor(), "Hit the \"View Test Information\" button first ", "Looking at the wrong test", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
         if(TestLength.getText().equals("Quiz"))
         {
             Question[] QuizQs;
