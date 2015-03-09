@@ -753,15 +753,15 @@ public void renamer(String name, int x)
         File file = new File("Quiz" + Integer.toString(count));
         if(file.exists())
         {
-            count ++;
             File file2 = new File("Quiz" + Integer.toString(count-1));
             try
             {
                 file2.createNewFile();
-                FilesUtil.writeToTextFile("Quiz" + Integer.toString(count-1), FilesUtil.readTextFile("Quiz" + Integer.toString(count-1)));
+                FilesUtil.writeToTextFile("Quiz" + Integer.toString(count-1), FilesUtil.readTextFile("Quiz" + Integer.toString(count)));
                 file.delete();
             }
             catch(IOException ioe){;}    
+            count ++;
         }
         else
         a = false;
