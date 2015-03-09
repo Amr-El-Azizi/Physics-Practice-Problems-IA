@@ -6673,13 +6673,15 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        String testname = JOptionPane.showInputDialog("Give the test a name:") + "\n\r";
+        String testname = JOptionPane.showInputDialog("Give the test a name:");
         String QName = "Quiz" + writer.countQuiz();
-        String info = testname + "\n\r Quiz \n\r ";
+        String info = testname + "-Quiz\n\r";
         if(KinematicsRB1.isSelected())
-            info = info + "\n\r Kinematics \n\r ";
+            info = info + "-Kinematics\n\r";
         if(ForcesRB1.isSelected())
-            info = info + "Forces \n\r ";
+            info = info + "-Forces\n\r";
+        if(PerQ.isSelected())
+            info = info + "-PerQ\n\r";
         info = info + "\n\r";
         File file = new File(QName);
         try{

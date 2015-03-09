@@ -1,13 +1,13 @@
-Test Test
+Testing-Quiz
+-Kinematics
 
- QuizKinematics 
- 1. Acceleration|An object accelerated at a rate of 24.0ms^-2 and had a total change of velocity of 7.0ms^-1. How long was it accelerating for?|0.2916666666666667|s~
+1. Acceleration|An object accelerated at a rate of 9.0ms^-2 for 5.0s and reached a velocity of 3.0ms^-1. What was its initial velocity?|-42.0|ms^-1~
 
-1. Throwing a ball|An object is thrown straight vertically upwards out of a hovering helicopter at a velocity of 5.0ms^-1. How high up is the helicopter if the ball takes 25.0s to reach the ground?|3250.0|s~
+1. Horizontal Motion|A penguin slides off of an ice flow at a velocity of 5.0ms^-1. When he hits the water, he experiences a backwards acceleration and stops 20.0m from the edge. What is the acceleration he experienced?|0.125|ms^-2~
 
-1. Launching a Ball off of a surface|A ball is kicked off of a building 19.0m high with a horizontal velocity of 4.0ms^-1. Ignoring fluid resistance, how far does it travel before it hits the ground?|NaN|ms~
+1. Velocity|If an object moved 11.0m after 19.0s, what was its velocity?|0.5789473684210527|ms^-1~
 
-1. Horizontal Motion|A cart is moving at a speed of 11.0ms^-1 while being accelerated at a rate of -25.0ms^-2. How long does it take to reach the initial point?|0.88|s~
+1. Acceleration|If an object started moving at 17.0ms^-1 and was at a speed of 12.0ms^-1 after 16.0s, how fast did it accelerate?|-0.3125|ms^-2~
 
-1. Dropping a ball|A 5.0kg weigh is dropped from the edge of a cliff and has a final velocity of 3.0ms^-1. How long did it take to hit the ground?|0.3|s~
+1. Launching an object at an angle|If a2.0m tall person throws a rugby ball at a31.0 degree angle with an initial velocity of 21.0ms^-1, what is the change in displacement once the rugby ball hits the ground?|10.49511571697677|m~
 

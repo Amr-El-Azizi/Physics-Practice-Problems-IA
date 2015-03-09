@@ -495,7 +495,7 @@ public String[] testbringer()
     }
     String[] names = new String[counter];
     for(int i = 1; i <= counter; i ++)
-    names[i] = "Quiz" + Integer.toString(i);
+    names[i-1] = "Quiz" + Integer.toString(i);
     return names;
 }
 }
