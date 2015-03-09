@@ -423,6 +423,7 @@ public class Main extends javax.swing.JFrame {
         QuizAnsB13 = new javax.swing.JButton();
         QuizAnsB14 = new javax.swing.JButton();
         QuizAnsB15 = new javax.swing.JButton();
+        jButton58 = new javax.swing.JButton();
         Quizlets = new javax.swing.JPanel();
         jButton32 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
@@ -582,6 +583,7 @@ public class Main extends javax.swing.JFrame {
         QuizAnsB28 = new javax.swing.JButton();
         QuizAnsB29 = new javax.swing.JButton();
         QuizAnsB30 = new javax.swing.JButton();
+        jButton59 = new javax.swing.JButton();
         Resources = new javax.swing.JPanel();
         jButton12 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
@@ -3377,6 +3379,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton58.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton58.setText("Save Quest");
+        jButton58.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton58ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout QuestBLayout = new javax.swing.GroupLayout(QuestB);
         QuestB.setLayout(QuestBLayout);
         QuestBLayout.setHorizontalGroup(
@@ -3429,6 +3439,8 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuestBLayout.createSequentialGroup()
                 .addComponent(jButton7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton58)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton6))
@@ -3451,6 +3463,9 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizAnsB14, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB15, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
+
+        QuestBLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton4, jButton58});
+
         QuestBLayout.setVerticalGroup(
             QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuestBLayout.createSequentialGroup()
@@ -3537,7 +3552,8 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(QuestBLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton6)
                     .addComponent(jButton7)
-                    .addComponent(jButton4)))
+                    .addComponent(jButton4)
+                    .addComponent(jButton58)))
         );
 
         PanCard.add(QuestB, "Quest Form B");
@@ -4560,6 +4576,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton59.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton59.setText("Save Test");
+        jButton59.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton59ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout TestCLayout = new javax.swing.GroupLayout(TestC);
         TestC.setLayout(TestCLayout);
         TestCLayout.setHorizontalGroup(
@@ -4609,6 +4633,8 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TestCLayout.createSequentialGroup()
                 .addComponent(jButton51)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton59)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton52)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton53))
@@ -4633,7 +4659,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizAnsB30, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        TestCLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton52, jButton53});
+        TestCLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton52, jButton53, jButton59});
 
         TestCLayout.setVerticalGroup(
             TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4720,7 +4746,8 @@ public class Main extends javax.swing.JFrame {
                 .addGroup(TestCLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton51)
                     .addComponent(jButton52)
-                    .addComponent(jButton53)))
+                    .addComponent(jButton53)
+                    .addComponent(jButton59)))
         );
 
         PanCard.add(TestC, "Test Form C");
@@ -6703,7 +6730,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        String testname = JOptionPane.showInputDialog("Give the test a name:");
+        String testname = JOptionPane.showInputDialog("Give the quiz a name:");
         String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Quiz-\n\r";
         if(KinematicsRB1.isSelected())
@@ -6714,33 +6741,14 @@ public class Main extends javax.swing.JFrame {
             info = info + "PerQ-\n\r";
         info = info + "\n\r";
         File file = new File(QName);
-        try{
-        file.createNewFile();
-        FilesUtil.writeToTextFile(QName, info);
-        }
-        catch (IOException ioe) {; }
         try
         {
+            file.createNewFile();
+            FilesUtil.writeToTextFile(QName, info);
             writer.addQuestion(QuizQ1, QName);
-        }
-        catch (IOException ioe) {; }
-        try
-        {
             writer.addQuestion(QuizQ2, QName);
-        }
-        catch (IOException ioe) {; }
-        try
-        {
             writer.addQuestion(QuizQ3, QName);
-        }
-        catch (IOException ioe) {; }
-        try
-        {
             writer.addQuestion(QuizQ4, QName);
-        }
-        catch (IOException ioe) {; }
-        try
-        {
             writer.addQuestion(QuizQ5, QName);
         }
         catch (IOException ioe) {; }
@@ -6979,6 +6987,71 @@ public class Main extends javax.swing.JFrame {
         writer.renamer("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1), jComboBox3.getSelectedIndex() + 1);
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(writer.testbringer()));
     }//GEN-LAST:event_jButton57ActionPerformed
+
+    private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
+        String testname = JOptionPane.showInputDialog("Give the quest a name:");
+        String QName = "Quest" + writer.countQuiz();
+        String info = testname + "-Quest-\n\r";
+        if(KinematicsRB1.isSelected())
+            info = info + "Kinematics-\n\r";
+        if(ForcesRB1.isSelected())
+            info = info + "Forces-\n\r";
+        if(PerQ.isSelected())
+            info = info + "PerQ-\n\r";
+        info = info + "\n\r";
+        File file = new File(QName);
+        try
+        {
+            file.createNewFile();
+            FilesUtil.writeToTextFile(QName, info);
+            writer.addQuestion(QuizQ1, QName);
+            writer.addQuestion(QuizQ2, QName);
+            writer.addQuestion(QuizQ3, QName);
+            writer.addQuestion(QuizQ4, QName);
+            writer.addQuestion(QuizQ5, QName);
+            writer.addQuestion(QuizQ6, QName);
+            writer.addQuestion(QuizQ7, QName);
+            writer.addQuestion(QuizQ8, QName);
+            writer.addQuestion(QuizQ9, QName);
+            writer.addQuestion(QuizQ10, QName);
+        }
+        catch (IOException ioe) {; }
+    }//GEN-LAST:event_jButton58ActionPerformed
+
+    private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
+        String testname = JOptionPane.showInputDialog("Give the test a name:");
+        String QName = "Test" + writer.countQuiz();
+        String info = testname + "-Test-\n\r";
+        if(KinematicsRB1.isSelected())
+            info = info + "Kinematics-\n\r";
+        if(ForcesRB1.isSelected())
+            info = info + "Forces-\n\r";
+        if(PerQ.isSelected())
+            info = info + "PerQ-\n\r";
+        info = info + "\n\r";
+        File file = new File(QName);
+        try
+        {
+            file.createNewFile();
+            FilesUtil.writeToTextFile(QName, info);
+            writer.addQuestion(QuizQ1, QName);
+            writer.addQuestion(QuizQ2, QName);
+            writer.addQuestion(QuizQ3, QName);
+            writer.addQuestion(QuizQ4, QName);
+            writer.addQuestion(QuizQ5, QName);
+            writer.addQuestion(QuizQ6, QName);
+            writer.addQuestion(QuizQ7, QName);
+            writer.addQuestion(QuizQ8, QName);
+            writer.addQuestion(QuizQ9, QName);
+            writer.addQuestion(QuizQ10, QName);
+            writer.addQuestion(QuizQ11, QName);
+            writer.addQuestion(QuizQ12, QName);
+            writer.addQuestion(QuizQ13, QName);
+            writer.addQuestion(QuizQ14, QName);
+            writer.addQuestion(QuizQ15, QName);
+        }
+        catch (IOException ioe) {; }
+    }//GEN-LAST:event_jButton59ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -7360,6 +7433,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton56;
     private javax.swing.JButton jButton57;
+    private javax.swing.JButton jButton58;
+    private javax.swing.JButton jButton59;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
