@@ -474,7 +474,28 @@ public String countQuiz()
             a = false;
         }
     }
-    System.out.println(count);
     return Integer.toString(count);
+}
+
+public String[] testbringer()
+{
+    int counter = 0;
+    int count = 1;
+    boolean a = true;
+    while(a)
+    {
+        File file = new File("Quiz" + Integer.toString(count));
+        if(file.exists())
+        {
+            count ++;
+            counter ++;
+        }
+        else
+        a = false;
+    }
+    String[] names = new String[counter];
+    for(int i = 1; i <= counter; i ++)
+    names[i] = "Quiz" + Integer.toString(i);
+    return names;
 }
 }

@@ -150,13 +150,14 @@ public class Main extends javax.swing.JFrame {
         jComboBox3 = new javax.swing.JComboBox();
         jLabel6 = new javax.swing.JLabel();
         jPanel22 = new javax.swing.JPanel();
-        jTextField11 = new javax.swing.JTextField();
+        TestLength = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
-        jTextArea7 = new javax.swing.JTextArea();
+        TestUnits = new javax.swing.JTextArea();
         jButton19 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
+        jButton56 = new javax.swing.JButton();
         Search = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
@@ -1145,9 +1146,9 @@ public class Main extends javax.swing.JFrame {
 
         jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Test Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
 
-        jTextField11.setEditable(false);
-        jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField11.setText("Number");
+        TestLength.setEditable(false);
+        TestLength.setBackground(new java.awt.Color(255, 255, 255));
+        TestLength.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel16.setText("Length:");
@@ -1155,11 +1156,11 @@ public class Main extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel17.setText("Units:");
 
-        jTextArea7.setEditable(false);
-        jTextArea7.setColumns(20);
-        jTextArea7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextArea7.setRows(5);
-        jScrollPane7.setViewportView(jTextArea7);
+        TestUnits.setEditable(false);
+        TestUnits.setColumns(20);
+        TestUnits.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        TestUnits.setRows(5);
+        jScrollPane7.setViewportView(TestUnits);
 
         jButton19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton19.setText("Go To Test");
@@ -1182,16 +1183,15 @@ public class Main extends javax.swing.JFrame {
                     .addGroup(jPanel22Layout.createSequentialGroup()
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(104, 104, 104)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(TestLength, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(271, Short.MAX_VALUE))
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel22Layout.createSequentialGroup()
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TestLength, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel22Layout.createSequentialGroup()
@@ -1211,6 +1211,9 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton56.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton56.setText("View Test Information");
+
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
@@ -1218,10 +1221,12 @@ public class Main extends javax.swing.JFrame {
             .addGroup(jPanel21Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
+                    .addGroup(jPanel21Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox3, 0, 496, Short.MAX_VALUE))
+                        .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton56))
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
@@ -1235,7 +1240,8 @@ public class Main extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(jButton56))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -4861,6 +4867,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_TakeaTestBActionPerformed
 
     private void SavedTestsBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavedTestsBActionPerformed
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(writer.testbringer()));
+        TestLength.setText("");
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Saved Tests");
     }//GEN-LAST:event_SavedTestsBActionPerformed
@@ -6667,11 +6675,16 @@ public class Main extends javax.swing.JFrame {
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the test a name:") + "\n\r";
         String QName = "Quiz" + writer.countQuiz();
-        System.out.println(QName);
+        String info = testname + "\n\r Quiz \n\r ";
+        if(KinematicsRB1.isSelected())
+            info = info + "\n\r Kinematics \n\r ";
+        if(ForcesRB1.isSelected())
+            info = info + "Forces \n\r ";
+        info = info + "\n\r";
         File file = new File(QName);
         try{
         file.createNewFile();
-        FilesUtil.writeToTextFile(QName, testname);
+        FilesUtil.writeToTextFile(QName, info);
         }
         catch (IOException ioe) {; }
         try
@@ -7019,6 +7032,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JPanel TestA;
     private javax.swing.JPanel TestB;
     private javax.swing.JPanel TestC;
+    private javax.swing.JTextField TestLength;
+    private javax.swing.JTextArea TestUnits;
     private javax.swing.JPanel TopicL;
     private javax.swing.JTree TopicList;
     private javax.swing.JButton TopicListB;
@@ -7077,6 +7092,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton53;
     private javax.swing.JButton jButton54;
     private javax.swing.JButton jButton55;
+    private javax.swing.JButton jButton56;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -7225,8 +7241,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JTextArea jTextArea7;
-    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
     // End of variables declaration//GEN-END:variables
