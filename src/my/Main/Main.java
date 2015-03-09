@@ -4876,8 +4876,8 @@ public class Main extends javax.swing.JFrame {
 
     private void SavedTestsBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavedTestsBActionPerformed
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(writer.testbringer()));
-        TestLength.setText(writer.getLength((String)jComboBox3.getSelectedItem()));
-        TestUnits.setText(writer.getUnits((String)jComboBox3.getSelectedItem()));
+        TestLength.setText(writer.getLength("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
+        TestUnits.setText(writer.getUnits("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
         CardLayout card = (CardLayout)PanCard.getLayout();
         card.show(PanCard, "Saved Tests");
     }//GEN-LAST:event_SavedTestsBActionPerformed
@@ -6726,7 +6726,8 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
-        // TODO add your handling code here:
+        TestLength.setText(writer.getLength("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
+        TestUnits.setText(writer.getUnits("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
     }//GEN-LAST:event_jButton56ActionPerformed
 
     /**

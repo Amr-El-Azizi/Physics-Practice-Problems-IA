@@ -1,14 +1,13 @@
-Test
+Test-Quiz-
+-Kinematics-
 
- + Quiz 
- Kinematics 
- 1. Horizontal Motion|A penguin slides off of an ice flow at a velocity of 21.0ms^-1. When he hits the water, he experiences a backwards acceleration and stops 23.0m from the edge. What is the acceleration he experienced?|0.45652173913043476|ms^-2~
+1. Launching a Ball off of a surface|A ball is kicked off of a building 17.0m high with a horizontal velocity of 3.0ms^-1. Ignoring fluid resistance, what is its final horizontal velocity before impact if it weighs 68.0g?|3.0|ms^-1~
 
-1. Dropping a ball|A rubber ball is dropped from a rooftop has a velocity of 1.0ms^-1 right before impact. How high up from the ground is the rooftop?|0.05|m~
+1. Dropping a ball|A rubber ball is dropped from a rooftop has a velocity of 4.0ms^-1 right before impact. How high up from the ground is the rooftop?|0.8|m~
 
-1. Launching a Ball off of a surface|A ball is kicked off of a building 21.0m high with a horizontal velocity of 5.0ms^-1. Not accounting for friction, what is its final vertical velocity before impact if it weighs 76.0g?|20.493901531919196|ms^-1~
+1. Throwing a ball|An object is thrown straight down out of a windo at a velocity of 4.0ms^-1. How tall is the window if the ball takes7.0s to reach the ground?|273.0|m~
 
-1. Dropping a ball|A ball is dropped from a building 1.0m high. How long does it take to reach the bottom?|0.2|s~
+1. Horizontal Motion|An object moves at an initial velocity of 9.0ms^-1. If it accelerates at a rate of -7.0ms^-2 for  10.0s, what is its change in displacement?|-260.0|m~
 
-1. Throwing a ball|A ball is thrown downward off of a cliff 23.0m high with a velocity of 5.0ms^-1. What is its final velocity before impact if it weighs 66.0g?|22.02271554554524|ms^-1~
+1. Throwing a ball|An object is thrown upwards off of a building 8.0m high with a velocity of 2.0ms^-1. How long does it take to hit the bootom?|NaN|s~
 

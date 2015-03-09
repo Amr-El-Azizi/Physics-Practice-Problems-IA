@@ -494,9 +494,23 @@ public String[] testbringer()
         a = false;
     }
     String[] names = new String[counter];
-    for(int i = 1; i <= counter; i ++)
-    names[i-1] = "Quiz" + Integer.toString(i);
+    for(int i = 0; i < counter; i ++)
+    names[i] = testname("Quiz" + Integer.toString(i+1));
     return names;
+}
+
+public String testname(String name)
+{
+    String fileDataStr = "";
+    try
+    {
+        fileDataStr = FilesUtil.readTextFile(name);
+    }
+    catch (IOException ioe) {; }
+    for(int i = 0; i < fileDataStr.length(); i ++)
+        if(fileDataStr.charAt(i) == '-')
+            return fileDataStr.substring(0,i);
+    return "";
 }
 
 public String getLength(String name)
