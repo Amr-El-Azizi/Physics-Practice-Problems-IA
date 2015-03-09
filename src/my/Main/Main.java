@@ -6986,11 +6986,21 @@ public class Main extends javax.swing.JFrame {
         file.delete();
         writer.renamer("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1), jComboBox3.getSelectedIndex() + 1);
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(writer.testbringer()));
+        if(writer.testbringer().length == 0)
+        {
+            TestLength.setText("");
+            TestUnits.setText("");
+        }
+        else
+        {
+            TestLength.setText(writer.getLength("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
+            TestUnits.setText(writer.getUnits("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
+        }
     }//GEN-LAST:event_jButton57ActionPerformed
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the quest a name:");
-        String QName = "Quest" + writer.countQuiz();
+        String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Quest-\n\r";
         if(KinematicsRB1.isSelected())
             info = info + "Kinematics-\n\r";
@@ -7020,7 +7030,7 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the test a name:");
-        String QName = "Test" + writer.countQuiz();
+        String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Test-\n\r";
         if(KinematicsRB1.isSelected())
             info = info + "Kinematics-\n\r";
