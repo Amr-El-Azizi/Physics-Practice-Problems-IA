@@ -5284,6 +5284,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         String tempname = JOptionPane.showInputDialog("Give the question a name:");
+        if(tempname.equals(null))
+            return;
         temp.questionname = tempname;
         try
         {
@@ -6731,6 +6733,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the quiz a name:");
+        if(testname.equals(null))
+            return;
         String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Quiz-\n\r";
         if(KinematicsRB1.isSelected())
@@ -7005,6 +7009,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton58ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the quest a name:");
+        if(testname.equals(null))
+            return;
         String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Quest-\n\r";
         if(KinematicsRB1.isSelected())
@@ -7035,6 +7041,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton59ActionPerformed
         String testname = JOptionPane.showInputDialog("Give the test a name:");
+        if(testname.equals(null))
+            return;
         String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Test-\n\r";
         if(KinematicsRB1.isSelected())
