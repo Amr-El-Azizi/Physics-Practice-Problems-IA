@@ -1164,6 +1164,11 @@ public class Main extends javax.swing.JFrame {
 
         jButton19.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jButton19.setText("Go To Test");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
@@ -6729,6 +6734,31 @@ public class Main extends javax.swing.JFrame {
         TestLength.setText(writer.getLength("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
         TestUnits.setText(writer.getUnits("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)));
     }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        if(TestLength.getText().equals("Quiz"))
+        {
+            Question[] QuizQs = new Question[1];
+            QuizQs = writer.getQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
+            QuizQ1 = QuizQs[0];
+            QuizQ2 = QuizQs[1];
+            QuizQ3 = QuizQs[2];
+            QuizQ4 = QuizQs[3];
+            QuizQ5 = QuizQs[4];
+            CardLayout card = (CardLayout)PanCard.getLayout();
+            card.show(PanCard, "Quiz Form");
+        }
+        else if(TestLength.getText().equals("Quest"))
+        {
+            CardLayout card = (CardLayout)PanCard.getLayout();
+            card.show(PanCard, "Quest Form A");
+        }
+        else if(TestLength.getText().equals("Test"))
+        {
+            CardLayout card = (CardLayout)PanCard.getLayout();
+            card.show(PanCard, "Test Form A");
+        }
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
