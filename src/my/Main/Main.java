@@ -323,6 +323,7 @@ public class Main extends javax.swing.JFrame {
         QuizAnsB3 = new javax.swing.JButton();
         QuizAnsB4 = new javax.swing.JButton();
         QuizAnsB5 = new javax.swing.JButton();
+        jButton55 = new javax.swing.JButton();
         QuestA = new javax.swing.JPanel();
         Quiz6 = new javax.swing.JTextField();
         jLabel50 = new javax.swing.JLabel();
@@ -1144,6 +1145,7 @@ public class Main extends javax.swing.JFrame {
 
         jPanel22.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Test Information", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 16))); // NOI18N
 
+        jTextField11.setEditable(false);
         jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextField11.setText("Number");
 
@@ -1153,6 +1155,7 @@ public class Main extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel17.setText("Units:");
 
+        jTextArea7.setEditable(false);
         jTextArea7.setColumns(20);
         jTextArea7.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jTextArea7.setRows(5);
@@ -2658,6 +2661,14 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
+        jButton55.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton55.setText("Save Quiz");
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout QuizLayout = new javax.swing.GroupLayout(Quiz);
         Quiz.setLayout(QuizLayout);
         QuizLayout.setHorizontalGroup(
@@ -2708,6 +2719,8 @@ public class Main extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, QuizLayout.createSequentialGroup()
                 .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton55)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2))
             .addGroup(QuizLayout.createSequentialGroup()
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2729,6 +2742,9 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(QuizAnsB4, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(QuizAnsB5, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
+
+        QuizLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton2, jButton55});
+
         QuizLayout.setVerticalGroup(
             QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(QuizLayout.createSequentialGroup()
@@ -2814,7 +2830,8 @@ public class Main extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(QuizLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
-                    .addComponent(jButton3)))
+                    .addComponent(jButton3)
+                    .addComponent(jButton55)))
         );
 
         PanCard.add(Quiz, "Quiz Form");
@@ -6647,6 +6664,40 @@ public class Main extends javax.swing.JFrame {
         card.show(PanCard, "Main Interface");
     }//GEN-LAST:event_jButton17ActionPerformed
 
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        String testname = JOptionPane.showInputDialog("Give the test a name:") + "\n\r";
+        String QName = Quiz + writer.countQuiz();
+        try{
+        FilesUtil.writeToTextFile(testname, QName);
+        }
+        catch (IOException ioe) {; }
+        try
+        {
+            writer.addQuestion(QuizQ1, QName);
+        }
+        catch (IOException ioe) {; }
+        try
+        {
+            writer.addQuestion(QuizQ2, QName);
+        }
+        catch (IOException ioe) {; }
+        try
+        {
+            writer.addQuestion(QuizQ3, QName);
+        }
+        catch (IOException ioe) {; }
+        try
+        {
+            writer.addQuestion(QuizQ4, QName);
+        }
+        catch (IOException ioe) {; }
+        try
+        {
+            writer.addQuestion(QuizQ5, QName);
+        }
+        catch (IOException ioe) {; }
+    }//GEN-LAST:event_jButton55ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7022,6 +7073,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JButton jButton52;
     private javax.swing.JButton jButton53;
     private javax.swing.JButton jButton54;
+    private javax.swing.JButton jButton55;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;

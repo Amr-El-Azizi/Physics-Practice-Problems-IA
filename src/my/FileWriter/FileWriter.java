@@ -457,4 +457,23 @@ public void typedelete(int x, String name)
     try{FilesUtil.writeToTextFile(name, temp);}
     catch (IOException ioe) {; }
 }
+
+public String countQuiz()
+{
+    int count = 0;
+    boolean a = true;
+    while(a)
+    {
+        File file = new File("Quiz" + Integer.toString(count));
+        if(file.exists())
+        {
+            count ++;
+        }
+        else
+        {
+            a = false;
+        }
+    }
+    return Integer.toString(count);
+}
 }
