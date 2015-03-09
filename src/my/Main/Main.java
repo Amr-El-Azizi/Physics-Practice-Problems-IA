@@ -6691,11 +6691,11 @@ public class Main extends javax.swing.JFrame {
         String QName = "Quiz" + writer.countQuiz();
         String info = testname + "-Quiz-\n\r";
         if(KinematicsRB1.isSelected())
-            info = info + "-Kinematics-\n\r";
+            info = info + "Kinematics-\n\r";
         if(ForcesRB1.isSelected())
-            info = info + "-Forces-\n\r";
+            info = info + "Forces-\n\r";
         if(PerQ.isSelected())
-            info = info + "-PerQ-\n\r";
+            info = info + "PerQ-\n\r";
         info = info + "\n\r";
         File file = new File(QName);
         try{
@@ -6738,13 +6738,44 @@ public class Main extends javax.swing.JFrame {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         if(TestLength.getText().equals("Quiz"))
         {
-            Question[] QuizQs = new Question[1];
+            Question[] QuizQs;
             QuizQs = writer.getQs("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1));
             QuizQ1 = QuizQs[0];
             QuizQ2 = QuizQs[1];
             QuizQ3 = QuizQs[2];
             QuizQ4 = QuizQs[3];
             QuizQ5 = QuizQs[4];
+            Quiz1.setText(QuizQ1.questiontext);
+            Quiz2.setText(QuizQ2.questiontext);
+            Quiz3.setText(QuizQ3.questiontext);
+            Quiz4.setText(QuizQ4.questiontext);
+            Quiz5.setText(QuizQ5.questiontext);
+            if(writer.perQon("Quiz" + Integer.toString(jComboBox3.getSelectedIndex() + 1)))
+            {
+                QuizAnsB1.setVisible(true);
+                QuizAnsB2.setVisible(true);
+                QuizAnsB3.setVisible(true);
+                QuizAnsB4.setVisible(true);
+                QuizAnsB5.setVisible(true);
+            }
+            else
+            {
+                QuizAnsB1.setVisible(false);
+                QuizAnsB2.setVisible(false);
+                QuizAnsB3.setVisible(false);
+                QuizAnsB4.setVisible(false);
+                QuizAnsB5.setVisible(false);
+            }
+            QuizAnswerVar1.setVisible(false);
+            QuizAnswerVar2.setVisible(false);
+            QuizAnswerVar3.setVisible(false);
+            QuizAnswerVar4.setVisible(false);
+            QuizAnswerVar5.setVisible(false);
+            QuizUnitsVar1.setVisible(false);
+            QuizUnitsVar2.setVisible(false);
+            QuizUnitsVar3.setVisible(false);
+            QuizUnitsVar4.setVisible(false);
+            QuizUnitsVar5.setVisible(false);
             CardLayout card = (CardLayout)PanCard.getLayout();
             card.show(PanCard, "Quiz Form");
         }

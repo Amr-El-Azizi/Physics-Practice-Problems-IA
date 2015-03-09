@@ -612,8 +612,15 @@ public Question[] getQs(String name)
             temp.units = fileDataStr.substring(startindex, i);
             QuizQs[counter] = temp;
             counter ++;
+            temp = new Question(null, null, 0, null);
         }
     }
     return QuizQs;
 }
+
+/*public void print(Question[] qstns)
+{
+    for(Question q: qstns)
+        System.out.println(q.questiontext);
+}*/
 }
